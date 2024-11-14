@@ -11,10 +11,10 @@
 
 body {
   font-family: var(--primary-font);
+  margin: 0;
 }
 
 /**---------------------- Navbar **/
-
 .wrapper {
   max-width: var(--max-app-width);
   margin: 0 auto;
@@ -27,7 +27,7 @@ nav {
   width: 60%;
   height: 100vh;
   background-color: var(--contrast-color);
-  padding: 4rem;
+  padding: 80px;
   transition: right 0.5s ease-in-out;
 }
 
@@ -53,6 +53,10 @@ nav .close-btn {
   padding: 3rem;
 }
 
+.menu-btn svg {
+  color: var(--contrast-color);
+}
+
 .open {
   right: 0;
 }
@@ -71,7 +75,8 @@ header ul {
 section.navbar a {
   text-decoration: none;
   color: white;
-  font-size: 3.3rem;
+  font-size: 3rem;
+  padding-left: 3rem;
 }
 
 section.navbar a:active {
@@ -79,13 +84,12 @@ section.navbar a:active {
 }
 
 section.navbar a:hover {
-  color: var(--brand-color);
+  color: var(--contrast-color);
 }
 
-a.logo {
+section.navbar .logo {
   color: var(--contrast-color);
   font-weight: bold;
-  font-size: 24px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -113,8 +117,9 @@ a.logo {
   }
 
   section.navbar a {
-    color: black;
-    font-size: 2rem;
+    color: var(--contrast-color);
+    font-size: 1.7rem;
+    padding: 0;
   }
 }
 
