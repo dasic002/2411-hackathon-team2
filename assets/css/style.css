@@ -74,14 +74,51 @@ section.navbar a {
   font-size: 3.3rem;
 }
 
+section.navbar a:active {
+  text-decoration: underline;
+}
+
+section.navbar a:hover {
+  color: var(--brand-color);
+}
+
 a.logo {
   color: var(--contrast-color);
   font-weight: bold;
   font-size: 24px;
 }
 
-/**---------------------- Hero Section **/
+@media screen and (min-width: 1200px) {
+  .menu-btn,
+  nav .close-btn {
+    display: none;
+  }
 
+  nav {
+    position: unset;
+    height: auto;
+    background: none;
+    padding: 0;
+    width: auto;
+  }
+
+  section.navbar {
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  header ul {
+    flex-direction: row;
+    margin-top: auto;
+  }
+
+  section.navbar a {
+    color: black;
+    font-size: 2rem;
+  }
+}
+
+/**---------------------- Hero Section **/
 section.hero {
 }
 
