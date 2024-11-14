@@ -1,49 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap");
 
 :root {
-    --primary-color: #000000;
-    --contrast-color: #708090;
-    --secondary-color:#D3D3D3;
-    --brand-color: #FF4500;
-    --primary-font: "Roboto", sans-serif;
+  --primary-color: #000000;
+  --contrast-color: #708090;
+  --secondary-color: #d3d3d3;
+  --brand-color: #ff4500;
+  --primary-font: "Roboto", sans-serif;
+  --max-app-width: 1200px;
 }
 
 body {
-    font-family: var(--primary-font);
+  font-family: var(--primary-font);
 }
 
 /**---------------------- Navbar **/
 
-section.navbar {
+.wrapper {
+  max-width: var(--max-app-width);
+  margin: 0 auto;
+}
 
+nav {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  background-color: var(--contrast-color);
+  padding: 4rem;
+  transition: right 0.5s ease-in-out;
+}
+
+section.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .close-btn {
+  cursor: pointer;
+  width: 3rem;
+  display: block;
+  margin-left: auto;
+  background-color: var(--contrast-color);
+  border: none;
+}
+
+.menu-btn {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  padding: 3rem;
+}
+
+.open {
+  right: 0;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5em;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 4rem;
+  padding: 0;
+}
+
+section.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 3.3rem;
+}
+
+a.logo {
+  color: var(--contrast-color);
+  font-weight: bold;
+  font-size: 24px;
 }
 
 /**---------------------- Hero Section **/
 
 section.hero {
-
 }
 
 /**---------------------- weather section **/
 section.weather {
-
 }
 
 /**---------------------- news section **/
 
 section.news {
-
 }
 
 /**---------------------- FAQ section **/
 
 section.faq {
-
 }
-
 
 /**---------------------- Footer section **/
 
 section.footer {
-
 }
