@@ -46,7 +46,7 @@ You can safely delete this README.md file or change it for your own project. Ple
           </hd>
         <td>
             <ul>
-              <li>Age: 34</li>
+              <li>Age: 52</li>
               <li>Occupation:  Homemaker</li>
               <li> Role: Caregiver to her visually impaired teenage son</li>
               <li>  Tech Proficiency:  Moderate</li>
