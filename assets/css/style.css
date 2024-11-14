@@ -59,6 +59,52 @@ section.faq {
 
 /**---------------------- Footer section **/
 
-section.footer {
+footer {
+    margin: auto;
+    background-color: var(--contrast-color);
+    color: var(--secondary-color);
+    width: 100%;
+    height: 5em;
+    text-align: center;
+}
 
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--brand-color);
+    transition: 1s;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+#contact-button {
+    background-color: var(--secondary-color);
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+#contact-button a {
+    color: var(--contrast-color);
+}
+
+#contact-button:hover {
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+    transition: 1s ease-in-out;
+}
+
+#social-button a {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+footer small {
+    font-size: 8px;
 }
