@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap");
 
 :root {
-  --background-color: #fffff0;
-  --primary-color: #3c2f2f;
-  --primary-color-light: #543d3d;
+  --background-color: #ffffff;
+  --primary-color: #000000;
+  --primary-color-light: #2d2d2d;
   --contrast-color: #708090;
-  --secondary-color: #800000;
-  --secondary-color-light: #660000;
-  --accent-color: #ffd700;
-  --accent-color-light: #ffc100;
+  --secondary-color: #3333ff;
+  --secondary-color-light: #0050ff;
+  --accent-color: #ffcc00;
+  --accent-color-light: #dac600;
   --brand-color: var(--secondary-color);
   --primary-font: "Roboto", sans-serif;
   --max-app-width: 1200px;
@@ -18,6 +18,8 @@
 
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 *,
 *:before,
@@ -28,7 +30,6 @@ html {
 body {
   font-family: var(--primary-font);
   background: var(--background-color);
-  margin: 0;
 }
 
 p,
