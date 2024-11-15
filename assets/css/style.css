@@ -68,7 +68,7 @@ nav {
   position: fixed;
   right: -100%;
   top: 0;
-  width: 60%;
+  width: 90%;
   height: 100vh;
   background-color: var(--primary-color-light);
   padding: 3rem;
@@ -164,6 +164,14 @@ section.navbar a:hover {
 section.navbar .logo {
   color: var(--primary-color-light);
   font-weight: bold;
+}
+
+/* Media Queries for navbar  */
+
+@media screen and (min-width: 600px) {
+  nav {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
