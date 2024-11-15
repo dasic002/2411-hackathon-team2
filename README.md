@@ -129,12 +129,10 @@ All of the color schemes were readable for individuals with various types of vis
 Based on these criteria, we observerd:
 
 - Color Scheme 2,3 and 5 look a bit strange for certain types of impairments
-- Color scheme 1 could be a bit much for waking up in the morning , the visual contrast is very strong. However, the blue colors could help with waking up.
+- Color scheme 1 has a strong visual contrast and is visually appealing across impairment types. The bright tone could help with waking up.
 - Color scheme 2 and 5 score lower than the other schemes for certain combinations
 
-Our final chosen color scheme:
-
-(insert here)
+Our final chosen color scheme was **Color Scheme 1 (Classic Contrast)** , based on the results and a vote across our team members.
 
 #### Typography
 
