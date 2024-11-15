@@ -1,6 +1,8 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+
 # Hackathon team 2
+
 
 Short paragraph - description of the project
 
