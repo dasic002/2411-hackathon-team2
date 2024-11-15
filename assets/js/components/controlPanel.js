@@ -75,22 +75,6 @@ function initializeControlPanelEvents(panel) {
   });
 }
 
-export function updateControlPanel(show = true, title = "") {
-  const panel = document.getElementById("tts-control-panel");
-  if (!panel) return;
-
-  if (!show) {
-    panel.classList.remove("visible");
-    document.body.classList.remove("panel-visible");
-  } else {
-    panel.classList.add("visible");
-    document.body.classList.add("panel-visible");
-    if (title) {
-      panel.querySelector(".reading-title").textContent = title;
-    }
-  }
-}
-
 /**
  * Updates the visibility state and content of the text-to-speech control panel.
  * Controls the panel's visibility and updates the currently reading title if provided.
