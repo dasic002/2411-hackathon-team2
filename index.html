@@ -13,10 +13,17 @@
       <section class="wrapper navbar">
         <a href="#" class="logo">Our Logo</a>
 
-        <nav>
-          <button class="close-btn">
+        <nav role="navigation" aria-label="Main Menu">
+          <button
+            type="button"
+            class="close-btn"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="sr-only">Close main menu</span>
             <svg
-              clas
+              aria-hidden="true"
+              focusable="false"
               width="66"
               height="66"
               viewBox="0 0 66 66"
@@ -30,16 +37,22 @@
             </svg>
           </button>
 
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#" class="active">Contact Us</a></li>
-            <li><a href="#" class="active">FAQ</a></li>
+          <ul role="menubar" class="visible" id="mobile-menu">
+            <li role="menuitem">
+              <a href="#" class="active" aria-current="page">Home</a>
+            </li>
+            <li role="menuitem"><a href="#">Contact Us</a></li>
+            <li role="menuitem"><a href="#">FAQ</a></li>
           </ul>
         </nav>
 
         <!-- Mobile Menu  -->
         <button class="menu-btn" alt="Open Menu">
+          <span class="sr-only">Open main menu</span>
           <svg
+            aria-hidden="true"
+            aria-expanded="true"
+            focusable="false"
             width="69"
             height="69"
             viewBox="0 0 69 69"
