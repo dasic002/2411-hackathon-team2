@@ -6,6 +6,75 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Team</title>
         <link rel="stylesheet" href="assets/css/style.css">
+
+        <style>
+            /* Style heading */
+            h1 {
+                text-align: center;
+                font-size: 50px;
+            }
+
+            .profile-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; 
+                gap: 40px;
+                max-width: 1400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .profile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                max-width: 800px;
+                padding: 20px;
+                border: 1px solid #ddd; 
+                border-radius: 8px; 
+                background-color: var(--contrast-color)
+            }
+
+            .profile-right {
+                flex-direction: row-reverse;
+                background-color: var(--secondary-color)
+            }
+
+            .social-wrapper {
+                display:flex;
+                gap:15px;
+                align-items: center;
+                text-decoration:none;
+            }
+
+            .social {
+                width: 100px;
+                height: auto;
+                overflow: hidden;
+                text-align: center;
+            }
+
+            .text-grow {
+                transition: all 0.2s ease-in-out;
+            }
+
+            .text-grow:hover {
+                transform: scale(1.03);
+            }
+
+            @media (max-width: 768px) {
+                .profile {
+                    flex-direction: column; 
+                    align-items: center;
+                    text-align: center;
+                }
+                .social-wrapper {
+                    justify-content:center;
+                }
+             }
+        </style>
     </head>
 
     <body>
@@ -20,6 +89,48 @@
             <section class="team">
                 <h1>Meet The Team</h1>
 
+                <div class="profile-wrapper">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img src="assets/media/placeholder-person.png" alt="Charlie Enright">
+                        </div>
+                        <div class="profile-text">
+                            <h2>Charlie Enright <span class="title">(Archaeologist, Code Institute Alumnus)</span></h2>
+                            <p>“During the day, I work as an archaeologist specialising in aerial surveys and 3D modelling, 
+                                with a strong passion for uncovering the past. I’m enthusiastic about finding innovative ways 
+                                to engage broader audiences. Outside of work, I’m eager to develop my skills as a software 
+                                developer and constantly seek new learning opportunities.”</p>
+                            <div class="social-wrapper">
+                                <a href="https://github.com/enrightc" target="_blank" alt="Link to Charlie's GitHub">
+                                <img src="assets/media/github.png" alt="" class="social text-grow">
+                            </a>
+                            <a href="https://www.linkedin.com/in/charlie-enright-54443a46/" target="_blank" alt="Link to Charlie's LinkedIn">
+                                <img src="assets/media/linkedin.png" class="social text-grow">
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Image on the right for this profile -->
+                    <div class="profile profile-right">
+                        <div class="profile-image">
+                            <img src="assets/media/placeholder-person.png" alt="Carlos Da Silva" class="image">
+                        </div>
+                        <div class="profile-text">
+                            <h2>Carlos Da Silva <span class="title">(Freelance Designer, Code Institute Alumnus)</span></h2>
+                            <p>“Need some text here.”</p>
+                            <div class="social-wrapper">
+                                <a href="https://github.com/dasic002" target="_blank">
+                                    <img src="assets/media/github.png" alt="" class="social text-grow">
+                                </a>
+                                <a href="https://www.linkedin.com/in/carlos-da-silva-90149627/" target="_blank">
+                                    <img src="assets/media/linkedin.png" class="social text-grow">
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>  
             
             </section>
 
