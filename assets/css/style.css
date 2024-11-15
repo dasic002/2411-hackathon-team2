@@ -1,17 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap");
 
 :root {
+  --background-color: #ffffff;
   --primary-color: #000000;
+  --primary-color-light: #2d2d2d;
   --contrast-color: #708090;
-  --secondary-color: #d3d3d3;
-  --brand-color: #ff4500;
+  --secondary-color: #3333ff;
+  --secondary-color-light: #0050ff;
+  --accent-color: #ffcc00;
+  --accent-color-light: #dac600;
+  --brand-color: var(--secondary-color);
   --primary-font: "Roboto", sans-serif;
   --max-app-width: 1200px;
 }
 
+/**---------------------- Global styles  **/
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: var(--primary-font);
-  margin: 0;
+  background: var(--background-color);
+}
+
+p,
+a {
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
 }
 
 /**---------------------- For accessility 
@@ -37,10 +69,10 @@ nav {
   position: fixed;
   right: -100%;
   top: 0;
-  width: 60%;
+  width: 90%;
   height: 100vh;
-  background-color: var(--contrast-color);
-  padding: 80px;
+  background-color: var(--primary-color-light);
+  padding: 3rem;
   transition: right 0.5s ease-in-out;
 }
 
@@ -55,19 +87,32 @@ nav .close-btn {
   width: 3rem;
   display: block;
   margin-left: auto;
-  background-color: var(--contrast-color);
   border: none;
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  min-height: 66px;
+  background-color: var(--primary-color-light);
 }
 
 .menu-btn {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   border: none;
-  background-color: white;
+  background-color: var(--background-color);
   padding: 3rem;
 }
 
 .menu-btn svg {
-  color: var(--contrast-color);
+  color: var(--primary-color-light);
+}
+
+.menu-btn span:nth-of-type(2) {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color-light);
 }
 
 .open {
@@ -86,23 +131,48 @@ header ul {
 }
 
 section.navbar a {
+  display: inline-block;
   text-decoration: none;
   color: white;
   font-size: 3rem;
+  margin-left: auto;
+  display: inline-block;
+  padding: 0;
+}
+
+section.navbar a:hover {
+  color: red;
+}
+
+/* Logo  */
+section.navbar .logo {
+  margin-left: 0;
   padding-left: 3rem;
 }
 
-section.navbar a:active {
+section.navbar .menuitem {
+  background: red;
+}
+section.navbar .active {
   text-decoration: underline;
 }
 
 section.navbar a:hover {
-  color: var(--contrast-color);
+  color: var(--accent-color);
+  background: var(--primary-color-light);
 }
 
 section.navbar .logo {
-  color: var(--contrast-color);
+  color: var(--primary-color-light);
   font-weight: bold;
+}
+
+/* Media Queries for navbar  */
+
+@media screen and (min-width: 600px) {
+  nav {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -130,9 +200,24 @@ section.navbar .logo {
   }
 
   section.navbar a {
-    color: var(--contrast-color);
+    color: var(--primary-color);
     font-size: 1.7rem;
-    padding: 0;
+    padding: 1em;
+    border-radius: 4px;
+  }
+
+  section.navbar .logo {
+    color: var(--primary-color);
+  }
+
+  section.navbar .logo:hover {
+    color: inherit;
+    background-color: inherit;
+  }
+
+  section.navbar a:hover {
+    color: var(--accent-color-light);
+    background: var(--primary-color-light);
   }
 }
 
@@ -158,9 +243,6 @@ section.faq {
 
 section.footer {
 }
-
-
-
 
 /**---------------------- Footer section **/
 
