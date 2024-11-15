@@ -12,8 +12,41 @@
 
         <!--Navbar-->
         <header>
-            <nav>
-            </nav>
+            <section class="wrapper navbar">
+                <a href="#" class="logo">Our Logo</a>
+
+                <nav role="navigation" aria-label="Main Menu">
+                    <button type="button" class="close-btn" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">Close main menu</span>
+                        <svg aria-hidden="true" focusable="false" width="66" height="66" viewBox="0 0 66 66" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M33 4.125C16.9125 4.125 4.125 16.9125 4.125 33C4.125 49.0875 16.9125 61.875 33 61.875C49.0875 61.875 61.875 49.0875 61.875 33C61.875 16.9125 49.0875 4.125 33 4.125ZM44.1375 47.4375L33 36.3L21.8625 47.4375L18.5625 44.1375L29.7 33L18.5625 21.8625L21.8625 18.5625L33 29.7L44.1375 18.5625L47.4375 21.8625L36.3 33L47.4375 44.1375L44.1375 47.4375Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+
+                    <ul role="menubar" class="visible" id="mobile-menu">
+                        <li role="menuitem">
+                            <a href="#" class="active" aria-current="page">Home</a>
+                        </li>
+                        <li role="menuitem"><a href="#">Contact Us</a></li>
+                        <li role="menuitem"><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+
+
+                <!-- Mobile Menu  -->
+                <button class="menu-btn" alt="Open Menu">
+                    <span class="sr-only">Open main menu</span>
+                    <svg aria-hidden="true" aria-expanded="true" focusable="false" width="69" height="69"
+                        viewBox="0 0 69 69" fill="#708090" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.625 20.125C8.625 19.3625 8.9279 18.6312 9.46707 18.0921C10.0062 17.5529 10.7375 17.25 11.5 17.25H57.5C58.2625 17.25 58.9938 17.5529 59.5329 18.0921C60.0721 18.6312 60.375 19.3625 60.375 20.125C60.375 20.8875 60.0721 21.6188 59.5329 22.1579C58.9938 22.6971 58.2625 23 57.5 23H11.5C10.7375 23 10.0062 22.6971 9.46707 22.1579C8.9279 21.6188 8.625 20.8875 8.625 20.125ZM8.625 34.5C8.625 33.7375 8.9279 33.0062 9.46707 32.4671C10.0062 31.9279 10.7375 31.625 11.5 31.625H57.5C58.2625 31.625 58.9938 31.9279 59.5329 32.4671C60.0721 33.0062 60.375 33.7375 60.375 34.5C60.375 35.2625 60.0721 35.9938 59.5329 36.5329C58.9938 37.0721 58.2625 37.375 57.5 37.375H11.5C10.7375 37.375 10.0062 37.0721 9.46707 36.5329C8.9279 35.9938 8.625 35.2625 8.625 34.5ZM8.625 48.875C8.625 48.1125 8.9279 47.3812 9.46707 46.8421C10.0062 46.3029 10.7375 46 11.5 46H57.5C58.2625 46 58.9938 46.3029 59.5329 46.8421C60.0721 47.3812 60.375 48.1125 60.375 48.875C60.375 49.6375 60.0721 50.3688 59.5329 50.9079C58.9938 51.4471 58.2625 51.75 57.5 51.75H11.5C10.7375 51.75 10.0062 51.4471 9.46707 50.9079C8.9279 50.3688 8.625 49.6375 8.625 48.875Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+            </section>
         </header>
 
         <main>
@@ -81,6 +114,16 @@
         </footer>
 
         <script type="module" src="assets/js/script.js"></script>
+        <script>
+            // Navbar : open mobile menu
+            document.querySelector(".menu-btn").addEventListener("click", () => {
+                document.querySelector("nav").classList.toggle("open");
+            });
+            // Navbar : close mobile menu
+            document.querySelector(".close-btn").addEventListener("click", () => {
+                document.querySelector("nav").classList.toggle("open");
+            });
+        </script>
     </body>
 
 </html>
