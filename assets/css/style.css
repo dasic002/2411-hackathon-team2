@@ -1,51 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap");
 
 :root {
-    --primary-color: #000000;
-    --contrast-color: #708090;
-    --secondary-color:#D3D3D3;
-    --brand-color: #FF4500;
-    --primary-font: "Roboto", sans-serif;
+  --primary-color: #000000;
+  --contrast-color: #708090;
+  --secondary-color: #d3d3d3;
+  --brand-color: #ff4500;
+  --primary-font: "Roboto", sans-serif;
+  --max-app-width: 1200px;
 }
 
 body {
-    font-family: var(--primary-font);
+  font-family: var(--primary-font);
+  margin: 0;
+}
+
+/**---------------------- For accessility 
+ https://webaim.org/techniques/css/invisiblecontent/ 
+ **/
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /**---------------------- Navbar **/
+.wrapper {
+  max-width: var(--max-app-width);
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+  background-color: var(--contrast-color);
+  padding: 80px;
+  transition: right 0.5s ease-in-out;
+}
 
 section.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+nav .close-btn {
+  cursor: pointer;
+  width: 3rem;
+  display: block;
+  margin-left: auto;
+  background-color: var(--contrast-color);
+  border: none;
+}
+
+.menu-btn {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  padding: 3rem;
+}
+
+.menu-btn svg {
+  color: var(--contrast-color);
+}
+
+.open {
+  right: 0;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5em;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 4rem;
+  padding: 0;
+}
+
+section.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  padding-left: 3rem;
+}
+
+section.navbar a:active {
+  text-decoration: underline;
+}
+
+section.navbar a:hover {
+  color: var(--contrast-color);
+}
+
+section.navbar .logo {
+  color: var(--contrast-color);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-btn,
+  nav .close-btn {
+    display: none;
+  }
+
+  nav {
+    position: unset;
+    height: auto;
+    background: none;
+    padding: 0;
+    width: auto;
+  }
+
+  section.navbar {
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  header ul {
+    flex-direction: row;
+    margin-top: auto;
+  }
+
+  section.navbar a {
+    color: var(--contrast-color);
+    font-size: 1.7rem;
+    padding: 0;
+  }
 }
 
 /**---------------------- Hero Section **/
-
 section.hero {
-
 }
 
 /**---------------------- weather section **/
 section.weather {
-
 }
 
 /**---------------------- news section **/
 
 section.news {
-
 }
 
 /**---------------------- FAQ section **/
 
 section.faq {
-
 }
-
 
 /**---------------------- Footer section **/
 
 section.footer {
-
 }
 
 
