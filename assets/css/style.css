@@ -222,7 +222,55 @@ section.navbar .logo {
 }
 
 /**---------------------- Hero Section **/
-section.hero {
+
+.hero {
+    margin: auto;
+    margin-bottom: 2px;
+    height: 8em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.hero-div {
+    background-color: var(--contrast-color);
+    text-align: center; 
+    border-radius: 4px;
+}
+
+#page-title{
+    background-image: url(../media/newspaper.jpg);
+    background-size: cover;
+    color: var(--secondary-color);
+    -webkit-text-stroke-color: var(--primary-color);
+    -webkit-text-stroke-width: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-box {
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 85%;
+    height: 70%;
+    border-radius: 4px;
+}
+
+h1 {
+    margin: 7px 0 5px 0;
+}
+
+#greeting {
+    font-size: 1em;
+    margin: 3px;
+}
+
+#greeting-date {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /**---------------------- weather section **/
@@ -257,11 +305,64 @@ section.faq details[open] {
     padding: 0.5em;
   }
 
+/**---------------------- Profile section **/
+
+.profile {
+    background-color: var(--contrast-color)
+}
 
 
 /**---------------------- Footer section **/
 
-section.footer {
+footer {
+    margin: auto;
+    background-color: var(--contrast-color);
+    color: var(--secondary-color);
+    width: 100%;
+    height: 5em;
+    text-align: center;
+}
+
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--brand-color);
+    transition: 1s;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+#contact-button {
+    background-color: var(--secondary-color);
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+#contact-button a {
+    color: var(--contrast-color);
+}
+
+#contact-button:hover {
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+    transition: 1s ease-in-out;
+}
+
+#social-button a {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+footer small {
+    font-size: 8px;
 }
 
 /**---------------------- Footer section **/
