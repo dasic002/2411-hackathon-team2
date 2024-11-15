@@ -71,7 +71,7 @@ We described our project goals to ChatGPT and asked for 5 suggestions of a color
   </tr>
 </table>
 
-Keeping our user personas in mind, we then wanted to test how these colors look for users with different types of visual impairments. We created a mockup for our landing page and tested each layout for 8 types of impairments using a [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM)
+Keeping our user personas in mind, we then wanted to test how these colors look for users with different types of visual impairments. We created a mockup for our landing page and tested each layout for 8 types of impairments using a [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM) :
 
 - Green-weak (Deuteranomaly)
 - Red-weak (Protanomaly)
@@ -92,31 +92,49 @@ Keeping our user personas in mind, we then wanted to test how these colors look 
         <th><img style='width:100%'src="/assets/media/readme/color-scheme-1.png"></th>
   </tr>
    <tr>
-        <td><strong>2.</strong> (Classic Contrast)</td>
+        <td><strong>2.</strong> (Subdued Sophistication)</td>
         <th><img style='width:100%'src="/assets/media/readme/color-scheme-2.png"></th>
   </tr>
    <tr>
-        <td><strong>3.</strong> (Classic Contrast)</td>
+        <td><strong>3.</strong> (Nature Inspired)</td>
         <th><img style='width:100%'src="/assets/media/readme/color-scheme-3.png"></th>
   </tr>
    <tr>
-        <td><strong>4.</strong> (Classic Contrast)</td>
+        <td><strong>4.</strong> (Warm Embrace)</td>
         <th><img style='width:100%'src="/assets/media/readme/color-scheme-4.png"></th>
   </tr>
    <tr>
-        <td><strong>5.</strong> (Classic Contrast)</td>
+        <td><strong>5.</strong> (Monochrome Modernity)</td>
         <th><img style='width:100%'src="/assets/media/readme/color-scheme-5.png"></th>
   </tr>
 </table>
 
 We also used EightGrid to determine the contrast between each of the 7 shades of each color scheme.
 
-<img style='width:100%'src="/assets/media/readme/color-scheme-eight-grid.png">
+<table>
+<tr>
+      <th>Color Contrast Combinations</th>
+  </tr>
+  <tr>
+      <td><img style='width:100%'src="/assets/media/readme/color-scheme-eight-grid.png"></td>
+  </tr>
+</table>
 
-Based in the results, we chose subjectively Color Scheme 1 and 4 as candidates,
+All of the color schemes were readable for individuals with various types of visual impairments. Our criteria to chose a scheme were:
 
-- they looked inviting to the eye for across types of impairment
-- Most of the text and accent colors passed AAA or better for the combinations, making them very well suited for our application purposes.
+- The colors should be visually inviting across different types of impairments
+- The colors need to align with the website's purpose. In the morning, after waking up, warmer tones might be more comfortable for the eyes, as they can help reduce overstimulation.
+- The color combinations should achieve a high AAA rating or better, making them well-suited for our intended application with high color contrast.
+
+Based on these criteria, we observerd:
+
+- Color Scheme 2,3 and 5 look a bit strange for certain types of impairments
+- Color scheme 1 could be a bit much for waking up in the morning , the visual contrast is very strong. However, the blue colors could help with waking up.
+- Color scheme 2 and 5 score lower than the other schemes for certain combinations
+
+Our final chosen color scheme:
+
+(insert here)
 
 #### Typography
 
