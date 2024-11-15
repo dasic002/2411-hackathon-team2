@@ -34,7 +34,7 @@ Preview Image [add img]
 
 #### User Stories
 
-#### MoSCoW Prioritzation
+#### MoSCoW Prioritization
 
 ---
 
@@ -42,7 +42,7 @@ Preview Image [add img]
 
 #### Colours
 
-We described our project goals to ChatGPT and asked for 5 suggestions of a color schmeme for our application. We asked to include a background colour, a primary color for headings, a secondary text and links, and an accent color for buttons etc. Except for the background color, we asked for 2 variations of each color, leading to 5 color schemes of 7 colors each:
+We described our project goals to ChatGPT and asked for 5 suggestions of a colour scheme for our application. We asked to include a background colour, a primary colour for headings, a secondary text and links, and an accent colour for buttons etc. Except for the background colour, we asked for 2 variations of each colour, leading to 5 colour schemes of 7 colours each:
 
 <table>
  <tr>
@@ -71,7 +71,7 @@ We described our project goals to ChatGPT and asked for 5 suggestions of a color
   </tr>
 </table>
 
-Keeping our user personas in mind, we then wanted to test how these colors look for users with different types of visual impairments. We created a mockup for our landing page and tested each layout for 8 types of impairments using a [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM) :
+Keeping our user personas in mind, we then wanted to test how these colours would be seen by with different types of visual impairments, namely Colour Vision Deficiency. We created a mockup for our landing page and tested each layout for 8 types of colour blindness using a [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM) :
 
 - Green-weak (Deuteranomaly)
 - Red-weak (Protanomaly)
@@ -109,7 +109,7 @@ Keeping our user personas in mind, we then wanted to test how these colors look 
   </tr>
 </table>
 
-We also used EightGrid to determine the contrast between each of the 7 shades of each color scheme.
+We also used [EightShapes](https://contrast-grid.eightshapes.com/) to determine the contrast between each of the 7 shades of each colour scheme.
 
 <table>
 <tr>
@@ -120,19 +120,19 @@ We also used EightGrid to determine the contrast between each of the 7 shades of
   </tr>
 </table>
 
-All of the color schemes were readable for individuals with various types of visual impairments. Our criteria to chose a scheme were:
+All colour schemes were readable for individuals with various types of visual impairments. Our criteria for choosing a scheme were:
 
-- The colors should be visually inviting across different types of impairments
-- The colors need to align with the website's purpose. In the morning, after waking up, warmer tones might be more comfortable for the eyes, as they can help reduce overstimulation.
-- The color combinations should achieve a high AAA rating or better, making them well-suited for our intended application with high color contrast.
+- The colours should be visually inviting across different types of impairments
+- The colours need to align with the website's purpose. In the morning, after waking up, warmer tones might be more comfortable for the eyes, as they can help reduce overstimulation.
+- The colour combinations should achieve a high AAA rating or better, making them well-suited for our intended application with high colour contrast.
 
-Based on these criteria, we observerd:
+Based on these criteria, we observed:
 
-- Color Scheme 2,3 and 5 look a bit strange for certain types of impairments
-- Color scheme 1 has a strong visual contrast and is visually appealing across impairment types. The bright tone could help with waking up.
-- Color scheme 2 and 5 score lower than the other schemes for certain combinations
+- Colour Schemes 2, 3 and 5 look a bit strange for certain types of impairments
+- Colour scheme 1 has a strong visual contrast and is visually appealing across impairment types. The bright tone could help with waking up.
+- Colour schemes 2 and 5 score lower than the other schemes for certain combinations
 
-Our final chosen color scheme was **Color Scheme 1 (Classic Contrast)** , based on the results and a vote across our team members.
+Our final chosen colour scheme was **Color Scheme 1 (Classic Contrast)**, based on the results and a vote amongst our team members.
 
 #### Typography
 
@@ -158,7 +158,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
               <li> Visual Impairment: Moderate vision loss due to retinitis pigmentosa</li>
               <li>  Tech Proficiency:  High</li>
               <li>  Location: Urban area</li>
-              <li>  Goals:  Stay informed about current weather and news without straining his eyes.Use technology to maintain an independent lifestyle</li>
+              <li>  Goals:  Stay informed about current weather and news without straining his eyes. Use technology to maintain an independent lifestyle</li>
               <li>  Frustrations: Websites that aren't compatible with screen readers.
             Unorganized information that makes navigation difficult.</li>
               <li>  Preferred Features: Voice-assisted navigation and news reading.
@@ -181,7 +181,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
               <li>  Location: Suburban area</li>
               <li>  Goals: Find reliable resources that support her son's independence.
             Simplify access to information for her son.</li>
-              <li>  Frustrations: Limited resources and tools specifically catering to teenagers with visual impairments.Complicated technology that her son struggles to use.</li>
+              <li>  Frustrations: Limited resources and tools specifically catering to teenagers with visual impairments. Complicated technology that her son struggles to use.</li>
               <li>  Preferred Features: Simple and intuitive UI for easy learning.
           Personalization options to cater to specific needs..</li>
             </ul>
@@ -201,7 +201,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
               <li> Visual Impairment:  None</li>
               <li>  Tech Proficiency:  Moderate</li>
               <li>  Location:  Rural area</li>
-              <li>  Goals: Advocate for better technological solutions for visually impaired individuals.Educate clients on accessible technology.</li>
+              <li>  Goals: Advocate for better technological solutions for visually impaired individuals. Educate clients on accessible technology.</li>
               <li>  Frustrations: Lack of awareness about assistive technologies.
 Continuous adaptation to new technologies for her clients.</li>
               <li>  Preferred Features: Comprehensive guides for educators and caregivers.
@@ -222,10 +222,10 @@ Supportive community or feedback section for sharing insights.</li>
               <li> Visual Impairment: Age-related macular degeneration</li>
               <li>  Tech Proficiency:  Moderate</li>
               <li>  Location: Urban area</li>
-              <li>  Goals: Keep up with daily news and weather predictions without dependency on others.Utilize voice features to circumvent declining eyesight.</li>
+              <li>  Goals: Keep up with daily news and weather predictions without dependency on others. Utilize voice features to circumvent declining eyesight.</li>
               <li>  Frustrations: Small fonts and cluttered web layouts.
 Slow-loading pages or sites that are not voice-enabled.</li>
-              <li>  Preferred Features: Customized news content read aloud at scheduled times.Easy navigation using large buttons and simplified layout.</li>
+              <li>  Preferred Features: Customized news content read aloud at scheduled times.Easy navigation using large buttons and a simplified layout.</li>
             </ul>
         </td>
     </tr>
