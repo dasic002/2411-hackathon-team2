@@ -16,6 +16,15 @@
 
 /**---------------------- Global styles  **/
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: var(--primary-font);
   background: var(--background-color);
@@ -186,6 +195,15 @@ section.navbar .logo {
     font-size: 1.7rem;
     padding: 1em;
     border-radius: 4px;
+  }
+
+  section.navbar .logo {
+    color: var(--primary-color);
+  }
+
+  section.navbar .logo:hover {
+    color: inherit;
+    background-color: inherit;
   }
 
   section.navbar a:hover {
