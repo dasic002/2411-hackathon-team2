@@ -140,7 +140,7 @@ Our final chosen color scheme:
 
 #### UX Research
 
-To inform our design and layout decisions, we adopted a user-centric approach and sought to create user personas. We outlined our project goals to ChatGPI and asked for assistance in generating five user personas that represent our target audience for the application:
+To inform our design and layout decisions, we adopted a user-centric approach and sought to create user personas. We outlined our project goals to ChatGPT and asked for assistance in generating five user personas that represent our target audience for the application:
 
 <table>
     <tr>
