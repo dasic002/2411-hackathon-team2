@@ -1,8 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-
 # Hackathon team 2
-
 
 Short paragraph - description of the project
 
@@ -43,6 +41,82 @@ Preview Image [add img]
 ## Design
 
 #### Colours
+
+We described our project goals to ChatGPT and asked for 5 suggestions of a color schmeme for our application. We asked to include a background colour, a primary color for headings, a secondary text and links, and an accent color for buttons etc. Except for the background color, we asked for 2 variations of each color, leading to 5 color schemes of 7 colors each:
+
+<table>
+ <tr>
+        <th>Name</th>
+        <th> Basic Color Scheme</th>
+  </tr>
+ <tr>
+        <td><strong>1.</strong>(Classic Contrast)</td>
+        <th><img style='width:100%'src="/assets/media/readme/basic-1.png"></th>
+  </tr>
+   <tr>
+        <td><strong>2.</strong> (Subdued Sophistication)</td>
+        <th><img style='width:100%'src="/assets/media/readme/basic-2.png"></th>
+  </tr>
+   <tr>
+        <td><strong>3.</strong> (Nature Inspired)</td>
+        <th><img style='width:100%'src="/assets/media/readme/basic-3.png"></th>
+  </tr>
+   <tr>
+        <td><strong>4.</strong> (Warm Embrace)</td>
+        <th><img style='width:100%'src="/assets/media/readme/basic-4.png"></th>
+  </tr>
+   <tr>
+        <td><strong>5.</strong> (Monochrome Modernity)</td>
+        <th><img style='width:100%'src="/assets/media/readme/basic-5.png"></th>
+  </tr>
+</table>
+
+Keeping our user personas in mind, we then wanted to test how these colors look for users with different types of visual impairments. We created a mockup for our landing page and tested each layout for 8 types of impairments using a [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM)
+
+- Green-weak (Deuteranomaly)
+- Red-weak (Protanomaly)
+- Blue-weak (Tritanomaly)
+- Monochromacy (Tritanomaly)
+- Red-blind (Protanopy)
+- Green-blind (Deuteranopy)
+- Blue-blind (Deuteranopy)
+- Blue Cone Monochromacy
+
+<table>
+ <tr>
+        <th>Color Scheme</th>
+        <th>Contrast Grid</th>
+  </tr>
+ <tr>
+        <td><strong>1.</strong>(Classic Contrast)</td>
+        <th><img style='width:100%'src="/assets/media/readme/color-scheme-1.png"></th>
+  </tr>
+   <tr>
+        <td><strong>2.</strong> (Classic Contrast)</td>
+        <th><img style='width:100%'src="/assets/media/readme/color-scheme-2.png"></th>
+  </tr>
+   <tr>
+        <td><strong>3.</strong> (Classic Contrast)</td>
+        <th><img style='width:100%'src="/assets/media/readme/color-scheme-3.png"></th>
+  </tr>
+   <tr>
+        <td><strong>4.</strong> (Classic Contrast)</td>
+        <th><img style='width:100%'src="/assets/media/readme/color-scheme-4.png"></th>
+  </tr>
+   <tr>
+        <td><strong>5.</strong> (Classic Contrast)</td>
+        <th><img style='width:100%'src="/assets/media/readme/color-scheme-5.png"></th>
+  </tr>
+</table>
+
+We also used EightGrid to determine the contrast between each of the 7 shades of each color scheme.
+
+<img style='width:100%'src="/assets/media/readme/color-scheme-eight-grid.png">
+
+Based in the results, we chose subjectively Color Scheme 1 and 4 as candidates,
+
+- they looked inviting to the eye for across types of impairment
+- Most of the text and accent colors passed AAA or better for the combinations, making them very well suited for our application purposes.
 
 #### Typography
 
@@ -196,3 +270,6 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 ---
 
 ## Credits
+
+- [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM) for testing the layout with different types of visual impairment
+- [EightShapes Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=D3D3D3%0D%0A000000%0D%0A1C1C1C%0D%0A708090%0D%0AD3D3D3%0D%0AFF4500%0D%0ADC143C%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to test foreground and background color combinations of color schemes
