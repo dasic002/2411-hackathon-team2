@@ -8,6 +8,7 @@
   --secondary-color: #3333ff;
   --secondary-color-light: #0050ff;
   --secondary-color-dark: #3333ff;
+  --secondary-color-with-opacity: rgba(51,51,255,0.2);
   --accent-color: #ffcc00;
   --accent-color-light: #dac600;
   --brand-color: var(--secondary-color);
@@ -327,7 +328,7 @@ section.weather {
 }
 
 .news-card {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color-with-opacity);
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
