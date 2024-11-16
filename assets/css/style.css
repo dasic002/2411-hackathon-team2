@@ -681,7 +681,7 @@ footer small {
 
 .profile-right {
     flex-direction: row-reverse;
-    background-color: var(--secondary-color);
+    background-color: #d3d3d3;
 }
 
 
