@@ -19,7 +19,7 @@ function displayGreeting(){
     greeting = document.getElementById("greeting");
     if (hour < 12) {
         greeting.innerHTML = "Good Morning";
-    } else if (12 <= hour < 18){
+    } else if (12 <= hour & hour <= 18){
         greeting.innerHTML = "Good Afternoon";
     } else {
         greeting.innerHTML = "Good Evening";
