@@ -570,7 +570,7 @@ section.faq h1 {
 }
 
 section.faq .shade-1 {
-  color: var(--secondary-color: );
+  color: var(--secondary-color);
   background-color: var(--contrast-color);
 }
 
