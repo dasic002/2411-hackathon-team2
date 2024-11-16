@@ -109,13 +109,12 @@ nav .close-btn {
   cursor: pointer;
   border: none;
   background-color: var(--background-color);
-  padding: 3rem;
+  padding: 2rem 3rem;
 }
 
 .menu-btn svg {
   min-height: 60px;
   min-width: 60px;
-  aspect-ratio: 1 / 1;
   color: var(--primary-color-light);
 }
 
@@ -152,18 +151,27 @@ section.navbar a {
 }
 
 section.navbar a:hover {
-  color: red;
+  color: var(--secondary-color);
 }
 
 /* Logo  */
-section.navbar .logo {
-  margin-left: 0;
+section.navbar .logo svg {
+  margin-right: auto;
   padding-left: 3rem;
+  min-height: 60px;
+  min-width: 60px;
+  color: var(--accent-color);
 }
 
-section.navbar .menuitem {
-  background: red;
+section.navbar .logo {
+  margin-left: unset;
+  padding: 0;
+  fill: currentColor;
+  color: red;
+  color: var(--primary-color-light);
+  font-weight: bold;
 }
+
 section.navbar .active {
   text-decoration: underline;
 }
@@ -171,11 +179,6 @@ section.navbar .active {
 section.navbar a:hover {
   color: var(--accent-color);
   background: var(--primary-color-light);
-}
-
-section.navbar .logo {
-  color: var(--primary-color-light);
-  font-weight: bold;
 }
 
 /* Media Queries for navbar  */
@@ -202,7 +205,8 @@ section.navbar .logo {
 
   section.navbar {
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   header ul {
@@ -219,6 +223,10 @@ section.navbar .logo {
 
   section.navbar .logo {
     color: var(--primary-color);
+  }
+
+  section.navbar .logo svg {
+    padding-left: 0;
   }
 
   section.navbar .logo:hover {
