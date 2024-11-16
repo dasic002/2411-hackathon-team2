@@ -482,11 +482,12 @@ section.news .section {
   display: none;
   width: 100%;
   padding: 0.5rem;
-  background: var(--secondary-color);
+  background: var(--contrast-color);
   border: none;
   border-radius: 4px;
   font-size: 1rem;
-  color: var(--primary-color);
+  font-weight: bold;
+  color: var(--background-color);
   cursor: pointer;
   margin-bottom: 1rem;
 }
@@ -554,8 +555,8 @@ section.news .section {
   grid-column: 1 / -1;
   font-size: 1.1rem;
   padding: 0.5rem;
-  background: var(--contrast-color);
-  border-radius: 4px;
+  background: var(--background-color);
+  border-bottom: 1px solid var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -566,6 +567,67 @@ section.news .section {
 
 #tts-control-panel .reading-title {
   color: var(--primary-color);
+}
+
+/* voice preview controls */
+.voice-control-group {
+  margin-bottom: 1rem;
+}
+
+.voice-selection-container {
+  max-width: 450px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.voice-select {
+  flex: 1;
+  padding: 14px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.preview-voice {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background: white;
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.preview-voice:hover {
+  background: var(--secondary-color-light);
+  color: white;
+}
+
+button.preview-voice {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background: var(--contrast-color);
+  color: var(--background-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.preview-voice svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.preview-voice:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* Media queries for news and control panel */
