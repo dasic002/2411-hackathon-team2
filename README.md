@@ -54,23 +54,23 @@ We described our project goals to ChatGPT and asked for 5 suggestions of a colou
   </tr>
  <tr>
         <td><strong>1.</strong>(Classic Contrast)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-1.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-1.png"></th>
   </tr>
    <tr>
         <td><strong>2.</strong> (Subdued Sophistication)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-2.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-2.png"></th>
   </tr>
    <tr>
         <td><strong>3.</strong> (Nature Inspired)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-3.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-3.png"></th>
   </tr>
    <tr>
         <td><strong>4.</strong> (Warm Embrace)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-4.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-4.png"></th>
   </tr>
    <tr>
         <td><strong>5.</strong> (Monochrome Modernity)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-5.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-5.png"></th>
   </tr>
 </table>
 
@@ -92,23 +92,23 @@ Keeping our user personas in mind, we then wanted to test how these colours woul
   </tr>
  <tr>
         <td><strong>1.</strong>(Classic Contrast)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-1.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-1.png"></th>
   </tr>
    <tr>
         <td><strong>2.</strong> (Subdued Sophistication)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-2.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-2.png"></th>
   </tr>
    <tr>
         <td><strong>3.</strong> (Nature Inspired)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-3.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-3.png"></th>
   </tr>
    <tr>
         <td><strong>4.</strong> (Warm Embrace)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-4.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-4.png"></th>
   </tr>
    <tr>
         <td><strong>5.</strong> (Monochrome Modernity)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-5.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-5.png"></th>
   </tr>
 </table>
 
@@ -119,7 +119,7 @@ We also used [EightShapes](https://contrast-grid.eightshapes.com/) to determine 
       <th>Color Contrast Combinations</th>
   </tr>
   <tr>
-      <td><img style='width:100%'src="/assets/media/readme/color-scheme-eight-grid.png"></td>
+      <td><img style='width:100%'src="assets/media/readme/color-scheme-eight-grid.png"></td>
   </tr>
 </table>
 
@@ -150,7 +150,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
     </tr>
     <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-1.png">
+            <img style='width:80px'src="assets/media/readme/persona-1.png">
             <p style="font-weight:bold; margin:0">Michael </p>
             <p>The Independent Visionary </p>
           </hd>
@@ -171,7 +171,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
     </tr>
       <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-2.png">
+            <img style='width:80px'src="assets/media/readme/persona-2.png">
             <p style="font-weight:bold; margin:0">Linda </p>
             <p>The Devoted Caregiver </p>
           </hd>
@@ -193,7 +193,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
   </tr>
     <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-3.png">
+            <img style='width:80px'src="assets/media/readme/persona-3.png">
             <p style="font-weight:bold; margin:0">Sarah </p>
             <p>The Outreach Advocate </p>
           </hd>
@@ -214,7 +214,7 @@ Supportive community or feedback section for sharing insights.</li>
     </tr>
    <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-4.png">
+            <img style='width:80px'src="assets/media/readme/persona-4.png">
             <p style="font-weight:bold; margin:0">David </p>
             <p>The News Enthusiast </p>
           </hd>
@@ -234,7 +234,7 @@ Slow-loading pages or sites that are not voice-enabled.</li>
     </tr>
  <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-5.png">
+            <img style='width:80px'src="assets/media/readme/persona-5.png">
             <p style="font-weight:bold; margin:0">Anika </p>
             <p>The Tech-Savvy Student </p>
           </hd>
