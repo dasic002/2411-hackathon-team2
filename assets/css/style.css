@@ -12,6 +12,11 @@
   --brand-color: var(--secondary-color);
   --primary-font: "Roboto", sans-serif;
   --max-app-width: 1200px;
+  --paragraph-font-size: 1.125rem;
+  --paragraph-line-height: 1.65rem;
+  --primary-heading-font-size: 2rem;
+  --secondary-heading-font-size: 1.75rem;
+  --tertiary-heading-font-size: 1.4rem;
 }
 
 /**---------------------- Global styles  **/
@@ -38,6 +43,8 @@ body {
 p,
 a {
   color: var(--primary-color);
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
 }
 
 h1,
@@ -47,6 +54,22 @@ h4,
 h5,
 h6 {
   color: var(--primary-color);
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--primary-heading-font-size);
+}
+
+h2 {
+  font-size: var(--secondary-heading-font-size);
+}
+
+h3,
+h4,
+h5,
+summary {
+  font-size: var(--tertiary-heading-font-size);
 }
 
 body.panel-visible {
