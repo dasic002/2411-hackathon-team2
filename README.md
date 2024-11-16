@@ -1,10 +1,10 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Hackathon team 2
+# Hackathon team 2 - Open Access
 
 Short paragraph - description of the project
 
-<a href= "https://dasic002.github.io/2411-hackathon-team2/" target="_blank">View the deployed website here</a>
+[View the deployed website here](https://dasic002.github.io/2411-hackathon-team2/)
 
 Preview Image [add img]
 
