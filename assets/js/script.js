@@ -1,9 +1,49 @@
+// Modules import
 import { fetchGuardianNews } from "./services/newsService.js";
 import { renderNewsCard } from "./components/newsCard.js";
 import { initializeSpeechControls } from "./eventHandlers/newsEvents.js";
 import { initializeControlPanel } from "./components/controlPanel.js";
 
-async function initializeApp() {
+// Navbar section
+// Navbar : open mobile menu
+document.querySelector(".menu-btn").addEventListener("click", () => {
+    document.querySelector("nav").classList.toggle("open");
+});
+// Navbar : close mobile menu
+document.querySelector(".close-btn").addEventListener("click", () => {
+    document.querySelector("nav").classList.toggle("open");
+});
+
+// Hero section
+let today = new Date();
+
+function displayCurrentDate() {
+    // Display the current date in the DOM
+    let currentDate = document.querySelector("#greeting-date");
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let day = days[today.getDay()];
+    let date = today.getDate();
+    let months = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    let month = months[today.getMonth()];
+    let year = today.getFullYear();
+    currentDate.innerHTML = `${day}` + ' ' + `${date}`+ ' ' + `${month}` + ' ' + `${year}`;
+}
+
+function displayGreeting(){
+    // Display a different greeting depanding on the time
+    hour = today.getHours();
+    greeting = document.getElementById("greeting");
+    if (hour < 12) {
+        greeting.innerHTML = "Good Morning";
+    } else if (12 <= hour < 18){
+        greeting.innerHTML = "Good Afternoon";
+    } else {
+        greeting.innerHTML = "Good Evening";
+    }
+}
+
+// News and Control Panel initialization
+async function initializeNewsAndControl() {
   // Initialize control panel
   initializeControlPanel();
 
@@ -30,4 +70,5 @@ async function renderNews() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", initializeApp);
+// Initialize JS functionality after DOM loaded
+document.addEventListener("DOMContentLoaded", displayCurrentDate, displayGreeting, initializeNewsAndControl);
