@@ -409,6 +409,8 @@ section.news .section {
 
 .view-more {
   max-width: fit-content;
+  background: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .speech-buttons button:disabled {
@@ -417,10 +419,14 @@ section.news .section {
   cursor: not-allowed;
 }
 
-.speech-buttons button:hover,
-.view-more:hover {
+.speech-buttons button:hover {
   background: var(--contrast-color);
   color: var(--secondary-color-dark);
+}
+
+.view-more:hover {
+  background: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .article-actions {
