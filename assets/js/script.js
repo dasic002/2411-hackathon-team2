@@ -1,3 +1,20 @@
+// Modules import
+import { fetchGuardianNews } from "./services/newsService.js";
+import { renderNewsCard } from "./components/newsCard.js";
+import { initializeSpeechControls } from "./eventHandlers/newsEvents.js";
+import { initializeControlPanel } from "./components/controlPanel.js";
+
+// Navbar section
+// Navbar : open mobile menu
+document.querySelector(".menu-btn").addEventListener("click", () => {
+    document.querySelector("nav").classList.toggle("open");
+});
+// Navbar : close mobile menu
+document.querySelector(".close-btn").addEventListener("click", () => {
+    document.querySelector("nav").classList.toggle("open");
+});
+
+// Hero section
 let today = new Date();
 
 function displayCurrentDate() {
@@ -11,7 +28,6 @@ function displayCurrentDate() {
     let year = today.getFullYear();
     currentDate.innerHTML = `${day}` + ' ' + `${date}`+ ' ' + `${month}` + ' ' + `${year}`;
 }
-displayCurrentDate();
 
 function displayGreeting(){
     // Display a different greeting depanding on the time
@@ -25,4 +41,34 @@ function displayGreeting(){
         greeting.innerHTML = "Good Evening";
     }
 }
-displayGreeting()
+
+// News and Control Panel initialization
+async function initializeNewsAndControl() {
+  // Initialize control panel
+  initializeControlPanel();
+
+  // Initialize news section
+  await renderNews();
+}
+
+async function renderNews() {
+  const newsContainer = document.querySelector(".news");
+  try {
+    const articles = await fetchGuardianNews();
+    newsContainer.innerHTML = `
+            <h2>Latest News</h2>
+            <div class="news-grid">
+                ${articles.map((article, index) => renderNewsCard(article, index)).join("")}
+            </div>
+        `;
+    initializeSpeechControls(newsContainer, articles);
+  } catch (error) {
+    console.error("Failed to render news:", error);
+    newsContainer.innerHTML = `
+            <p class="error" role="alert">Failed to load news. Please try again later.</p>
+        `;
+  }
+}
+
+// Initialize JS functionality after DOM loaded
+document.addEventListener("DOMContentLoaded", displayCurrentDate, displayGreeting, initializeNewsAndControl);
