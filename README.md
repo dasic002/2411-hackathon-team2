@@ -4,7 +4,9 @@
 
 # News Echo
 
-Short paragraph - description of the project
+## Project Description
+
+News Echo is a platform designed to enhance digital accessibility, particularly for visually impaired users and individuals with motor skill challenges. By integrating features like screen reader support, voice navigation, and customisable viewing settings, News Echo ensures an inclusive and seamless browsing experience. The platform provides real-time news and weather updates, read aloud for convenience, and allows users to tailor display preferences to their specific needs. With a focus on accessibility and innovation, News Echo aims to break barriers and empower everyone to access and engage with content effortlessly.
 
 [View the deployed website here](https://dasic002.github.io/2411-hackathon-team2/)
 
