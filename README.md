@@ -4,7 +4,7 @@
 
 Short paragraph - description of the project
 
-View the live site[add link]
+<a href= "https://dasic002.github.io/2411-hackathon-team2/" target="_blank">View the deployed website here</a>
 
 Preview Image [add img]
 
