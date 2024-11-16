@@ -113,6 +113,9 @@ nav .close-btn {
 }
 
 .menu-btn svg {
+  min-height: 60px;
+  min-width: 60px;
+  aspect-ratio: 1 / 1;
   color: var(--primary-color-light);
 }
 
