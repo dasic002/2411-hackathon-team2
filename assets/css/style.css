@@ -8,7 +8,7 @@
   --secondary-color: #3333ff;
   --secondary-color-light: #0050ff;
   --secondary-color-dark: #3333ff;
-  --secondary-color-with-opacity: rgba(51,51,255,0.2);
+  --secondary-color-with-opacity: rgba(51, 51, 255, 0.2);
   --accent-color: #ffcc00;
   --accent-color-light: #dac600;
   --brand-color: var(--secondary-color);
@@ -188,11 +188,11 @@ section.navbar .logo svg {
   color: var(--secondary-color-with-opacity);
 }
 
-section.navbar .logo svg:hover{
-  color:var(--secondary-color-light);
+section.navbar .logo svg:hover {
+  color: var(--secondary-color-light);
   background: var(--background-color);
-  border:none;
-} 
+  border: none;
+}
 
 section.navbar .logo {
   margin-left: unset;
@@ -578,7 +578,6 @@ section.news .section {
     flex: none;
     order: -1;
     padding: 15px 0;
-    }
   }
 
   #tts-control-panel .panel-content {
@@ -611,13 +610,6 @@ section.news .section {
   }
 }
 
-@media (min-width: 1000px) {
-  .news-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-  }
-}
 @media (min-width: 1200px) {
   .news {
     padding: 0;
