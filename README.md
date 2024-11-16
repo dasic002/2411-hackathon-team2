@@ -292,6 +292,16 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 
 ## Team
 
+#### Carols
+#### Charlie
+#### Eugénie
+#### Ioan
+#### Nils
+#### Shantel
+#### Viki
+
+
+
 ---
 
 ## Credits
