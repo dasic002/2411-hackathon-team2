@@ -297,6 +297,11 @@ section.weather {
 }
 
 /**---------------------- news section **/
+
+.news {
+  padding: 3rem;
+}
+
 .news-card {
   border: 1px solid var(--secondary-color);
   border-radius: 8px;
@@ -558,6 +563,18 @@ section.weather {
   #tts-control-panel .panel-content {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
+  .news {
+    padding: 0;
   }
 }
 
