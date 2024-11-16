@@ -572,7 +572,8 @@ section.weather {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
   }
-
+}
+@media (min-width: 1200px) {
   .news {
     padding: 0;
   }
