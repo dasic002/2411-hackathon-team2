@@ -235,22 +235,12 @@ section.navbar .logo {
 .hero {
   margin: auto;
   margin-bottom: 2px;
-  height: 8em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  margin: auto;
-  margin-bottom: 2px;
-  height: 8em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
 
 .hero-div {
-  background-color: var(--contrast-color);
-  text-align: center;
-  border-radius: 4px;
   background-color: var(--contrast-color);
   text-align: center;
   border-radius: 4px;
@@ -264,10 +254,12 @@ section.navbar .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  height: 25vh;
 }
 
 #title-box {
-  background-color: rgba(0, 0, 0, 0.438);
+  background-color: rgba(0, 0, 0, 0.70);
   width: 90%;
   height: 70%;
   border-radius: 4px;
@@ -276,11 +268,16 @@ section.navbar .logo {
 h1 {
   margin: 7px 0 5px 0;
   color: var(--background-color);
+  padding: 5px;
+  font-size: 2em;
+}
+
+#title-box p {
+  margin: 5px;
 }
 
 #greeting {
   font-size: 1em;
-  margin: 3px;
   color: var(--background-color);
   font-weight: 600;
 }
@@ -289,9 +286,23 @@ h1 {
   color: var(--background-color);
   font-size: 0.8em;
   font-weight: 600;
-  margin: 0;
   padding: 2px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Media query for Hero section*/
+@media screen and (max-width: 485px) {
+  .hero {
+      grid-template-columns: none;
+  }
+
+  .hero-div {
+      height: 17vh;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
 }
 
 /**------------------ weather section **/
@@ -613,12 +624,11 @@ section.faq details[open] {
 /**---------------------- Footer section **/
 
 footer {
-  margin: auto;
+  margin-top: 10px;
   background-color: var(--contrast-color);
   color: var(--secondary-color);
   width: 100%;
-  height: 5em;
-  text-align: center;
+  padding: 5px 0;
 }
 
 footer a {
@@ -633,31 +643,110 @@ footer a:hover {
 
 .flex-container {
   display: flex;
-  justify-content: space-evenly;
-  padding: 15px 0;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #contact-button {
-  background-color: var(--secondary-color);
-  padding: 6px 10px;
-  border-radius: 4px;
+  height: 80%;
+  margin-right: 5em;
 }
 
 #contact-button a {
   color: var(--contrast-color);
+  background-color: var(--background-color);
+  padding: 10px 50px;
+  border-radius: 4px;
 }
 
-#contact-button:hover {
-  background-color: var(--brand-color);
-  color: var(--secondary-color);
-  transition: 1s ease-in-out;
+#contact-button a:hover {
+  color: var(--background-color);
+  background-color: var(--contrast-color);
+  border: var(--background-color) 1px solid;
+  transition: 1s;
 }
 
-#social-button a {
-  font-size: 25px;
-  margin: 0 10px;
+#footer-info {
+  border-left: var(--background-color) solid 1px;
+  display: grid !important;
+  place-content: center;
+}
+
+#footer-info-block {
+  margin-left: 5em;
+}
+
+#footer-info p {
+  font-size: 1.2em;
+  color: var(--background-color);
+  text-align: center;
+}
+
+#footer-info>p {
+  margin-bottom: 5px;
+}
+
+#footer-social {
+  margin-top: 3px;
+  text-align: center;
+}
+
+#footer-info a {
+  font-size: 20px;
+  padding: 10px;
+  color: var(--background-color);
+}
+
+#footer-info a:hover {
+  color: var(--secondary-color-light);
+  transition: 1s;
 }
 
 footer small {
   font-size: 8px;
+  color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+footer small a {
+  color: var(--background-color);
+  text-decoration: underline;
+}
+
+/*Media query for Footer section*/
+
+@media screen and (max-width: 750px) {
+  #footer-info-block {
+      margin-left: 2em;
+  }
+
+  #contact-button {
+      margin-right: 2em;
+  }
+
+  #footer-info p {
+      font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #contact-button {
+      margin-right: 0.7em;
+  }
+
+  #contact-button a {
+      padding: 6px 9px;
+  }
+
+  #footer-info-block {
+      margin-left: 0.7em;
+  }
+
+  #footer-info p {
+      font-size: 0.7em;
+  }
 }
