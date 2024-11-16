@@ -2,6 +2,8 @@
 
 # Hackathon team 2 - Open Access
 
+# News Echo
+
 Short paragraph - description of the project
 
 [View the deployed website here](https://dasic002.github.io/2411-hackathon-team2/)
