@@ -81,6 +81,7 @@ nav {
   background-color: var(--primary-color-light);
   padding: 3rem;
   transition: right 0.5s ease-in-out;
+  z-index: 10;
 }
 
 section.navbar {
@@ -569,8 +570,8 @@ section.faq h1 {
 }
 
 section.faq .shade-1 {
-  color: var(--secondary-color:);
-  background-color: var(--contrast-color)
+  color: var(--secondary-color: );
+  background-color: var(--contrast-color);
 }
 
 section.faq details {
