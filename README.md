@@ -26,6 +26,13 @@ Preview Image [add img]
 
 #### About Us Page
 
+#### FAQ Page
+On our Frequently Asked Questions page, we’ve made it easier for users with poor motor skills or visual impairments to interact with the content. Instead of needing to click on a small arrow, you can click anywhere on the question to open or close the answer section.
+
+The FAQ includes useful links to comprehensive guides from external sources to equip our user with knowledge of support services and accessible technology available.  We give clear instructions on how to change display settings on their apple or android devices.  We provide guidance if they have difficulties with our website, we explain how we handle personal information.  We explain how to use voice commands on the site and how our site is compatible with screen readers and other assistive technologies. 
+
+A comprehensive guide to common frequently asked questions that our users may have enabling them to be better informed, independent technically savvy users.  
+
 ---
 
 ## Agile
