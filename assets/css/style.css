@@ -4,9 +4,10 @@
   --background-color: #ffffff;
   --primary-color: #000000;
   --primary-color-light: #2d2d2d;
-  --contrast-color: #708090;
+  --contrast-color: #e0e0fe;
   --secondary-color: #3333ff;
   --secondary-color-light: #0050ff;
+  --secondary-color-dark: #3333ff;
   --accent-color: #ffcc00;
   --accent-color-light: #dac600;
   --brand-color: var(--secondary-color);
@@ -332,6 +333,17 @@ section.weather {
   margin-bottom: 20px;
 }
 
+section.news .section {
+  display: inline-block;
+  color: var(--secondary-color-dark);
+  background-color: var(--contrast-color);
+  margin: 0;
+  margin-top: -0.5em;
+  padding: 0.25em 1em;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
 .article-container {
   display: flex;
   gap: 20px;
@@ -378,12 +390,11 @@ section.weather {
 .view-more {
   flex: 1;
   min-width: 80px;
-
   font-size: 1rem;
   padding: 8px;
   border: none;
   border-radius: 4px;
-  background: var(--contrast-color);
+  background: var(--secondary-color);
   color: white;
   cursor: pointer;
   transition: all 0.2s;
@@ -394,14 +405,15 @@ section.weather {
 }
 
 .speech-buttons button:disabled {
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  background: var(--contrast-color);
+  color: var(--secondary-color-dark);
   cursor: not-allowed;
 }
 
 .speech-buttons button:hover,
 .view-more:hover {
-  background: var(--brand-color);
+  background: var(--contrast-color);
+  color: var(--secondary-color-dark);
 }
 
 .article-actions {
@@ -534,7 +546,7 @@ section.weather {
   grid-column: 1 / -1;
   font-size: 1.1rem;
   padding: 0.5rem;
-  background: var(--secondary-color);
+  background: var(--contrast-color);
   border-radius: 4px;
   margin-bottom: 1rem;
 }
