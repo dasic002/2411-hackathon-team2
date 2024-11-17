@@ -761,7 +761,7 @@ section.faq details[open] {
 
 footer {
   margin-top: 10px;
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color-light);
   color: var(--secondary-color);
   width: 100%;
   padding: 5px 0;
@@ -792,7 +792,7 @@ footer a:hover {
 }
 
 #contact-button a {
-  color: var(--tertiary-color);
+  color: var(--primary-color-light);
   background-color: var(--background-color);
   padding: 10px 50px;
   border-radius: 4px;
@@ -800,7 +800,7 @@ footer a:hover {
 
 #contact-button a:hover {
   color: var(--background-color);
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color-light);
   border: var(--background-color) 1px solid;
   transition: 1s;
 }
@@ -933,7 +933,7 @@ footer small a {
     padding: 30px;
     border: 1px solid #ddd; 
     border-radius: 8px; 
-    background-color: var(--contrast-color);
+    background-color: #ffffff;
 }
 
 .profile-right {
@@ -985,7 +985,87 @@ max-width: 24%;
 
 .text-grow:hover {
     transform: scale(1.2);
+
 }
+
+
+
+/** Error Page Styles **/
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7; /* Light primary background */
+  color: #333333; /* Neutral text color */
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333333; /* Accent color for error title */
+  margin: 0 0 1rem;
+}
+
+.page p {
+  font-size: 1.125rem; /* Standard paragraph size */
+  line-height: 1.6;
+  margin: 1rem 0;
+  color: #666666; /* Secondary text color */
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.actions a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffffff; /* Light text on button */
+  background-color: #3333ff; /* Primary button color */
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.actions a:hover {
+  color: #3333ff;
+  background-color: #e0e0fe;
+  text-decoration: none; 
+  border: 1px solid #ffffff; 
+  transition: all 0.3s ease-in-out; 
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .page h1 {
+    font-size: 3.5rem;
+  }
+
+  .page p {
+    font-size: 1rem;
+  }
+
+  .actions a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .page h1 {
+    font-size: 2.5rem;
+  }
+}
+
 
 @media (max-width: 768px) {
     .profile {
