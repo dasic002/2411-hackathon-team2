@@ -41,7 +41,6 @@ html {
 
 body {
   font-family: var(--primary-font);
-  padding-bottom: 2rem;
   transition: padding-bottom 0.3s ease-in-out;
   margin: 0;
   background: var(--background-color);
@@ -821,7 +820,7 @@ footer {
   background-color: var(--primary-color-light);
   color: var(--secondary-color);
   width: 100%;
-  padding: 5px 0;
+  padding: 15px 0;
 }
 
 footer a {
@@ -839,8 +838,6 @@ footer a:hover {
   padding: 4px;
   justify-content: center;
   align-items: center;
-
-
 }
 
 #contact-button {
@@ -899,7 +896,7 @@ footer a:hover {
 }
 
 #footer-social i {
-  font-size: 27px;
+  font-size: 40px;
 }
 
 footer small {
@@ -908,6 +905,7 @@ footer small {
   display: flex;
   justify-content: center;
   padding: 5px;
+  margin-top: 10px;
 }
 
 footer small a {
@@ -951,7 +949,7 @@ footer small a {
 }
 
   #contact-button a {
-      padding: 6px 50px;
+      padding: 6px 65px;
   }
 
   #footer-info {
