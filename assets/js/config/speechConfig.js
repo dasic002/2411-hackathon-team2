@@ -11,4 +11,9 @@ export const speechConfig = {
   currentText: "",
   currentArticleId: null,
   currentTitle: "",
+  selectedVoice: null,
+  previewUtterance: null,
+  isPreview: false,
+  lastReadingState: null,
+  intentionallyInterrupted: false,
 };

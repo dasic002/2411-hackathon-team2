@@ -70,8 +70,9 @@ async function renderNews() {
   }
 }
 
-// Initialize JS functionality after DOM loaded
-document.addEventListener("DOMContentLoaded", () => {
+// Initialize JS functionality after DOM loaded//
+document.addEventListener("DOMContentLoaded", async () => {
+  await initializeSpeechSynthesis();
   displayCurrentDate();
   displayGreeting();
   initializeNewsAndControl();
