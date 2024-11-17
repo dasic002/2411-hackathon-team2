@@ -728,16 +728,16 @@ button.preview-voice {
 
 section.faq .wrapper {
     max-width: var(--max-app-width);
-    margin: 0 auto;
   }
 
 section.faq {
-  padding: 80px;
+  padding: 40px;
 }
 
 section.faq h1 {
   text-align: center;
   font-size: 50px;
+  color: var(--primary-color)
 }
 
 section.faq .shade-1 {
@@ -745,20 +745,26 @@ section.faq .shade-1 {
 }
 
 section.faq .shade-2 {
-  background-color: var(--primary-color-light);
+  background-color: var(--background-color);
+  color: var(--primary-color)
 }
 
 section.faq details {
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 4px;
   width: 100%;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 section.faq summary {
   font-weight: bold;
   margin: 0.5em -0.5em 0;
   padding: 0.5em;
+}
+
+section.faq .parag-shade2 {
+  color: var(--primary-color);
 }
 
 section.faq details[open] {
