@@ -17,10 +17,13 @@ Preview Image [add img]
 ## Features
 
 #### Logo
+
+![News Echo Logo](assets/media/readme/newsecho-logo.png)
+
 The logo features a minimalist and modern design that reflects the site’s focus on clarity and accessibility. The design is simple yet striking, ensuring the logo is easily recognisable and ties directly to the site’s name. It consists of two main elements:
 
 1. Bold "N":
-  - 	This represents the title "News Echo".
+  - This represents the title "News Echo".
 2.	Radiating Curves:
 	- Two curved lines extend outward from the "N", resembling waves or signals. These represent communication, connection, and the spread of knowledge.
 
