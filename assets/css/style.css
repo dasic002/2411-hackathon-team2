@@ -701,12 +701,18 @@ button.preview-voice {
 
 /**---------------------- FAQ section **/
 
+section.faq {
+  .wrapper {
+    max-width: var(--max-app-width);
+    margin: 0 auto;
+  }
+}
 section.faq h1 {
   padding: 1em;
 }
 
 section.faq .shade-1 {
-  color: var(--secondary-color);
+  color: var(--primary-color-light);
   background-color: var(--contrast-color);
 }
 
