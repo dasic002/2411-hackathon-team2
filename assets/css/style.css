@@ -1007,7 +1007,6 @@ max-width: 24%;
 .actions a {
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bold;
   color: #ffffff; /* Light text on button */
   background-color: #3333ff; /* Primary button color */
   padding: 0.75rem 1.5rem;
@@ -1016,7 +1015,7 @@ max-width: 24%;
 }
 
 .actions a:hover {
-  color: #ffffff;
+  color: #3333ff;
   background-color: #e0e0fe;
   text-decoration: none; 
   border: 1px solid #ffffff; 
