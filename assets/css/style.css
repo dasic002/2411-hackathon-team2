@@ -8,6 +8,7 @@
   --secondary-color: #3333ff;
   --secondary-color-light: #0050ff;
   --secondary-color-dark: #3333ff;
+  --tertiary-color: #708090;
   --secondary-color-with-opacity: rgba(51, 51, 255, 0.2);
   --accent-color: #ffcc00;
   --accent-color-light: #dac600;
@@ -50,7 +51,6 @@ a {
   line-height: var(--paragraph-line-height);
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -271,19 +271,20 @@ section.navbar a:hover {
   }
 }
 
+
+
 /**---------------------- Hero Section **/
 
 .hero {
   margin: auto;
   margin-bottom: 2px;
-  height: 8em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
 }
 
 .hero-div {
-  background-color: var(--contrast-color);
+  background-color: var(--tertiary-color);
   text-align: center;
   border-radius: 4px;
 }
@@ -291,36 +292,60 @@ section.navbar a:hover {
 #page-title {
   background-image: url(../media/newspaper.jpg);
   background-size: cover;
-  color: var(--secondary-color);
   -webkit-text-stroke-color: var(--primary-color);
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 0.3px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  height: 25vh;
 }
 
 #title-box {
-  background-color: rgba(0, 0, 0, 0.438);
-  width: 85%;
+  background-color: rgba(0, 0, 0, 0.70);
+  width: 90%;
   height: 70%;
   border-radius: 4px;
 }
 
 h1 {
   margin: 7px 0 5px 0;
+  color: var(--background-color);
+  padding: 5px;
+  font-size: 2em;
+}
+
+#title-box p {
+  margin: 5px;
 }
 
 #greeting {
   font-size: 1em;
-  margin: 3px;
+  color: var(--background-color);
+  font-weight: 600;
 }
 
 #greeting-date {
+  color: var(--background-color);
   font-size: 0.8em;
   font-weight: 600;
-  margin: 0;
   padding: 2px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Media query for Hero section*/
+@media screen and (max-width: 485px) {
+  .hero {
+      grid-template-columns: none;
+  }
+
+  .hero-div {
+      height: 17vh;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
 }
 
 /**------------------ weather section **/
@@ -762,12 +787,11 @@ section.faq details[open]>summary {
 /**---------------------- Footer section **/
 
 footer {
-  margin: auto;
-  background-color: var(--contrast-color);
+  margin-top: 10px;
+  background-color: var(--tertiary-color);
   color: var(--secondary-color);
   width: 100%;
-  height: 5em;
-  text-align: center;
+  padding: 5px 0;
 }
 
 footer a {
@@ -782,35 +806,113 @@ footer a:hover {
 
 .flex-container {
   display: flex;
-  justify-content: space-evenly;
-  padding: 15px 0;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #contact-button {
-  background-color: var(--secondary-color);
-  padding: 6px 10px;
-  border-radius: 4px;
+  height: 80%;
+  margin-right: 5em;
 }
 
 #contact-button a {
-  color: var(--contrast-color);
+  color: var(--tertiary-color);
+  background-color: var(--background-color);
+  padding: 10px 50px;
+  border-radius: 4px;
 }
 
-#contact-button:hover {
-  background-color: var(--brand-color);
-  color: var(--secondary-color);
-  transition: 1s ease-in-out;
+#contact-button a:hover {
+  color: var(--background-color);
+  background-color: var(--tertiary-color);
+  border: var(--background-color) 1px solid;
+  transition: 1s;
 }
 
-#social-button a {
-  font-size: 25px;
-  margin: 0 10px;
+#footer-info {
+  border-left: var(--background-color) solid 1px;
+  display: grid !important;
+  place-content: center;
+}
+
+#footer-info-block {
+  margin-left: 5em;
+}
+
+#footer-info p {
+  font-size: 1.2em;
+  color: var(--background-color);
+  text-align: center;
+}
+
+#footer-info>p {
+  margin-bottom: 5px;
+}
+
+#footer-social {
+  margin-top: 3px;
+  text-align: center;
+}
+
+#footer-info a {
+  font-size: 20px;
+  padding: 10px;
+  color: var(--background-color);
+}
+
+#footer-info a:hover {
+  color: var(--secondary-color-light);
+  transition: 1s;
 }
 
 footer small {
   font-size: 8px;
+  color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
 }
 
+footer small a {
+  color: var(--background-color);
+  text-decoration: underline;
+}
+
+/*Media query for Footer section*/
+
+@media screen and (max-width: 750px) {
+  #footer-info-block {
+      margin-left: 2em;
+  }
+
+  #contact-button {
+      margin-right: 2em;
+  }
+
+  #footer-info p {
+      font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #contact-button {
+      margin-right: 0.7em;
+  }
+
+  #contact-button a {
+      padding: 6px 9px;
+  }
+
+  #footer-info-block {
+      margin-left: 0.7em;
+  }
+
+  #footer-info p {
+      font-size: 0.7em;
+  }
+}
 /**---------------------- team.html **/
 .team-title {
     text-align: center;
@@ -837,7 +939,7 @@ footer small {
     padding: 30px;
     border: 1px solid #ddd; 
     border-radius: 8px; 
-    background-color: var(--contrast-color);
+    background-color: #ffffff;
 }
 
 .profile-right {
@@ -889,7 +991,87 @@ max-width: 24%;
 
 .text-grow:hover {
     transform: scale(1.2);
+
 }
+
+
+
+/** Error Page Styles **/
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7; /* Light primary background */
+  color: #333333; /* Neutral text color */
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333333; /* Accent color for error title */
+  margin: 0 0 1rem;
+}
+
+.page p {
+  font-size: 1.125rem; /* Standard paragraph size */
+  line-height: 1.6;
+  margin: 1rem 0;
+  color: #666666; /* Secondary text color */
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.actions a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffffff; /* Light text on button */
+  background-color: #3333ff; /* Primary button color */
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.actions a:hover {
+  color: #3333ff;
+  background-color: #e0e0fe;
+  text-decoration: none; 
+  border: 1px solid #ffffff; 
+  transition: all 0.3s ease-in-out; 
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .page h1 {
+    font-size: 3.5rem;
+  }
+
+  .page p {
+    font-size: 1rem;
+  }
+
+  .actions a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .page h1 {
+    font-size: 2.5rem;
+  }
+}
+
 
 @media (max-width: 768px) {
     .profile {
