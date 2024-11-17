@@ -302,6 +302,27 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 
 ## Deployment
 
+## Version Control 
+
+The site was developed by a team of 7 using Git for version control, with all code managed in the **"main"** GitHub repository. Our workflow included the following key Git commands:
+
+- **Daily Workflow**:  
+  - `git checkout main` – Switch to the main branch.  
+  - `git pull origin main` – Fetch and integrate the latest changes from the remote main branch.  
+  - `git checkout <your-branch>` – Switch back to your feature branch.  
+  - `git merge main` – Merge the latest changes from the main branch into your branch.  
+
+- **Stashing Changes**:  
+  - `git stash push -u -m "Your stash message"` – Temporarily save your changes.  
+  - `git stash apply` – Reapply stashed changes after syncing with the main branch.
+
+- **Committing and Pushing Changes**:  
+  - `git add .` – Stage all changes (or specify individual files).  
+  - `git commit -m "Description of your changes"` – Commit changes with a descriptive message.  
+  - `git push origin <branch-name>` – Push committed changes to the remote repository.
+
+This structured Git workflow allowed our team to collaborate effectively and manage changes efficiently throughout development.
+
 #### GitHub Pages
 
 ---
