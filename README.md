@@ -1,10 +1,14 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Hackathon team 2
+# Hackathon team 2  (Open Access)
 
-Short paragraph - description of the project
+# News Echo
 
-View the live site[add link]
+## Project Description
+
+News Echo is a platform designed to enhance digital accessibility, particularly for visually impaired users and individuals with motor skill challenges. By integrating features like screen reader support, voice navigation, and customisable viewing settings, News Echo ensures an inclusive and seamless browsing experience. The platform provides real-time news and weather updates, read aloud for convenience, and allows users to tailor display preferences to their specific needs. With a focus on accessibility and innovation, News Echo aims to break barriers and empower everyone to access and engage with content effortlessly.
+
+[View the deployed website here](https://dasic002.github.io/2411-hackathon-team2/)
 
 Preview Image [add img]
 
@@ -33,7 +37,23 @@ In the second part, the user will be able to access social media pages from an I
 
 ---
 
-## Agile
+
+## Agile Workflow for GitHub Project Board
+
+At the start of the project, the team conducted a brainstorming session to generate ideas for the site's features. These ideas were categorised into **To Do**, **In Progress**, and **Done** to organise tasks efficiently.  
+
+#### Daily Workflow:
+
+**Issue Assignment**: At the beginning of each day, issues listed on the GitHub project board were allocated to team members.  
+   - **Must Have** issues were given immediate attention.  
+   - **To do** issues were tackled as time and resources allowed.  
+
+**Progress Updates**: At the end of each day, the board was reviewed:  
+   - Completed tasks were moved to **Done**.  
+   - Outstanding tasks were re-examined to determine which ones were most urgent for the following day.  
+
+#### Completion:  
+This iterative approach ensured that all issues were addressed, resulting in a fully functional website with all planned features successfully implemented.
 
 #### Project Board
 
@@ -59,23 +79,23 @@ We described our project goals to ChatGPT and asked for 5 suggestions of a colou
   </tr>
  <tr>
         <td><strong>1.</strong>(Classic Contrast)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-1.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-1.png"></th>
   </tr>
    <tr>
         <td><strong>2.</strong> (Subdued Sophistication)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-2.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-2.png"></th>
   </tr>
    <tr>
         <td><strong>3.</strong> (Nature Inspired)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-3.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-3.png"></th>
   </tr>
    <tr>
         <td><strong>4.</strong> (Warm Embrace)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-4.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-4.png"></th>
   </tr>
    <tr>
         <td><strong>5.</strong> (Monochrome Modernity)</td>
-        <th><img style='width:100%'src="/assets/media/readme/basic-5.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/basic-5.png"></th>
   </tr>
 </table>
 
@@ -97,23 +117,23 @@ Keeping our user personas in mind, we then wanted to test how these colours woul
   </tr>
  <tr>
         <td><strong>1.</strong>(Classic Contrast)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-1.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-1.png"></th>
   </tr>
    <tr>
         <td><strong>2.</strong> (Subdued Sophistication)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-2.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-2.png"></th>
   </tr>
    <tr>
         <td><strong>3.</strong> (Nature Inspired)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-3.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-3.png"></th>
   </tr>
    <tr>
         <td><strong>4.</strong> (Warm Embrace)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-4.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-4.png"></th>
   </tr>
    <tr>
         <td><strong>5.</strong> (Monochrome Modernity)</td>
-        <th><img style='width:100%'src="/assets/media/readme/color-scheme-5.png"></th>
+        <th><img style='width:100%'src="assets/media/readme/color-scheme-5.png"></th>
   </tr>
 </table>
 
@@ -124,7 +144,7 @@ We also used [EightShapes](https://contrast-grid.eightshapes.com/) to determine 
       <th>Color Contrast Combinations</th>
   </tr>
   <tr>
-      <td><img style='width:100%'src="/assets/media/readme/color-scheme-eight-grid.png"></td>
+      <td><img style='width:100%'src="assets/media/readme/color-scheme-eight-grid.png"></td>
   </tr>
 </table>
 
@@ -155,7 +175,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
     </tr>
     <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-1.png">
+            <img style='width:80px'src="assets/media/readme/persona-1.png">
             <p style="font-weight:bold; margin:0">Michael </p>
             <p>The Independent Visionary </p>
           </hd>
@@ -176,7 +196,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
     </tr>
       <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-2.png">
+            <img style='width:80px'src="assets/media/readme/persona-2.png">
             <p style="font-weight:bold; margin:0">Linda </p>
             <p>The Devoted Caregiver </p>
           </hd>
@@ -198,7 +218,7 @@ To inform our design and layout decisions, we adopted a user-centric approach an
   </tr>
     <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-3.png">
+            <img style='width:80px'src="assets/media/readme/persona-3.png">
             <p style="font-weight:bold; margin:0">Sarah </p>
             <p>The Outreach Advocate </p>
           </hd>
@@ -219,7 +239,7 @@ Supportive community or feedback section for sharing insights.</li>
     </tr>
    <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-4.png">
+            <img style='width:80px'src="assets/media/readme/persona-4.png">
             <p style="font-weight:bold; margin:0">David </p>
             <p>The News Enthusiast </p>
           </hd>
@@ -239,7 +259,7 @@ Slow-loading pages or sites that are not voice-enabled.</li>
     </tr>
  <tr>
         <td>
-            <img style='width:80px'src="/assets/media/readme/persona-5.png">
+            <img style='width:80px'src="assets/media/readme/persona-5.png">
             <p style="font-weight:bold; margin:0">Anika </p>
             <p>The Tech-Savvy Student </p>
           </hd>
@@ -287,11 +307,42 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 
 ## Deployment
 
+## Version Control 
+
+The site was developed by a team of 7 using Git for version control, with all code managed in the **"main"** GitHub repository. Our workflow included the following key Git commands:
+
+- **Daily Workflow**:  
+  - `git checkout main` – Switch to the main branch.  
+  - `git pull origin main` – Fetch and integrate the latest changes from the remote main branch.  
+  - `git checkout <your-branch>` – Switch back to your feature branch.  
+  - `git merge main` – Merge the latest changes from the main branch into your branch.  
+
+- **Stashing Changes**:  
+  - `git stash push -u -m "Your stash message"` – Temporarily save your changes.  
+  - `git stash apply` – Reapply stashed changes after syncing with the main branch.
+
+- **Committing and Pushing Changes**:  
+  - `git add .` – Stage all changes (or specify individual files).  
+  - `git commit -m "Description of your changes"` – Commit changes with a descriptive message.  
+  - `git push origin <branch-name>` – Push committed changes to the remote repository.
+
+This structured Git workflow allowed our team to collaborate effectively and manage changes efficiently throughout development.
+
 #### GitHub Pages
 
 ---
 
 ## Team
+
+#### Carols
+#### Charlie
+#### Eugénie
+#### Ioan
+#### Nils
+#### Shantel
+#### Viki
+
+
 
 ---
 
@@ -299,3 +350,11 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 
 - [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM) for testing the layout with different types of visual impairment
 - [EightShapes Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=D3D3D3%0D%0A000000%0D%0A1C1C1C%0D%0A708090%0D%0AD3D3D3%0D%0AFF4500%0D%0ADC143C%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to test foreground and background color combinations of color schemes
+- [Figma](https://www.figma.com/?utm_source=google&utm_medium=cpc&utm_campaign=21284800768&utm_term=figma&utm_content=699203569592&utm_adgroup=169015406544&gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RT5SSwtM37YXnnUR-UkkFcYTGjyeAprApI-kRAqisRzVAo61hUlp-caAi-OEALw_wcB) to create project logo
+
+
+## Content
+
+
+
+

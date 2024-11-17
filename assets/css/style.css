@@ -4,15 +4,23 @@
   --background-color: #ffffff;
   --primary-color: #000000;
   --primary-color-light: #2d2d2d;
-  --contrast-color: #708090;
+  --contrast-color: #e0e0fe;
   --secondary-color: #3333ff;
   --secondary-color-light: #0050ff;
+  --secondary-color-dark: #3333ff;
+  --secondary-color-with-opacity: rgba(51, 51, 255, 0.2);
   --accent-color: #ffcc00;
   --accent-color-light: #dac600;
   --brand-color: var(--secondary-color);
   --primary-font: "Roboto", sans-serif;
   --max-app-width: 1200px;
+  --paragraph-font-size: 1.125rem;
+  --paragraph-line-height: 1.65rem;
+  --primary-heading-font-size: 2rem;
+  --secondary-heading-font-size: 1.75rem;
+  --tertiary-heading-font-size: 1.4rem;
 }
+
 
 /**---------------------- Global styles  **/
 
@@ -38,6 +46,8 @@ body {
 p,
 a {
   color: var(--primary-color);
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
 }
 
 h2,
@@ -46,6 +56,22 @@ h4,
 h5,
 h6 {
   color: var(--primary-color);
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--primary-heading-font-size);
+}
+
+h2 {
+  font-size: var(--secondary-heading-font-size);
+}
+
+h3,
+h4,
+h5,
+summary {
+  font-size: var(--tertiary-heading-font-size);
 }
 
 body.panel-visible {
@@ -108,10 +134,12 @@ nav .close-btn {
   cursor: pointer;
   border: none;
   background-color: var(--background-color);
-  padding: 3rem;
+  padding: 2rem 3rem;
 }
 
 .menu-btn svg {
+  min-height: 60px;
+  min-width: 60px;
   color: var(--primary-color-light);
 }
 
@@ -141,37 +169,46 @@ section.navbar a {
   display: inline-block;
   text-decoration: none;
   color: white;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-left: auto;
   display: inline-block;
   padding: 0;
 }
 
 section.navbar a:hover {
-  color: red;
+  color: var(--secondary-color);
 }
 
 /* Logo  */
-section.navbar .logo {
-  margin-left: 0;
+section.navbar .logo svg {
+  margin-right: auto;
   padding-left: 3rem;
+  min-height: 60px;
+  min-width: 60px;
+  color: var(--secondary-color-with-opacity);
 }
 
-section.navbar .menuitem {
-  background: red;
+section.navbar .logo svg:hover {
+  color: var(--secondary-color-light);
+  background: var(--background-color);
+  border: none;
 }
+
+section.navbar .logo {
+  margin-left: unset;
+  padding: 0;
+  fill: currentColor;
+  color: red;
+  color: var(--primary-color-light);
+  font-weight: bold;
+}
+
 section.navbar .active {
   text-decoration: underline;
 }
 
 section.navbar a:hover {
   color: var(--accent-color);
-  background: var(--primary-color-light);
-}
-
-section.navbar .logo {
-  color: var(--primary-color-light);
-  font-weight: bold;
 }
 
 /* Media Queries for navbar  */
@@ -198,7 +235,8 @@ section.navbar .logo {
 
   section.navbar {
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   header ul {
@@ -215,6 +253,10 @@ section.navbar .logo {
 
   section.navbar .logo {
     color: var(--primary-color);
+  }
+
+  section.navbar .logo svg {
+    padding-left: 0;
   }
 
   section.navbar .logo:hover {
@@ -310,11 +352,27 @@ section.weather {
 }
 
 /**---------------------- news section **/
+
+.news {
+  padding: 3rem;
+}
+
 .news-card {
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color-with-opacity);
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+section.news .section {
+  display: inline-block;
+  color: var(--secondary-color-dark);
+  background-color: var(--contrast-color);
+  margin: 0;
+  margin-top: -0.5em;
+  padding: 0.25em 1em;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .article-container {
@@ -325,7 +383,7 @@ section.weather {
 
 .image-container {
   flex: 1;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .image-container img {
@@ -336,7 +394,7 @@ section.weather {
 
 .speech-controls {
   flex: 0 0 250px;
-  padding: 15px;
+  padding: 0;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -355,7 +413,8 @@ section.weather {
 
 .speech-buttons {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+  gap: 1em;
   flex-wrap: wrap;
 }
 
@@ -363,12 +422,11 @@ section.weather {
 .view-more {
   flex: 1;
   min-width: 80px;
-
   font-size: 1rem;
-  padding: 8px;
+  padding: 1rem;
   border: none;
   border-radius: 4px;
-  background: var(--contrast-color);
+  background: var(--secondary-color);
   color: white;
   cursor: pointer;
   transition: all 0.2s;
@@ -376,21 +434,29 @@ section.weather {
 
 .view-more {
   max-width: fit-content;
+  background: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .speech-buttons button:disabled {
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  background: var(--contrast-color);
+  color: var(--secondary-color-dark);
   cursor: not-allowed;
 }
 
-.speech-buttons button:hover,
+.speech-buttons button:hover {
+  background: var(--contrast-color);
+  color: var(--secondary-color-dark);
+}
+
 .view-more:hover {
-  background: var(--brand-color);
+  background: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .article-actions {
   display: flex;
+  align-items: center;
   gap: 10px;
   margin-top: 15px;
 }
@@ -447,11 +513,12 @@ section.weather {
   display: none;
   width: 100%;
   padding: 0.5rem;
-  background: var(--secondary-color);
+  background: var(--contrast-color);
   border: none;
   border-radius: 4px;
   font-size: 1rem;
-  color: var(--primary-color);
+  font-weight: bold;
+  color: var(--background-color);
   cursor: pointer;
   margin-bottom: 1rem;
 }
@@ -519,8 +586,8 @@ section.weather {
   grid-column: 1 / -1;
   font-size: 1.1rem;
   padding: 0.5rem;
-  background: var(--secondary-color);
-  border-radius: 4px;
+  background: var(--background-color);
+  border-bottom: 1px solid var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -533,6 +600,67 @@ section.weather {
   color: var(--primary-color);
 }
 
+/* voice preview controls */
+.voice-control-group {
+  margin-bottom: 1rem;
+}
+
+.voice-selection-container {
+  max-width: 450px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.voice-select {
+  flex: 1;
+  padding: 14px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.preview-voice {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background: white;
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.preview-voice:hover {
+  background: var(--secondary-color-light);
+  color: white;
+}
+
+button.preview-voice {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background: var(--contrast-color);
+  color: var(--background-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.preview-voice svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.preview-voice:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* Media queries for news and control panel */
 @media (max-width: 768px) {
   .article-container {
@@ -542,6 +670,7 @@ section.weather {
   .speech-controls {
     flex: none;
     order: -1;
+    padding: 15px 0;
   }
 
   #tts-control-panel .panel-content {
@@ -571,6 +700,12 @@ section.weather {
   #tts-control-panel .panel-content {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .news {
+    padding: 0;
   }
 }
 
@@ -749,4 +884,94 @@ footer small a {
   #footer-info p {
       font-size: 0.7em;
   }
+}
+/**---------------------- team.html **/
+.team-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    padding: 30px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: var(--contrast-color);
+}
+
+.profile-right {
+    flex-direction: row-reverse;
+    background-color: #d3d3d3;
+}
+
+
+.profile > .profile-image {
+flex: 0 0 24%; 
+max-width: 24%; 
+}
+
+.profile > .profile-text {
+    flex: 0 0 75%; 
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.social-wrapper {
+    display:flex;
+    gap:15px;
+    align-items: center;
+    text-decoration:none;
+}
+
+.social-link {
+    color: black;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.text-grow {
+    transition: all 0.2s ease-in-out;
+}
+
+.text-grow:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    .social-wrapper {
+        justify-content:center;
+    }
 }
