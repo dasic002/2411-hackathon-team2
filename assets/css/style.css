@@ -304,7 +304,7 @@ section.navbar a:hover {
 #title-box {
   background-color: rgba(0, 0, 0, 0.70);
   width: 90%;
-  height: 70%;
+  height: 85%;
   border-radius: 4px;
 }
 
@@ -778,10 +778,11 @@ footer a:hover {
 }
 
 .flex-container {
-  display: flex;
+  display:flex;
   padding: 4px;
   justify-content: center;
   align-items: center;
+
 
 }
 
@@ -840,6 +841,10 @@ footer a:hover {
   transition: 1s;
 }
 
+#footer-social i {
+  font-size: 27px;
+}
+
 footer small {
   font-size: 8px;
   color: var(--background-color);
@@ -851,6 +856,8 @@ footer small {
 footer small a {
   color: var(--background-color);
   text-decoration: underline;
+  font-size: 8px;
+  line-height: normal;
 }
 
 /*Media query for Footer section*/
@@ -870,21 +877,35 @@ footer small a {
 }
 
 @media screen and (max-width: 485px) {
-  #contact-button {
-      margin-right: 0.7em;
-  }
 
-  #contact-button a {
-      padding: 6px 9px;
+  .flex-container {
+    margin: auto;
+    flex-direction: column;
+    padding: 0;
   }
 
   #footer-info-block {
-      margin-left: 0.7em;
+    margin-left: 0;
+}
+
+#contact-button {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+  #contact-button a {
+      padding: 6px 50px;
+  }
+
+  #footer-info {
+    border-left:none; 
   }
 
   #footer-info p {
-      font-size: 0.7em;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
+
 }
 /**---------------------- team.html **/
 .team-title {
