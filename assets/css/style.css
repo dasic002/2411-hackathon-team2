@@ -8,6 +8,7 @@
   --secondary-color: #3333ff;
   --secondary-color-light: #0050ff;
   --secondary-color-dark: #3333ff;
+  --tertiary-color: #708090;
   --secondary-color-with-opacity: rgba(51, 51, 255, 0.2);
   --accent-color: #ffcc00;
   --accent-color-light: #dac600;
@@ -283,7 +284,7 @@ section.navbar a:hover {
 }
 
 .hero-div {
-  background-color: var(--contrast-color);
+  background-color: var(--tertiary-color);
   text-align: center;
   border-radius: 4px;
 }
@@ -760,7 +761,7 @@ section.faq details[open] {
 
 footer {
   margin-top: 10px;
-  background-color: var(--contrast-color);
+  background-color: var(--tertiary-color);
   color: var(--secondary-color);
   width: 100%;
   padding: 5px 0;
@@ -790,7 +791,7 @@ footer a:hover {
 }
 
 #contact-button a {
-  color: var(--contrast-color);
+  color: var(--tertiary-color);
   background-color: var(--background-color);
   padding: 10px 50px;
   border-radius: 4px;
@@ -798,7 +799,7 @@ footer a:hover {
 
 #contact-button a:hover {
   color: var(--background-color);
-  background-color: var(--contrast-color);
+  background-color: var(--tertiary-color);
   border: var(--background-color) 1px solid;
   transition: 1s;
 }
