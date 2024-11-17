@@ -18,13 +18,19 @@ Preview Image [add img]
 
 #### Navigation Menu
 
+The navigation bar is very intutitive and easy to navigate through the different options of HOME - CONTACT US - FAQ.  When viewed on mobile the menu turns into a burger icon and expands to a full menu when enlarged for tablets and desktops. 
+
 #### Hero Section
 
 In the Hero section we can see displayed the choosen title of the app "NEWS ECHO" to enhance it's purpose. Depending of the day, the user is greeted by different messages: "Good Morning", "Good Afternoon" and "Good Evening". The user will be also able to check the current date depending on his timezone.
 
 #### Weather Widget
 
+The weather widget is displayed clearly, using a universal cloud symbol.  Todays current weather is displayed with a large volume speak button, when the user selects this the weather will be spoken out loud to them.  If they click and select anywhere on the weather it will display weather for the next couple of days. It is intuitive and easy to use. It has been designed with users who may have poor motor skills and or visual impairments. 
+
 #### News Widget
+
+The news widget is a large News symbol button with sound waves, when the user clicks on the large speaker button the news will be spoken to them.  They can choose to select to have the News headline title spoken to them first and they choose weather they wish to listen to the full article.  This allows to them to choose between different news articles that they are interested in.
 
 #### Footer
 
@@ -33,7 +39,10 @@ In the second part, the user will be able to access social media pages from an I
 
 #### Contact Page
 
+
 #### About Us Page
+
+Meet the team who developed the website. Each team members bio, photo, linkedin and github profiles are clearly displayed with links that open in separate pages. 
 
 ---
 
@@ -59,7 +68,49 @@ This iterative approach ensured that all issues were addressed, resulting in a f
 
 #### User Stories
 
+* As a user, I want to see current weather information for my location.
+* As a user with visual impairments, I want to hear the weather information read aloud
+* As a user, I want to browse latest news articles
+* As a user, I want to hear news headlines and content read aloud
+* As a user, I want to adjust text size throughout the application
+* As a visually impaired user, I want to use keyboard shortcuts to navigate the website, so that I can easily move between sections without needing a mouse.
+* As a developer, I want to implement semantic HTML and ARIA roles, so that screen readers can accurately interpret and navigate the page content.
+* As a user, I want the site to function seamlessly on all device sizes, so that I have a consistent experience, whether on a mobile device or desktop.
+* As a user concerned about privacy, I want clear information on how my location data is used, so that I feel secure using the service.
+* As a user, I want to receive weather alerts for severe conditions, so that I can prepare accordingly.
+* As a non-native English speaker, I want to include an option to choose a different language or voice for the text-to-speech conversion, so I can understand the information more easily.
+* As a user I would like to have the option to adjust the speed or pitch of the audio, so I can listen comfortably.
+* As a user I would like to see a FAQ section, so I can access common queries easily and self-serve.
+* As a user, I can check today's weather by hours, so that I can dress accordingly.
+* As a user, I can filter the news, so I can access the latest news of the topics I want.
+* As a user, I would like to be able to navigate using the keyboard.
+
+
 #### MoSCoW Prioritization
+<h2>MUST HAVES:</h2>
+
+* Create weather widget UI component
+* Integrate with OpenWeatherMap or similar weather API
+* Implement error handling
+* Implement geolocation functionality
+* Implement text-to-speech functionality using Web Speech API
+* Create speech controls (play, pause, stop) - if needed for this widget
+* Format weather data into readable text
+* Create news section layout
+* Integrate with a news API
+* Implement error handling
+* Implement article preview cards
+* Add text-to-speech controls for each article
+* Implement stop/pause functionality per article
+
+<h2>SHOULD HAVES</h2>
+
+<h2>WON'T HAVES</h2>
+* Create text input area
+* Implement text-to-speech conversion
+* Add playback controls (check volume implementation ?)
+* Implement PDF file upload
+* Add PDF text extraction functionality
 
 ---
 
