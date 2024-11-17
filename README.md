@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Hackathon team 2 - Open Access
+# Hackathon team 2  (Open Access)
 
 # News Echo
 
@@ -32,9 +32,8 @@ Preview Image [add img]
 
 ---
 
-## Agile
 
-### Agile Workflow for GitHub Project Board
+## Agile Workflow for GitHub Project Board
 
 At the start of the project, the team conducted a brainstorming session to generate ideas for the site's features. These ideas were categorised into **To Do**, **In Progress**, and **Done** to organise tasks efficiently.  
 
@@ -326,5 +325,10 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 - [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM) for testing the layout with different types of visual impairment
 - [EightShapes Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=D3D3D3%0D%0A000000%0D%0A1C1C1C%0D%0A708090%0D%0AD3D3D3%0D%0AFF4500%0D%0ADC143C%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to test foreground and background color combinations of color schemes
 - [Figma](https://www.figma.com/?utm_source=google&utm_medium=cpc&utm_campaign=21284800768&utm_term=figma&utm_content=699203569592&utm_adgroup=169015406544&gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RT5SSwtM37YXnnUR-UkkFcYTGjyeAprApI-kRAqisRzVAo61hUlp-caAi-OEALw_wcB) to create project logo
+
+
+## Content
+
+
 
 
