@@ -980,21 +980,33 @@ footer small a {
 }
 
 .profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 800px;
-  padding: 30px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: var(--contrast-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    padding: 30px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: var(--primary-color-light);
 }
 
 .profile-right {
   flex-direction: row-reverse;
   background-color: #d3d3d3;
 }
+
+.profile:nth-of-type(odd) .profile-text h2,
+.profile:nth-of-type(odd) .profile-text h2 span,
+.profile:nth-of-type(odd) .profile-text p {
+    color: white !important;
+}
+
+/* Target SVGs in profiles 1, 3, 5, and 7 */
+.profile:nth-of-type(odd) .social-wrapper svg path {
+  fill: white;
+}
+
 
 .profile > .profile-image {
   flex: 0 0 24%;
