@@ -60,10 +60,8 @@
           </button>
 
           <ul role="menubar" class="visible" id="mobile-menu">
-            <li role="menuitem">
-              <a href="#" class="active" aria-current="page">Home</a>
-            </li>
-            <li role="menuitem"><a href="#">Contact Us</a></li>
+            <li role="menuitem"><a href="#" class="active" aria-current="page">Home</a></li>
+            <li role="menuitem"><a href="team.html">Contact Us</a></li>
             <li role="menuitem"><a href="faq.html">FAQ</a></li>
           </ul>
         </nav>
@@ -92,6 +90,46 @@
 
         <!--news section-->
         <section class="news"></section>
+
+        <!--FAQ section-->
+        <section class="faq">
+            <h1>FAQ</h1>
+            <details>
+                <summary>Is the site compatible with screen readers and other assistive
+                    technologies?</summary>
+                <p>Yes, our website is fully compatible with screen readers and other assistive technologies. We utilize
+                    semantic HTML and ARIA roles to ensure seamless navigation for visually impaired users.</p>
+            </details>
+            <details>
+                <summary>How can I use voice commands to navigate the site?</summary>
+                <p>Voice commands are supported through compatible browsers and devices. You can activate these
+                    features in your device settings for effortless, hands-free navigation.</p>
+            </details>
+            <details>
+                <summary>Can I receive automatic updates for weather and news?</summary>
+                <p>We currently don't offer real-time updates when you access the site. Automatic push notifications for
+                    updates will be part of future enhancements based on user feedback.</p>
+            </details>
+            <details>
+                <summary>How do I adjust the text size and contrast settings?</summary>
+                <p>Our website offers customizable settings to adjust text size and contrast. Simply navigate to the
+                    "Settings" section in the header or footer to personalize your viewing experience according to your
+                    needs.</p>
+            </details>
+            <details>
+                <summary>How is my personal information handled, especially when using
+                    location services?</summary>
+                <p>Your privacy is our priority. Location data, if used, is handled with strict confidentiality and
+                    solely for providing accurate weather information. Please review our Privacy Policy for more
+                    details.</p>
+            </details>
+            <details>
+                <summary>What should I do if I experience difficulties using the
+                    website?</summary>
+                <p>If you encounter any issues or have feedback, please visit the "Contact" section for support options.
+                    Our team is dedicated to continuously improving accessibility based on user experiences.</p>
+            </details>
+        </section>
     </main>
 
     <!--Footer section-->
@@ -108,18 +146,8 @@
         <small>Copyright 2024 by <a href="#">@Team_Name</a>. All Rights Reserved. </small>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
 
-    <script>
-        // Navbar : open mobile menu
-        document.querySelector(".menu-btn").addEventListener("click", () => {
-            document.querySelector("nav").classList.toggle("open");
-        });
-        // Navbar : close mobile menu
-        document.querySelector(".close-btn").addEventListener("click", () => {
-            document.querySelector("nav").classList.toggle("open");
-        });
-    </script>
 </body>
 
 </html>
