@@ -14,6 +14,7 @@
   --max-app-width: 1200px;
 }
 
+
 /**---------------------- Global styles  **/
 
 html {
@@ -647,4 +648,95 @@ footer a:hover {
 
 footer small {
   font-size: 8px;
+}
+
+/**---------------------- team.html **/
+.team-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    padding: 30px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: var(--contrast-color);
+}
+
+.profile-right {
+    flex-direction: row-reverse;
+    background-color: #d3d3d3;
+}
+
+
+.profile > .profile-image {
+flex: 0 0 24%; 
+max-width: 24%; 
+}
+
+.profile > .profile-text {
+    flex: 0 0 75%; 
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.social-wrapper {
+    display:flex;
+    gap:15px;
+    align-items: center;
+    text-decoration:none;
+}
+
+.social-link {
+    color: black;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.text-grow {
+    transition: all 0.2s ease-in-out;
+}
+
+.text-grow:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    .social-wrapper {
+        justify-content:center;
+    }
 }
