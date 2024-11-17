@@ -583,6 +583,7 @@ section.news .section {
 
 #tts-control-panel .speech-buttons {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
 }
 
@@ -718,6 +719,10 @@ button.preview-voice {
   #tts-control-panel .panel-content {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+  }
+
+  #tts-control-panel .speech-buttons {
+    flex-direction: column;
   }
 }
 
