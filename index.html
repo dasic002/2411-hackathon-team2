@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Navbar-->
     <header>
-        <section class="wrapper navbar">
-            <a href="#" class="logo">Our Logo</a>
+      <section class="wrapper navbar">
+        <a href="#" class="logo" alt="Logo">
+          <svg
+            aria-hidden="true"
+            alt="Logo"
+            focusable="false"
+            viewBox="0 0 59 59"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M46.291 8.22607L44.0066 10.5096C50.0218 14.6838 53.9693 21.6384 53.9693 29.4983C53.9693 37.3444 50.0357 44.2871 44.0398 48.4632L46.3242 50.7476C52.8833 45.963 57.1562 38.2202 57.1562 29.4983C57.1562 20.7627 52.8695 13.0078 46.291 8.22607Z"
+            />
+            <path
+              d="M50.3851 29.498C50.3851 22.6245 46.8119 16.5696 41.4236 13.0923L39.106 15.4099C43.943 18.2474 47.1973 23.4984 47.1973 29.498C47.1973 35.4837 43.9596 40.7255 39.1447 43.5658L41.4586 45.8825C46.8276 42.4015 50.3851 36.3576 50.3851 29.498Z"
+            />
+            <path
+              d="M43.7532 29.4984C43.7532 24.441 40.8216 20.0538 36.5681 17.9473L34.1454 20.3736C37.8864 21.7187 40.5681 25.3011 40.5681 29.4984C40.5681 33.6809 37.9076 37.2532 34.1896 38.612L36.6086 41.031C40.84 38.9162 43.7532 34.5429 43.7532 29.4984Z"
+            />
+            <path
+              d="M36.4141 29.5C36.4141 26.3739 33.7056 23.8415 30.3656 23.8415V3.12331C30.3656 2.41623 29.7526 1.84375 28.9967 1.84375C28.2426 1.84375 27.6295 2.41623 27.6295 3.12331V3.76586C26.6311 4.57619 11.4598 18.2651 11.4598 18.2651H5.1118C3.30677 18.2651 1.84375 19.6323 1.84375 21.3211V37.6761C1.84375 39.3659 3.30677 40.733 5.1118 40.733H11.4608V40.7349C11.4608 40.7349 20.3393 47.5236 27.6304 55.2129V55.8748C27.6304 56.5819 28.2435 57.1562 28.9976 57.1562C29.7535 57.1562 30.3666 56.5819 30.3666 55.8748V35.1566C33.7065 35.1566 36.4141 32.6233 36.4141 29.5Z"
+            />
+          </svg>
+        </a>
         <!-- Mobile Menu 
          ensuring that screen reader reads this button first as it's based on the DOM position
          https://dequeuniversity.com/checklists/web/reading-focus-order
         -->
         <button class="menu-btn" alt="Open Menu">
           <span class="sr-only">Open main menu</span>
-          <span>Click for Menu</span>
           <svg
             aria-hidden="true"
             aria-expanded="true"
@@ -60,10 +79,9 @@
           </button>
 
           <ul role="menubar" class="visible" id="mobile-menu">
-            <li role="menuitem">
-              <a href="#" class="active" aria-current="page">Home</a>
-            </li>
-            <li role="menuitem"><a href="#">Contact Us</a></li>
+
+            <li role="menuitem"><a href="#" class="active" aria-current="page">Home</a></li>
+            <li role="menuitem"><a href="team.html">Contact Us</a></li>
             <li role="menuitem"><a href="faq.html">FAQ</a></li>
           </ul>
         </nav>
@@ -71,55 +89,166 @@
     </header>
 
     <main>
-
       <!--Hero Section-->
       <section class="hero">
         <div class="hero-div" id="page-title">
-            <div id="title-box">
-                <h1>NEWS ECHO</h1>
-                <h2 id="greeting"></h2>
-                <p id="greeting-date"></p>
-            </div>
+          <div id="title-box">
+            <h1>NEWS ECHO</h1>
+            <h2 id="greeting"></h2>
+            <p id="greeting-date"></p>
+          </div>
         </div>
         <div class="hero-div">
-            <!--Weather widget placeholder-->
-            <p>Weather widget</p>
+          <!--Weather widget placeholder-->
+          <p>Weather widget</p>
         </div>
-     </section>
+      </section>
 
-        <!--weather section-->
-        <section class="weather"></section>
+      <!--weather section-->
+      <section class="weather"></section>
 
-        <!--news section-->
-        <section class="news"></section>
+      <!--news section-->
+      <section class="wrapper news">
+        <!-- News content will be dynamically inserted by JavaScript -->
+      </section>
+
+      <!--Text-to-Speech Control Panel-->
+      <section
+        id="tts-control-panel"
+        role="region"
+        aria-label="Text-to-speech controls"
+      >
+        <div class="panel-content">
+          <button class="controls-toggle" aria-expanded="false">
+            Show Speed & Pitch Controls
+          </button>
+          <div class="now-reading">
+            <span class="reading-label">Now reading: </span>
+            <span class="reading-title" aria-live="polite"></span>
+          </div>
+          <div class="controls-content">
+            <div class="control-group">
+              <label for="global-speech-rate">Speed:</label>
+              <input
+                type="range"
+                id="global-speech-rate"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+                class="speech-slider"
+                aria-label="Speech rate control"
+              />
+              <span class="speech-value" aria-live="polite">1.0x</span>
+            </div>
+            <div class="control-group">
+              <label for="global-speech-pitch">Pitch:</label>
+              <input
+                type="range"
+                id="global-speech-pitch"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+                class="speech-slider"
+                aria-label="Speech pitch control"
+              />
+              <span class="speech-value" aria-live="polite">1.0x</span>
+            </div>
+          </div>
+          <div class="speech-buttons">
+            <button class="pause-speech" aria-label="Pause reading" disabled>
+              <span class="button-text">Pause</span>
+            </button>
+            <button class="stop-speech" aria-label="Stop reading" disabled>
+              <span class="button-text">Stop</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--Text-to-Speech Control Panel-->
+      <section
+        id="tts-control-panel"
+        role="region"
+        aria-label="Text-to-speech controls"
+      >
+        <div class="panel-content">
+          <button class="controls-toggle" aria-expanded="false">
+            Show Controls
+          </button>
+          <div class="now-reading">
+            <span class="reading-label">Now reading: </span>
+            <span class="reading-title" aria-live="polite"></span>
+          </div>
+          <div class="voice-picker"></div>
+          <div class="controls-content">
+            <div class="control-group">
+              <label for="global-speech-rate">Speed:</label>
+
+              <input
+                type="range"
+                id="global-speech-rate"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+                class="speech-slider"
+                aria-label="Speech rate control"
+              />
+
+              <span class="speech-value" aria-live="polite">1.0x</span>
+            </div>
+            <div class="control-group">
+              <label for="global-speech-pitch">Pitch:</label>
+              <input
+                type="range"
+                id="global-speech-pitch"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+                class="speech-slider"
+                aria-label="Speech pitch control"
+              />
+              <span class="speech-value" aria-live="polite">1.0x</span>
+            </div>
+          </div>
+          <div class="speech-buttons">
+            <button class="pause-speech" aria-label="Pause reading" disabled>
+              <span class="button-text">Pause</span>
+            </button>
+            <button class="stop-speech" aria-label="Stop reading" disabled>
+              <span class="button-text">Stop</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <!--Footer section-->
     <footer>
-        <div class="flex-container">
-            <div id="contact-button">
-                <a href="#">Contact Us</a>
-            </div>
-            <div id="social-button">
-                <span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
-                <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
-            </div>
+      <div class="flex-container">
+        <div id="contact-button">
+          <a href="#">Contact Us</a>
         </div>
-        <small>Copyright 2024 by <a href="#">@Team_Name</a>. All Rights Reserved. </small>
+        <div id="social-button">
+          <span
+            ><a href="#"><i class="fa-brands fa-square-facebook"></i></a
+          ></span>
+          <span
+            ><a href="#"><i class="fa-brands fa-instagram"></i></a
+          ></span>
+        </div>
+      </div>
+      <small
+        >Copyright 2024 by <a href="#">@Team_Name</a>. All Rights Reserved.
+      </small>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
 
-    <script>
-        // Navbar : open mobile menu
-        document.querySelector(".menu-btn").addEventListener("click", () => {
-            document.querySelector("nav").classList.toggle("open");
-        });
-        // Navbar : close mobile menu
-        document.querySelector(".close-btn").addEventListener("click", () => {
-            document.querySelector("nav").classList.toggle("open");
-        });
-    </script>
+
 </body>
 
 </html>
