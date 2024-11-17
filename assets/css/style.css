@@ -20,6 +20,10 @@
   --primary-heading-font-size: 2rem;
   --secondary-heading-font-size: 1.75rem;
   --tertiary-heading-font-size: 1.4rem;
+
+  --mobile-side-padding: 1.25rem;
+  --tablet-side-padding: 2rem;
+  --desktop-side-padding: 3rem;
 }
 
 /**---------------------- Global styles  **/
@@ -134,7 +138,7 @@ nav .close-btn {
   cursor: pointer;
   border: none;
   background-color: var(--background-color);
-  padding: 2rem 3rem;
+  padding: 2rem var(--mobile-side-padding);
 }
 
 .menu-btn svg {
@@ -183,7 +187,7 @@ section.navbar a:hover {
 /* Logo  */
 section.navbar .logo svg {
   margin-right: auto;
-  padding-left: 3rem;
+  padding-left: var(--mobile-side-padding);
   min-height: 60px;
   min-width: 60px;
   color: var(--primary-color-light);
@@ -212,6 +216,14 @@ section.navbar a:hover {
 @media screen and (min-width: 600px) {
   nav {
     width: 60%;
+  }
+
+  .menu-btn {
+    padding: 2rem var(--tablet-side-padding);
+  }
+
+  section.navbar .logo svg {
+    padding-left: var(--tablet-side-padding);
   }
 }
 
@@ -348,7 +360,7 @@ section.weather {
 /**---------------------- news section **/
 
 .news {
-  padding: 3rem;
+  padding: var(--mobile-side-padding);
 }
 
 .news-card {
@@ -694,6 +706,12 @@ button.preview-voice {
   #tts-control-panel .panel-content {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .news {
+    padding: var(--tablet-side-padding);
   }
 }
 
