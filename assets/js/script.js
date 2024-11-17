@@ -43,32 +43,6 @@ function displayCurrentDate() {
 }
 
 // News and Control Panel initialization
-
-async function initializeSpeechSynthesis() {
-  if (!("speechSynthesis" in window)) {
-    console.error("Speech synthesis not supported");
-    return false;
-  }
-
-  // Force voice loading in Chrome
-  return new Promise((resolve) => {
-    let voices = window.speechSynthesis.getVoices();
-    if (voices.length > 0) {
-      resolve(true);
-      return;
-    }
-
-    window.speechSynthesis.addEventListener(
-      "voiceschanged",
-      () => {
-        voices = window.speechSynthesis.getVoices();
-        resolve(true);
-      },
-      { once: true }
-    );
-  });
-}
-
 async function initializeNewsAndControl() {
   // Initialize control panel
   initializeControlPanel();
@@ -96,7 +70,7 @@ async function renderNews() {
   }
 }
 
-// Initialize JS functionality after DOM loaded
+// Initialize JS functionality after DOM loaded//
 document.addEventListener("DOMContentLoaded", async () => {
   await initializeSpeechSynthesis();
   displayCurrentDate();
