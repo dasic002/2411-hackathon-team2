@@ -522,6 +522,8 @@ section.news .section {
 #tts-control-panel.visible {
   display: block;
   transform: translateY(0);
+  max-width: calc(var(--max-app-width) * 1.2);
+  margin: 0 auto;
 }
 
 #tts-control-panel .controls-toggle {
@@ -747,9 +749,9 @@ button.preview-voice {
 /**---------------------- FAQ section **/
 
 section.faq .wrapper {
-    max-width: var(--max-app-width);
-    margin: 0 auto;
-  }
+  max-width: var(--max-app-width);
+  margin: 0 auto;
+}
 
 section.faq {
   padding: 80px;
@@ -783,30 +785,30 @@ section.faq details[open] {
 
 /**-Code inspired by stackoverflow to make faq easier to open close **/
 
-section.faq details>summary {
-    list-style-type: none;
-    outline: none;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-section.faq details>summary::-webkit-details-marker {
-    display: none;
-  }
-  
-section.faq details>summary::before {
-    content: '+ ';
-    font-size: 30;
-  }
-  
-section.faq details[open]>summary::before {
-    content: '- ';
-  }
-  
-section.faq details[open]>summary {
-    margin-bottom: 0.5rem;
-  }
+section.faq details > summary {
+  list-style-type: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+section.faq details > summary::-webkit-details-marker {
+  display: none;
+}
+
+section.faq details > summary::before {
+  content: "+ ";
+  font-size: 30;
+}
+
+section.faq details[open] > summary::before {
+  content: "- ";
+}
+
+section.faq details[open] > summary {
+  margin-bottom: 0.5rem;
+}
 
 /**---------------------- Profile section **/
 
@@ -1018,11 +1020,8 @@ footer small a {
 }
 
 .text-grow:hover {
-
   transform: scale(1.2);
 }
-
-
 
 /** Error Page Styles **/
 
@@ -1036,7 +1035,7 @@ footer small a {
   color: #333333; /* Neutral text color */
   text-align: center;
   padding: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .page h1 {
@@ -1072,11 +1071,10 @@ footer small a {
 .actions a:hover {
   color: #3333ff;
   background-color: #e0e0fe;
-  text-decoration: none; 
-  border: 1px solid #ffffff; 
-  transition: all 0.3s ease-in-out; 
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease-in-out;
 }
-
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -1099,7 +1097,6 @@ footer small a {
     font-size: 2.5rem;
   }
 }
-
 
 @media (max-width: 768px) {
   .profile {
