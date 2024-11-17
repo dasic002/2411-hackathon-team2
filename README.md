@@ -34,6 +34,23 @@ Preview Image [add img]
 
 ## Agile
 
+### Agile Workflow for GitHub Project Board
+
+At the start of the project, the team conducted a brainstorming session to generate ideas for the site's features. These ideas were categorised into **To Do**, **In Progress**, and **Done** to organise tasks efficiently.  
+
+#### Daily Workflow:
+
+**Issue Assignment**: At the beginning of each day, issues listed on the GitHub project board were allocated to team members.  
+   - **Must Have** issues were given immediate attention.  
+   - **To do** issues were tackled as time and resources allowed.  
+
+**Progress Updates**: At the end of each day, the board was reviewed:  
+   - Completed tasks were moved to **Done**.  
+   - Outstanding tasks were re-examined to determine which ones were most urgent for the following day.  
+
+#### Completion:  
+This iterative approach ensured that all issues were addressed, resulting in a fully functional website with all planned features successfully implemented.
+
 #### Project Board
 
 #### User Stories
