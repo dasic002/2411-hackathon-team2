@@ -16,6 +16,16 @@ Preview Image [add img]
 
 ## Features
 
+#### Logo
+The logo features a minimalist and modern design that reflects the site’s focus on clarity and accessibility. The design is simple yet striking, ensuring the logo is easily recognisable and ties directly to the site’s name. It consists of two main elements:
+
+1. Bold "N":
+  - 	This represents the title "News Echo".
+2.	Radiating Curves:
+	- Two curved lines extend outward from the "N", resembling waves or signals. These represent communication, connection, and the spread of knowledge.
+
+This logo captures the site's focus on accessibility and sharing information in a way that is easy for everyone to engage with. 
+
 #### Navigation Menu
 
 #### Hero Section
@@ -32,6 +42,8 @@ The Footer is devided in two parts. In the first is displayed a "Contact us" but
 In the second part, the user will be able to access social media pages from an Irish association called "Fighting Blindness" if they need support or information.
 
 #### Contact Page
+The Contact Page provides a space to showcase the talented individuals behind the project. Rather than being a traditional contact form, this page serves as a “Meet the Team” section, giving visitors insight into the team members’ skills, backgrounds, and professional experiences.
+Each team member is presented in a visually appealing format with a professional photo, name, role, and a brief personal introduction. The profiles highlight each member’s background, current expertise, and aspirations.
 
 #### About Us Page
 
