@@ -1,5 +1,35 @@
 import { speechConfig } from "../config/speechConfig.js";
-import { handlePauseResume, stopSpeaking, updateSpeechRate, updateSpeechPitch } from "../services/speechService.js";
+import { handlePauseResume, stopSpeaking, updateSpeechRate, updateSpeechPitch, updatePlayButtons } from "../services/speechService.js";
+import { getEnglishVoices, previewVoice, stopPreview } from "../services/voiceService.js";
+
+function createVoiceControls() {
+  const voices = getEnglishVoices();
+  const voiceOptions = voices
+    .map(
+      (voice) =>
+        `<option value="${voice.name}" ${voice.name === speechConfig.selectedVoice ? "selected" : ""}>
+          ${voice.name} (${voice.lang})
+      </option>`
+    )
+    .join("");
+
+  return `
+      <div class="control-group voice-control-group">
+          <label for="voice-select">Voice:</label>
+          <div class="voice-selection-container">
+              <select id="voice-select" class="voice-select">
+                  ${voiceOptions}
+              </select>
+              <button type="button" class="preview-voice" title="Preview voice">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                      <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                  </svg>
+              </button>
+          </div>
+      </div>
+  `;
+}
 
 /**
  * Initializes the text-to-speech control panel and sets up its event handlers.
@@ -16,8 +46,38 @@ export function initializeControlPanel() {
     document.body.classList.add("panel-visible");
   }
 
+  const controlsContent = panel.querySelector(".voice-picker");
+  if (controlsContent) {
+    // Insert voice controls at the beginning
+    controlsContent.insertAdjacentHTML("afterbegin", createVoiceControls());
+
+    // Set up voice selection and preview
+    const voiceSelect = controlsContent.querySelector("#voice-select");
+    const previewButton = controlsContent.querySelector(".preview-voice");
+
+    if (voiceSelect) {
+      voiceSelect.addEventListener("change", (e) => {
+        stopPreview();
+        speechConfig.selectedVoice = e.target.value;
+        // Enable pause/resume button if we have content to restart
+        updatePlayButtons();
+      });
+    }
+
+    if (previewButton) {
+      previewButton.addEventListener("click", () => {
+        if (speechConfig.selectedVoice) {
+          // Stop any current speech or preview
+          stopPreview();
+          // Play new preview
+          previewVoice(speechConfig.selectedVoice);
+        }
+      });
+    }
+  }
+
+  // Set up other controls (existing code)
   initializeControlPanelEvents(panel);
-  return panel;
 }
 
 /**
@@ -37,7 +97,7 @@ function initializeControlPanelEvents(panel) {
     const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
     toggleBtn.setAttribute("aria-expanded", !isExpanded);
     controlsContent.classList.toggle("show");
-    toggleBtn.textContent = isExpanded ? "Show Speed & Pitch Controls" : "Hide Speed & Pitch Controls";
+    toggleBtn.textContent = isExpanded ? "Show Controls" : "Hide Controls";
   });
 
   // Add event listeners for speech controls

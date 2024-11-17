@@ -96,24 +96,39 @@
             <!--Text-to-Speech Control Panel-->
             <section id="tts-control-panel" role="region" aria-label="Text-to-speech controls">
                 <div class="panel-content">
-                    <button class="controls-toggle" aria-expanded="false">
-                        Show Speed & Pitch Controls
-                    </button>
+          <button class="controls-toggle" aria-expanded="false">Show Controls</button>
                     <div class="now-reading">
                         <span class="reading-label">Now reading: </span>
                         <span class="reading-title" aria-live="polite"></span>
                     </div>
+          <div class="voice-picker"></div>
                     <div class="controls-content">
                         <div class="control-group">
                             <label for="global-speech-rate">Speed:</label>
-                            <input type="range" id="global-speech-rate" min="0.5" max="2" step="0.1" value="1"
-                                class="speech-slider" aria-label="Speech rate control">
+              <input
+                type="range"
+                id="global-speech-rate"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+                class="speech-slider"
+                aria-label="Speech rate control"
+              />
                             <span class="speech-value" aria-live="polite">1.0x</span>
                         </div>
                         <div class="control-group">
                             <label for="global-speech-pitch">Pitch:</label>
-                            <input type="range" id="global-speech-pitch" min="0.5" max="2" step="0.1" value="1"
-                                class="speech-slider" aria-label="Speech pitch control">
+              <input
+                type="range"
+                id="global-speech-pitch"
+                min="0.5"
+                max="2"
+                step="0.1"
+                value="1"
+                class="speech-slider"
+                aria-label="Speech pitch control"
+              />
                             <span class="speech-value" aria-live="polite">1.0x</span>
                         </div>
                     </div>
@@ -125,7 +140,6 @@
                             <span class="button-text">Stop</span>
                         </button>
                     </div>
-
                 </div>
             </section>
 
