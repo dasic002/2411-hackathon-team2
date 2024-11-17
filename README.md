@@ -22,6 +22,8 @@ Preview Image [add img]
 
 In the Hero section we can see displayed the choosen title of the app "NEWS ECHO" to enhance it's purpose. Depending of the day, the user is greeted by different messages: "Good Morning", "Good Afternoon" and "Good Evening". The user will be also able to check the current date depending on his timezone.
 
+![Hero Screenshot](assets/media/readme/hero_picture.png)
+
 #### Weather Widget
 
 #### News Widget
@@ -30,6 +32,9 @@ In the Hero section we can see displayed the choosen title of the app "NEWS ECHO
 
 The Footer is devided in two parts. In the first is displayed a "Contact us" button that bring the user to the Team page.
 In the second part, the user will be able to access social media pages from an Irish association called "Fighting Blindness" if they need support or information.
+The last part is about the Copyright with a link to the Team page.
+
+![Footer Screenshot](assets/media/readme/footer_picture.png)
 
 #### Contact Page
 
@@ -292,6 +297,8 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 - HTML5
 - CSS
 - Javascript
+- Google Fonts
+- Font Awesome
 - ...
 
 ---
@@ -363,6 +370,7 @@ This structured Git workflow allowed our team to collaborate effectively and man
 
 ## Content
 
+* The background image for the hero section was found on [Pexels](https://www.pexels.com/).
 
 
 
