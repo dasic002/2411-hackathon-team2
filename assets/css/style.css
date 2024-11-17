@@ -741,7 +741,11 @@ section.faq h1 {
 }
 
 section.faq .shade-1 {
-  background-color: var(--contrast-color);
+  background-color: var(--tertiary-color);
+}
+
+section.faq .shade-2 {
+  background-color: var(--primary-color-light);
 }
 
 section.faq details {
