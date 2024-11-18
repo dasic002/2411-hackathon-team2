@@ -48,7 +48,7 @@ We then tested the validation of each page using the [W3 HTML Validation Tool](h
 
 | Test Case | Test Case Description            | Expected Result                                                                                                                         | Pass / Fail |
 | --------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| TC01      | Home page passes HTML validator  | 1. Navigate to the HTML Validator <br>2. Copy the link of the Home Page or validate by copy+paste its html<br>3. Verify that it passes  | FAIL        |
+| TC01      | Home page passes HTML validator  | 1. Navigate to the HTML Validator <br>2. Copy the link of the Home Page or validate by copy+paste its html<br>3. Verify that it passes  | PASS        |
 | TC02      | Teams page passes HTML validator | 1. Navigate to the HTML Validator <br>2. Copy the link of the Teams Page or validate by copy+paste its html<br>3. Verify that it passes | PASS        |
 | TC03      | FAQ page passes HTML validator   | 1. Navigate to the HTML Validator <br>2. Copy the link of the FAQ Page or validate by copy+paste its html<br>3. Verify that it passes   | PASS        |
 
