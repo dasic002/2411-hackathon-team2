@@ -27,7 +27,7 @@ _Go back to [README.md](README.md)_
 
 ## Basic Functionality
 
-First, we tested the basic functionality of each pag, including all links and navigation elements.
+First, we tested the basic functionality of each page, including all links and navigation elements.
 
 #### Results
 
@@ -42,6 +42,8 @@ First, we tested the basic functionality of each pag, including all links and na
 
 ## HTML Validator
 
+We then tested the validation of each page using the [W3 HTML Validation Tool](https://validator.w3.org/)
+
 #### Results
 
 ---
@@ -54,7 +56,26 @@ First, we tested the basic functionality of each pag, including all links and na
 
 ## User Stories
 
+We then tested each user story that we have created at the beginning of the current iteration.
+
 #### Results
+
+| Test Case | Test Case Description                                                                                                                                                                    | Expected Result                                                                                                                                                                               | Pass / Fail |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| TC01      | As a user, I want to see current weather information for my location                                                                                                                     | The user can access the weather of his location when opening the app.                                                                                                                         | PASS        |
+| TC02      | As a user with visual impairments, I want to hear the weather information read aloud                                                                                                     | The user can start or pause by clicking a button or using keyboard to listen to the weather                                                                                                   | PASS        |
+| TC03      | As a user, I want to browse latest news articles                                                                                                                                         | The user can browse through the most recent articles and news headlines                                                                                                                       | PASS        |
+| TC04      | As a user, I want to hear news headlines and content read aloud                                                                                                                          | The user can start or pause the lecture thanks to a button                                                                                                                                    | PASS        |
+| TC05      | As a visually impaired user, I want to use keyboard shortcuts to navigate the website, so that I can easily move between sections without needing a mouse.                               | Navigating through a website with a keyboard uses the TAB key to move forward and the SHIFT+TAB combination to move backwards.                                                                | PASS        |
+| TC06      | As a developer, I want to implement semantic HTML and ARIA roles, so that screen readers can accurately interpret and navigate the page content.                                         | Maintain a clear and simple structure to make your HTML document easy to read and understand. Use semantic tags to enhance accessibility for screen readers and other assistive technologies. | PASS        |
+| TC07      | As a user, I want the site to function seamlessly on all device sizes, so that I have a consistent experience, whether on a mobile device or desktop.                                    | 1. Open the deployed site on a mobile phone<br>2. Open the deployed site on a tablet<br>3. Open the deployed site on a desktop                                                                | PASS        |
+| TC08      | As a user concerned about privacy, I want clear information on how my location data is used, so that I feel secure using the service.                                                    | Open the FAQ section on the deployed site and click on the privacy question.                                                                                                                  | PASS        |
+| TC09      | As a user, I want to receive weather alerts for severe conditions, so that I can prepare accordingly.                                                                                    |                                                                                                                                                                                               | FAIL        |
+| TC10      | As a non-native English speaker, I want to include an option to choose a different language or voice for the text-to-speech conversion, so I can understand the information more easily. | 1. Open the deployed site home page<br>2. Go to the voice section<br>3. Click on the drop down arrow and select a voice<br>4. Select play                                                     | FAIL        |
+| TC11      | As a user I would like to have the option to adjust the speed or pitch of the audio, so I can listen comfortably.                                                                        | 1. Open the deployed site home page<br>2. Go to the speed and pitch section<br>3. While the voice is playing use the variable adjustment to change the pitch and change the speed<br>         | PASS        |
+| TC12      | As a user I would like to see a FAQ section, so I can access common queries easily and self-serve.                                                                                       | 1. Open the deployed site.<br>2. From the menu bar select FAQ<br>3. A list of FAQ is displayed<br>4. Press on question to view answer, press on answer again to reduce it.                    | PASS        |
+| TC13      | As a user, I can check today's weather by hours, so that I can dress accordingly.                                                                                                        |                                                                                                                                                                                               | PASS        |
+| TC14      | As a user, I can filter the news, so I can access the latest news of the topics I want.                                                                                                  | The user can access the latest news of the topic he is interested in.                                                                                                                         | FAIL        |
 
 ---
 
