@@ -48,7 +48,7 @@ We then tested the validation of each page using the [W3 HTML Validation Tool](h
 
 | Test Case | Test Case Description            | Expected Result                                                                                                                         | Pass / Fail |
 | --------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| TC01      | Home page passes HTML validator  | 1. Navigate to the HTML Validator <br>2. Copy the link of the Home Page or validate by copy+paste its html<br>3. Verify that it passes  | PASS        |
+| TC01      | Home page passes HTML validator  | 1. Navigate to the HTML Validator <br>2. Copy the link of the Home Page or validate by copy+paste its html<br>3. Verify that it passes  | FAIL        |
 | TC02      | Teams page passes HTML validator | 1. Navigate to the HTML Validator <br>2. Copy the link of the Teams Page or validate by copy+paste its html<br>3. Verify that it passes | PASS        |
 | TC03      | FAQ page passes HTML validator   | 1. Navigate to the HTML Validator <br>2. Copy the link of the FAQ Page or validate by copy+paste its html<br>3. Verify that it passes   | PASS        |
 
@@ -124,7 +124,33 @@ The responsiveness was tested thanks to [Chrome Device toolbar](https://develope
 
 ## Accessibility
 
+Since this is a hackathon about accessibility, we went ahead and tested this part with a little more detail than usual.
+
+We tested the page with:
+
+- [WAVE WebAIM Evaluation Tool](https://wave.webaim.org/)
+- a color blindness simulator for 9 different types of color blindness [Pileston Color Blind Visioin Simulator ](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM)
+- the accessibility tab of [Google Lighthouse](https://pagespeed.web.dev/).
+
 #### Results
+
+| Test Case | Test Case Description                                               | Expected Result                                                                                                                                                              | Pass / Fail |
+| --------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| TC01      | Home page passes WAVE WebAIM validator                              | 1. Navigate to the WAVE WebAIM Validator <br>2. Copy the link of the Home Page <br>3. Verify that it passes                                                                  | PASS        |
+| TC02      | Teams page passes WAVE WebAIM validator                             | 1. Navigate to the WAVE WebAIMValidator <br>2. Copy the link of the Teams Page <br>3. Verify that it passes                                                                  | PASS        |
+| TC03      | FAQ page passes WAVE WebAIM validator                               | 1. Navigate to the WAVE WebAIM Validator <br>2. Copy the link of the FAQ Page <br>3. Verify that it passes                                                                   | PASS        |
+| TC04      | Home page works well for people Green-weak (Deuteranomaly)<br>      | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC05      | Home page works well for people Red-weak (Protanomaly)<br>          | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC06      | Home page works well for people Blue-weak (Tritanomaly)<br>         | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC07      | Home page works well for people Green-weak (Deuteranomaly)<br>      | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC08      | Home page works well for people with Monochromacy (Tritanomaly)<br> | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC09      | Home page works well for people with Red-blind (Protanopy)<br>      | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC10      | Home page works well for people with Green-blind (Deuteranopy)<br>  | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC11      | Home page works well for people with Blue-blind (Deuteranopy)<br>   | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC12      | Home page works well for people with Blue Cone Monochromacy<br>     | 1. Take a screenshot of the Home Page<br>2. Navigate to the Color Blind Simulator<br>3. Upload the image<br>4. Select the option<br>5. Verify that the elements are readable | PASS        |
+| TC13      | Home page passes Lighhouse accessiblity score with > 90%<br>        | 1. Open Google Lighthouse<br>2. Enter URL of Home Page<br>3. Verify that accessibility score passes                                                                          | PASS        |
+| TC14      | Teams page passes Lighhouse accessiblity score with > 90%<br>       | 1. Open Google Lighthouse<br>2. Enter URL of Teams Page<br>3. Verify that accessibility score passes                                                                         | PASS        |
+| TC15      | FAQ page passes Lighhouse accessiblity score with > 90%<br>         | 1. Open Google Lighthouse<br>2. Enter URL of FAQ Page<br>3. Verify that accessibility score passes                                                                           | PASS        |
 
 ---
 
