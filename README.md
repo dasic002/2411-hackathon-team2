@@ -16,11 +16,26 @@ Preview Image [add img]
 
 ## Features
 
+#### Logo
+
+![News Echo Logo](assets/media/readme/newsecho-logo.png)
+
+The logo features a minimalist and modern design that reflects the site’s focus on clarity and accessibility. The design is simple yet striking, ensuring the logo is easily recognisable and ties directly to the site’s name. It consists of two main elements:
+
+1. Bold "N":
+  - This represents the title "News Echo".
+2.	Radiating Curves:
+	- Two curved lines extend outward from the "N", resembling waves or signals. These represent communication, connection, and the spread of knowledge.
+
+This logo captures the site's focus on accessibility and sharing information in a way that is easy for everyone to engage with. 
+
 #### Navigation Menu
 
 #### Hero Section
 
 In the Hero section we can see displayed the choosen title of the app "NEWS ECHO" to enhance it's purpose. Depending of the day, the user is greeted by different messages: "Good Morning", "Good Afternoon" and "Good Evening". The user will be also able to check the current date depending on his timezone.
+
+![Hero Screenshot](assets/media/readme/hero_picture.png)
 
 #### Weather Widget
 
@@ -30,8 +45,13 @@ In the Hero section we can see displayed the choosen title of the app "NEWS ECHO
 
 The Footer is devided in two parts. In the first is displayed a "Contact us" button that bring the user to the Team page.
 In the second part, the user will be able to access social media pages from an Irish association called "Fighting Blindness" if they need support or information.
+The last part is about the Copyright with a link to the Team page.
+
+![Footer Screenshot](assets/media/readme/footer_picture.png)
 
 #### Contact Page
+The Contact Page provides a space to showcase the talented individuals behind the project. Rather than being a traditional contact form, this page serves as a “Meet the Team” section, giving visitors insight into the team members’ skills, backgrounds, and professional experiences.
+Each team member is presented in a visually appealing format with a professional photo, name, role, and a brief personal introduction. The profiles highlight each member’s background, current expertise, and aspirations.
 
 #### About Us Page
 
@@ -292,6 +312,8 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 - HTML5
 - CSS
 - Javascript
+- Google Fonts
+- Font Awesome
 - ...
 
 ---
@@ -363,6 +385,7 @@ This structured Git workflow allowed our team to collaborate effectively and man
 
 ## Content
 
+* The background image for the hero section was found on [Pexels](https://www.pexels.com/).
 
 
 

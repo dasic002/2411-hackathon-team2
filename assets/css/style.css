@@ -41,7 +41,6 @@ html {
 
 body {
   font-family: var(--primary-font);
-  padding-bottom: 2rem;
   transition: padding-bottom 0.3s ease-in-out;
   margin: 0;
   background: var(--background-color);
@@ -318,7 +317,7 @@ section.navbar a:hover {
 #title-box {
   background-color: rgba(0, 0, 0, 0.7);
   width: 90%;
-  height: 70%;
+  height: 85%;
   border-radius: 4px;
 }
 
@@ -522,6 +521,8 @@ section.news .section {
 #tts-control-panel.visible {
   display: block;
   transform: translateY(0);
+  max-width: calc(var(--max-app-width) * 1.2);
+  margin: 0 auto;
 }
 
 #tts-control-panel .controls-toggle {
@@ -581,6 +582,7 @@ section.news .section {
 
 #tts-control-panel .speech-buttons {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
 }
 
@@ -717,6 +719,10 @@ button.preview-voice {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
+
+  #tts-control-panel .speech-buttons {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -747,8 +753,9 @@ button.preview-voice {
 /**---------------------- FAQ section **/
 
 section.faq .wrapper {
-    max-width: var(--max-app-width);
-  }
+  max-width: var(--max-app-width);
+  margin: 0 auto;
+}
 
 section.faq {
   padding: 40px;
@@ -756,17 +763,23 @@ section.faq {
 
 section.faq h1 {
   text-align: center;
-  font-size: 50px;
-  color: var(--primary-color)
+  font-size: var(--primary-heading-font-size);
+  color: var(--primary-color);
 }
 
 section.faq .shade-1 {
   background-color: var(--tertiary-color);
+  color: white;
+  border: 0px;
+}
+
+section.faq .shade-1 p {
+  color: white;
 }
 
 section.faq .shade-2 {
   background-color: var(--background-color);
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 section.faq details {
@@ -793,6 +806,7 @@ section.faq details[open] {
 
 /**-Code inspired by stackoverflow to make faq easier to open close **/
 
+<<<<<<< HEAD
 section.faq details>summary {
     list-style-type: none;
     outline: none;
@@ -816,6 +830,32 @@ section.faq details[open]>summary::before {
 section.faq details[open]>summary {
     margin-bottom: 0.5rem;
   }
+=======
+section.faq details > summary {
+  list-style-type: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+section.faq details > summary::-webkit-details-marker {
+  display: none;
+}
+
+section.faq details > summary::before {
+  content: "+ ";
+  font-size: 30;
+}
+
+section.faq details[open] > summary::before {
+  content: "- ";
+}
+
+section.faq details[open] > summary {
+  margin-bottom: 0.5rem;
+}
+>>>>>>> 96b30dd80e4237c3349fe0fe9ace96ccbae0d07d
 
 /**---------------------- Profile section **/
 
@@ -827,10 +867,10 @@ section.faq details[open]>summary {
 
 footer {
   margin-top: 10px;
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color-light);
   color: var(--secondary-color);
   width: 100%;
-  padding: 5px 0;
+  padding: 15px 0;
 }
 
 footer a {
@@ -856,7 +896,7 @@ footer a:hover {
 }
 
 #contact-button a {
-  color: var(--tertiary-color);
+  color: var(--primary-color-light);
   background-color: var(--background-color);
   padding: 10px 50px;
   border-radius: 4px;
@@ -864,7 +904,7 @@ footer a:hover {
 
 #contact-button a:hover {
   color: var(--background-color);
-  background-color: var(--tertiary-color);
+  background-color: var(--primary-color-light);
   border: var(--background-color) 1px solid;
   transition: 1s;
 }
@@ -905,17 +945,24 @@ footer a:hover {
   transition: 1s;
 }
 
+#footer-social i {
+  font-size: 40px;
+}
+
 footer small {
   font-size: 8px;
   color: var(--background-color);
   display: flex;
   justify-content: center;
   padding: 5px;
+  margin-top: 10px;
 }
 
 footer small a {
   color: var(--background-color);
   text-decoration: underline;
+  font-size: 8px;
+  line-height: normal;
 }
 
 /*Media query for Footer section*/
@@ -935,20 +982,32 @@ footer small a {
 }
 
 @media screen and (max-width: 485px) {
-  #contact-button {
-    margin-right: 0.7em;
-  }
-
-  #contact-button a {
-    padding: 6px 9px;
+  .flex-container {
+    margin: auto;
+    flex-direction: column;
+    padding: 0;
   }
 
   #footer-info-block {
-    margin-left: 0.7em;
+    margin-left: 0;
+  }
+
+  #contact-button {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  #contact-button a {
+    padding: 6px 65px;
+  }
+
+  #footer-info {
+    border-left: none;
   }
 
   #footer-info p {
-    font-size: 0.7em;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 }
 /**---------------------- team.html **/
@@ -977,12 +1036,23 @@ footer small a {
   padding: 30px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: var(--contrast-color);
+  background-color: var(--primary-color-light);
 }
 
 .profile-right {
   flex-direction: row-reverse;
   background-color: #d3d3d3;
+}
+
+.profile:nth-of-type(odd) .profile-text h2,
+.profile:nth-of-type(odd) .profile-text h2 span,
+.profile:nth-of-type(odd) .profile-text p {
+  color: white !important;
+}
+
+/* Target SVGs in profiles 1, 3, 5, and 7 */
+.profile:nth-of-type(odd) .social-wrapper svg path {
+  fill: white;
 }
 
 .profile > .profile-image {
@@ -1027,11 +1097,8 @@ footer small a {
 }
 
 .text-grow:hover {
-
   transform: scale(1.2);
 }
-
-
 
 /** Error Page Styles **/
 
@@ -1045,7 +1112,7 @@ footer small a {
   color: #333333; /* Neutral text color */
   text-align: center;
   padding: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .page h1 {
@@ -1081,11 +1148,10 @@ footer small a {
 .actions a:hover {
   color: #3333ff;
   background-color: #e0e0fe;
-  text-decoration: none; 
-  border: 1px solid #ffffff; 
-  transition: all 0.3s ease-in-out; 
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease-in-out;
 }
-
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -1108,7 +1174,6 @@ footer small a {
     font-size: 2.5rem;
   }
 }
-
 
 @media (max-width: 768px) {
   .profile {
