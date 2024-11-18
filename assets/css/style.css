@@ -759,7 +759,7 @@ section.faq .wrapper {
 
 section.faq {
   padding: var(--mobile-side-padding);
-  /* min-height: calc(100vh - 4rem - 8px - 1.2em - 3px); */
+  min-height: calc(100vh - 4rem - 60px - 30px - 10rem);
 }
 
 section.faq h1 {
