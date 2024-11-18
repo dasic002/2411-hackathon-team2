@@ -31,6 +31,8 @@ This logo captures the site's focus on accessibility and sharing information in 
 
 #### Navigation Menu
 
+The navigation bar is very intutitive and easy to navigate through the different options of HOME - CONTACT US - FAQ.  When viewed on mobile the menu turns into a burger icon and expands to a full menu when enlarged for tablets and desktops. 
+
 #### Hero Section
 
 In the Hero section we can see displayed the choosen title of the app "NEWS ECHO" to enhance it's purpose. Depending of the day, the user is greeted by different messages: "Good Morning", "Good Afternoon" and "Good Evening". The user will be also able to check the current date depending on his timezone.
@@ -39,7 +41,11 @@ In the Hero section we can see displayed the choosen title of the app "NEWS ECHO
 
 #### Weather Widget
 
+The weather widget is displayed clearly, using a universal cloud symbol.  Todays current weather is displayed with a large volume speak button, when the user selects this the weather will be spoken out loud to them.  If they click and select anywhere on the weather it will display weather for the next couple of days. It is intuitive and easy to use. It has been designed with users who may have poor motor skills and or visual impairments. 
+
 #### News Widget
+
+The news widget is a large News symbol button with sound waves, when the user clicks on the large speaker button the news will be spoken to them.  They can choose to select to have the News headline title spoken to them first and they choose weather they wish to listen to the full article.  This allows to them to choose between different news articles that they are interested in.
 
 #### Footer
 
@@ -53,7 +59,9 @@ The last part is about the Copyright with a link to the Team page.
 The Contact Page provides a space to showcase the talented individuals behind the project. Rather than being a traditional contact form, this page serves as a “Meet the Team” section, giving visitors insight into the team members’ skills, backgrounds, and professional experiences.
 Each team member is presented in a visually appealing format with a professional photo, name, role, and a brief personal introduction. The profiles highlight each member’s background, current expertise, and aspirations.
 
+
 #### About Us Page
+Meet the team who developed the website. Each team members bio, photo, linkedin and github profiles are clearly displayed with links that open in separate pages. 
 
 #### FAQ Page
 On our Frequently Asked Questions page, we’ve made it easier for users with poor motor skills or visual impairments to interact with the content. Instead of needing to click on a small arrow, you can click anywhere on the question to open or close the answer section.
@@ -74,7 +82,7 @@ A template was created to help write User Stories and define Epics.
 ![Issue Template](https://github.com/user-attachments/assets/118a3d02-e88d-433b-ba2f-0c6eb926a29e)
 
 #### Daily Workflow:
-After the details of the project were recorded, each team member was allocated a must have task.  The more expereinced members of the team outlined the best methodolgoy for working in a proficant manner within Gitpod and Github and clear instructions on git commands were pinned in the teams slack channel to ensure all team members understood and carried out the same commands to avoid conflicts.
+After the details of the project were recorded, each team member was allocated a must have task.  The more experienced members of the team outlined the best methodolgoy for working in a proficant manner within Gitpod and Github and clear instructions on git commands were pinned in the teams slack channel to ensure all team members understood and carried out the same commands to avoid conflicts.
 
 The team leader kept detailed minutes of each sprint and followed up on issues from the previous sprint.  The team leader ensured all members of the team were allocated some time to discuss their particular tasks and any issues they were having and were given the appropriate advice from other team members.  
 
