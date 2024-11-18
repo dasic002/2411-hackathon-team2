@@ -27,29 +27,16 @@ _Go back to [README.md](README.md)_
 
 ## Basic Functionality
 
-<table>
-<tr>
-      <th>Test Case</th>
-      <th>Description</th>
-      <th>Expected Result</th>
-      <th>Actual Result</th>
-  </tr>
-
-  <tr>
-      <td>TC 01</td>
-      <td>Validate each Link in the Top Navigation</td>
-      <td>
-        <ol>
-        <li>Page should load</li>
-        <li>FAQ page loads</li>
-        <li>Teams page loads</li>
-        </ol>
-    </td>
-    <td>PASS</td>
-  </tr>
-</table>
+First, we tested the basic functionality of each pag, including all links and navigation elements.
 
 #### Results
+
+| Test Case | Test Case Description                          | Expected Result                                                                                                                                                                                                                                        | Pass / Fail |
+| --------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
+| TC01      | Validate each Link in the Top Navigation       | 1. Page should load<br>2. FAQ page loads<br>3. Teams page loads                                                                                                                                                                                        | PASS        |
+| TC02      | Validate each Link in the Footer               | 1. Page should load<br>2. All social media links should open to relevant external links in new window<br>3. Contact Us link should open Contact Us / Teams page                                                                                        | PASS        |
+| TC03      | Validate each link in Contact Us/Meet the Team | 1. Page should load<br>2. Link to Linkedin profiles for each team member should load in separate window <br>3. Link to github repositories for each team member should load in separate window <br>4. Home page should load<br>5. FAQ page should load | PASS        |
+| TC04      | Validate each link in FAQ                      | 1. Page should load<br>2. Link to The Lighthouse Guild should open in a separate window<br>3. Link to Royal National Institute of Blind People should open in a separate window<br>4. Home page should load<br>5. Teams page should load               | PASS        |
 
 ---
 
