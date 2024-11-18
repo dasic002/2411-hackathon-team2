@@ -951,7 +951,10 @@ footer small {
   font-size: var(--paragraph-font-size);
   color: var(--background-color);
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
   padding: 5px;
   margin-top: 10px;
 }
@@ -966,6 +969,9 @@ footer small a {
 /*Media query for Footer section*/
 
 @media screen and (max-width: 750px) {
+  footer small {
+    flex-direction: column;
+  }
   #footer-info-block {
     margin-left: 2em;
   }
@@ -1102,7 +1108,7 @@ footer small a {
 }
 
 .profile:last-of-type {
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 /**---------------------- Error page **/
