@@ -321,16 +321,85 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 ## Testing
 
 #### HTML validator
+## HTML Validation
+To test the markup validity [HTML Validator](https://validator.w3.org/) was used to assess markup validity and compliance with accessibility standards. THe following table shows the results for each page:
+
+**Summary Table**
+| Page             | Date       | Comments | Pass/Fail |
+|------------------|------------|----------|-----------|
+| Home             |  18/11/24  |          |           |
+| FAQ              |  18/11/24  |          |           |
+| Contact          |  18/11/24  |          |           |
+| Error            |  18/11/24  |          |           |
 
 #### CSS validator
+The CSS code of the website was validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input). The validation results are as follows:
+
+
+| CSS File      | Errors | Warnings                                                                                                                                       | Comments                                                                                                                        | Testing Date   |
+|---------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------------|
+| Home          | None   |                      |                        | 18/11/24 |
+| FAQ           | None   |                      |                        | 18/11/24 |
+| Contact       | None   |                      |                        | 18/11/24 |
+| Error         | None   |                      |                        | 18/11/24 |
 
 #### Responsiveness
+**Browser Compatibility** 
+-   Expected: Consistent appearance and functionality across major browsers.
+-   Testing: Test site on Chrome, Mozilla, Safari, and Edge browsers.
+-   Outcome: The site renders as expected with good responsiveness and compatibility across different browsers.
+
+**Responsiveness Test**
+- Expected: Site should render appropriately on various devices with different screen sizes. 
+- Testing: Test responsiveness on iPhone 12, iPad 12, and desktop (1024px). 
+- Outcome: The site displays responsively across different devices, maintaining functionality and appearance as intended.
 
 #### Accessibility
 
 #### Performance
 
 #### Lighthouse
+| Page              | Performance |             | Accessibility |          | Best Practice |             | SEO  |                   |
+|-------------------|-------------|-------------|---------------|----------|---------------|-------------|------|-------------------|
+|                   | Mobile (%)  | Desktop (%) | Mobile (%) | Desktop (%) | Mobile (%) | Desktop (%)    | Mobile (%) | Desktop (%) |
+| **Index**         |             |             |            |             |            |                |            |             |
+| **FAQ**           |             |             |            |             |            |                |            |             |
+| **Contact**       |    93       |   99        |      96    |   96        |     99     |   96           | 100        |   100       |
+| **Error**         |             |             |            |             |            |                |            |             |
+
+#### Manual Testing
+<details>
+  <summary>**Home*</summary>
+
+</details>
+
+<details>
+  <summary>**FAQ*</summary>
+    | Feature             | Expected Outcome                              | Testing Procedure                                  | Actual Outcome                                                                                   |
+|---------------------|-----------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Navigation Logo     | Redirects to the homepage (`index.html`)      | Click the logo in the navigation bar             | Successfully redirected to the homepage.                                                         |
+| Mobile Menu Toggle  | Opens and closes the navigation menu          | Click the menu button and close button           | Menu opened and closed as expected; `aria-expanded` attribute updated correctly.                 |
+| Navigation Links    | Redirects to respective pages                 | Click `Home`, `Contact Us`, and `FAQ` links      | Navigation links successfully redirected to the expected pages.                                  |
+| Profile Images      | Displays correct images for all team members  | Verify images for each profile                   | Images for all profiles displayed correctly.                                                     |
+| Profile Descriptions| Displays correct text for each profile        | Read descriptions under each team member         | All descriptions were accurate and correctly displayed.                                          |
+| GitHub Links        | Redirects to respective GitHub profiles       | Click on GitHub links for each team member       | GitHub links opened the correct profiles in a new tab.                                           |
+| LinkedIn Links      | Redirects to respective LinkedIn profiles     | Click on LinkedIn links for each team member     | LinkedIn links opened the correct profiles in a new tab.                                         |
+| Social Media Icons  | Redirects to Fighting Blindness social pages  | Click `Facebook`, `Instagram`, and `LinkedIn` icons in the footer | Social media links opened the correct pages in new tabs.                                         |
+| Contact Us Button   | Redirects to the Contact Us page              | Click the `Contact Us` button in the footer      | Successfully redirected to the Contact Us page.                                                  |
+| Responsive Design   | Adjusts layout for different screen sizes     | Resize browser window and test on various devices| The layout adjusted correctly for mobile, tablet, and desktop views; no overlapping elements.    |
+| Keyboard Navigation | Allows navigation through keyboard only       | Use `Tab` and `Enter` keys to navigate           | All interactive elements were accessible via keyboard and followed a logical tab order.          |
+| Screen Reader Labels| Descriptive `aria-label`/`alt` attributes     | Use a screen reader (e.g., NVDA or VoiceOver)    | Screen reader successfully read all labels and descriptions; meaningful context provided.         |
+</details>
+
+<details>
+  <summary>**Contact*</summary>
+
+</details>
+
+<details>
+  <summary>**Error*</summary>
+
+</details>
 
 ---
 
