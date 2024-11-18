@@ -839,6 +839,7 @@ section.faq details[open] > summary {
 /* Media queries for FAQ    */
 @media screen and (min-width: 600px) {
   section.faq {
+    padding-right: var(--tablet-side-padding);
     padding-left: var(--tablet-side-padding);
   }
 }
