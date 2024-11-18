@@ -844,6 +844,13 @@ section.faq details[open] > summary {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  section.faq {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 /**---------------------- Profile section **/
 
 .profile {
