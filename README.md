@@ -72,6 +72,99 @@ A comprehensive guide to common frequently asked questions that our users may ha
 
 ---
 
+## API Integration and Related Implementation
+
+### Weather Section
+
+The weather functionality in News Echo is a key feature that provides real-time weather information with accessibility at its core. Users can access current weather conditions, forecasts, and hear weather updates read aloud, making weather information accessible to all users regardless of visual ability.
+
+#### Key Features
+
+- **Current Weather Display**:
+
+  - Real-time temperature updates
+  - Location-based weather information
+  - Visual weather conditions with accessible icons
+  - High and low temperature readings
+
+- **Weather Forecasts**:
+
+  - 2-day weather prediction
+  - Detailed daily forecasts including:
+    - Temperature ranges
+    - Precipitation chances
+    - Humidity levels
+    - Wind conditions
+
+- **Accessibility Features**:
+  - Text-to-speech weather reports
+  - Screen reader compatible elements
+  - High contrast weather icons
+
+#### Technical Details
+
+#### API Integration
+
+The weather system uses [WeatherAPI.com](https://www.weatherapi.com/docs/) for reliable weather data:
+
+- Current weather conditions
+- Multi-day forecasts
+- Location-based services
+- Comprehensive weather metrics
+
+#### Location Services
+
+Implements a two-tier location system:
+
+1. Browser Geolocation (Primary) - User's consent required
+2. Default Location (Fallback) - Rare cases where the API fails due to unknown reasons
+
+#### Weather Updates
+
+- Cache system (5 minutes) for optimal performance to reduce API calls and improve user experience
+- Error handling with graceful degradation
+- Offline functionality with cached data
+
+#### Responsive Design
+
+The weather interface is fully responsive
+
+### Weather Icons
+
+The application features custom SVG icons that represent different weather conditions:
+
+- Clear sky (day/night versions)
+- Partly cloudy
+- Overcast conditions
+- Various precipitation states
+- Dynamic icon updates based on current conditions
+
+### Voice Integration
+
+Text-to-speech capabilities include:
+
+- Current weather narration
+- Forecast readings
+- Customizable speech settings
+- Clear pronunciation of weather terms
+
+### Error Handling
+
+Robust error management system:
+
+- Connection failure recovery
+- User-friendly error messages
+- Automatic retry mechanisms
+
+### Future Enhancements
+
+Planned improvements include:
+
+- Extended forecast period
+- Weather alerts integration
+- Additional weather metrics
+- User location preferences
+- Enhanced caching system
 
 ## Agile Workflow for GitHub Project Board
 
