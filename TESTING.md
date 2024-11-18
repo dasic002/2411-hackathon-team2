@@ -109,6 +109,8 @@ We then tested all pages for cross-browser compatibility to ensure that the site
 
 ## Responsiveness
 
+We created the website using the mobile first technique and created screen queries to accommodate the site on larger sizes.
+
 The responsiveness was tested thanks to [Chrome Device toolbar](https://developer.chrome.com/docs/devtools/device-mode). Different screen sizes were tested to inspect the responsiveness of the website.
 
 #### Results
