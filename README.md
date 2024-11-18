@@ -75,22 +75,40 @@ A comprehensive guide to common frequently asked questions that our users may ha
 
 ## Agile Workflow for GitHub Project Board
 
-At the start of the project, the team conducted a brainstorming session to generate ideas for the site's features. These ideas were categorised into **To Do**, **In Progress**, and **Done** to organise tasks efficiently.  
+Agile methodology was used throughout the project.  At the beginning of the project, the team conducted a brainstorming session to generate ideas for the site's features. These ideas were captured as user stories and detailed into tasks with MoSCow proioties.  This initaial step was recorded on a google spreadsheet and categorisedto organise tasks efficientl and then transferred over to Project Boards on Github. On issues recorded on the Projects Board were recorded in a medhoical manner, in a step by step detail to ensure all tasks were detailed correctly to manage workflow and assign the correct team member to the task.  
+
+A template was created to help write User Stories and define Epics.
+
+![Issue Template](https://github.com/user-attachments/assets/118a3d02-e88d-433b-ba2f-0c6eb926a29e)
 
 #### Daily Workflow:
+After the details of the project were recorded, each team member was allocated a must have task.  The more experienced members of the team outlined the best methodolgoy for working in a proficant manner within Gitpod and Github and clear instructions on git commands were pinned in the teams slack channel to ensure all team members understood and carried out the same commands to avoid conflicts.
 
-**Issue Assignment**: At the beginning of each day, issues listed on the GitHub project board were allocated to team members.  
-   - **Must Have** issues were given immediate attention.  
-   - **To do** issues were tackled as time and resources allowed.  
+The team leader kept detailed minutes of each sprint and followed up on issues from the previous sprint.  The team leader ensured all members of the team were allocated some time to discuss their particular tasks and any issues they were having and were given the appropriate advice from other team members.  
 
-**Progress Updates**: At the end of each day, the board was reviewed:  
+Each team worked using the project board and ticked off their tasks as they completed them and moved them to the approaite section.  The quality control team member after reviewing the code would create and allocate tasks which were highlighted to the team member as required. 
+
+**Progress Updates**: At the end of each sprint, the board was reviewed:  
+   - Items were moved to in progress
    - Completed tasks were moved to **Done**.  
-   - Outstanding tasks were re-examined to determine which ones were most urgent for the following day.  
+   - Outstanding tasks were re-examined to determine which ones were most urgent for the following sprint.
+   - Quality control team member reviewed outstanding bugs and allocated team member to review.
 
 #### Completion:  
 This iterative approach ensured that all issues were addressed, resulting in a fully functional website with all planned features successfully implemented.
 
 #### Project Board
+
+* Epics were written containing possible user stories and based on that the website was made.
+* User stories were created by looking at epics and through iterations the project was advancing.
+* Labels were added to sort the issues based on the importance which resulted to have unclosed issues as labelled as "won't have":
+* Closed issues.
+* Opened issues.
+* The Project Board is set to public.
+* The Project Board was used to track progression of the task through the Todo, In progress and Done columns:
+
+![Projects Board](https://github.com/user-attachments/assets/ec533b41-a4de-4ab9-a4e0-a142916a644b)
+
 
 #### User Stories
 
@@ -112,7 +130,9 @@ This iterative approach ensured that all issues were addressed, resulting in a f
 * As a user, I would like to be able to navigate using the keyboard.
 
 
-#### MoSCoW Prioritization
+#### MoSCoW Prioritization: 
+The MoSCow prioitization method was implemented on all issues and was reviewed after sprints. It was recorded on the issues of the project board and labelled accordingly. 
+
 <h2>MUST HAVES:</h2>
 
 * Create weather widget UI component
@@ -241,6 +261,8 @@ Our final chosen colour scheme was **Color Scheme 1 (Classic Contrast)**, based 
 
 #### Typography
 
+ - Based on reseach into font that was readable to people with visual impairments and dyslexia the font type Roboto and sans-serif were chosen as the sites primary font.
+   
 #### UX Research
 
 To inform our design and layout decisions, we adopted a user-centric approach and sought to create user personas. We outlined our project goals to ChatGPT and asked for assistance in generating five user personas that represent our target audience for the application:
@@ -367,16 +389,44 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 - ...
 
 ---
+## Future Implementation
+* Pdf to speech, a user could paste a pdf into the site and it would be read aloud.
+* Implement text-to-speech conversion
+* Create theme switcher component
+* Implement high contrast theme
+* Create color-blind friendly themes
+* Store user theme preference
+
 
 ## Testing
+We took a systematic and structural approach to manually test each page to ensure it functions correctly and to help identify potential bugs. We created a specific testing template to ensure and re-check all aspects of the app were working correctly as specified with expected and actual outcomes using a methodical approach. We did final testing on the deployed site.
+
+We manually tested all available features to ensure they were working as intended.
+We carried out various intensive testing to see if any errors occurred. Errors were fixed and it works well without any bugs.
 
 #### HTML validator
 
 #### CSS validator
 
 #### Responsiveness
+We created the website using the mobile first technique and created screen queries to accommodate the site on larger sizes. 
 
 #### Accessibility
+
+* Weather can be read aloud to people with visual impairments.
+* News can read aloud to people with visual impairments.
+* User can be in control of what they want to listen to.
+* User can navigate easily using keyboard instruction.
+* Clean, unclutterd easy to navigate
+* Meaningful Alt descriptions on all images making it suitable for screen readers and descriptive for screen reader users.
+* Large buttons used thoughout website to aid people with difficulties with motor skills.
+* Aria labels used to describe the content for screen readers and other accessibility tools.
+* Detailed color analysis as outlined in the design section above was implmented.
+* Colors suitable for people who are visually impaired was utilised
+* Font type Roboto, sans serif text was researched and used due to its suitablity for people with visually impairments and dyslexia.
+* Background and contrast colors were tested and worked efficiently and clearly.
+* After running our deployed site in incognito mode using Lighthouse any issues that were identified were recitified.
+* 
 
 #### Performance
 
@@ -386,6 +436,28 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 
 ## Deployment
 
+1. The site is Deployed using GitHub Pages
+2. Login to GitHub
+3. Go to the projects repository (https://github.com/users/dasic002/projects/4)
+4. Click on Settings
+5. Select pages in the left navigation bar
+6. From SOURCE dropdown select Deploy from a Branch
+7. Under BRANCH from dropdown select Main Branch and SAVE
+8. The site is now deployed but may take a few minutes to go live.
+9. Return to CODE tab of Github repo and wait a few minutes for build to finish, refresh page. This will show on github-pages to see active deployments.
+
+How to Fork:
+
+1. Login to Github
+2. Go to Project repository
+3. Click the FORK button top right corner
+4. How to Clone
+5. Log into Github
+6. Go to project repository
+7. Click on the code button, select what want to clone HTTPS, SSH or GitHub CLI and copy the link.
+8. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory
+9. Copy 'git clone' into the terminal and paste the link you copied in step 3. Press enter.
+    
 ## Version Control 
 
 The site was developed by a team of 7 using Git for version control, with all code managed in the **"main"** GitHub repository. Our workflow included the following key Git commands:
@@ -412,17 +484,28 @@ This structured Git workflow allowed our team to collaborate effectively and man
 ---
 
 ## Team
+We had an amazing and hard working group of people working on this project who dedicated many hours to the project and also supported their other team mates. 
 
-#### Carols
+#### Carlos
+Carlos lead the team as Team Leader from the start and did an amazing job of keeping sprints on schedule, tasks reviewed and everyone motivated. 
+
 #### Charlie
+Charlie did a fabulous job of creating a lovely teams page and supporting other team members. 
+
 #### Eugénie
+Eugénie did a great job of the header and footer of the page and offering support and advice throughout the project. 
+
 #### Ioan
+We cannot say enough about Ioan, his coding skills and work rate were phenomenal.  He put a lot of work and time into this project and it is much appreciated. He was a huge support to the team with his extensive knowledge.
+
 #### Nils
+Nils attention to detail in all aspects of the project was fantastic.  His coding skills to navigate the menu bar and quality assurance to ensure all accessibility code was implemented was invaluable.  He was a huge support to other team members and was always happy to take a huddle to give advice to other team members. 
+
 #### Shantel
+Shantel assisted with the readme document and the error 404 page and was great help with the final sprint home. 
+
 #### Viki
-
-
-
+Viki did the FAQ page and assisted with the Readme documentation and thoroughly enjoyed the whole hackathon and leart many new things! 
 
 ---
 
@@ -431,7 +514,9 @@ This structured Git workflow allowed our team to collaborate effectively and man
 - [Color Blind Vision Simulator](https://pilestone.com/pages/color-blindness-simulator-1?srsltid=AfmBOooS3NaYz6ZSMBzkC52-VBPHp0FpKVg1DJi_okGUmlTMUueONlkM) for testing the layout with different types of visual impairment
 - [EightShapes Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=D3D3D3%0D%0A000000%0D%0A1C1C1C%0D%0A708090%0D%0AD3D3D3%0D%0AFF4500%0D%0ADC143C%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to test foreground and background color combinations of color schemes
 - [Figma](https://www.figma.com/?utm_source=google&utm_medium=cpc&utm_campaign=21284800768&utm_term=figma&utm_content=699203569592&utm_adgroup=169015406544&gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RT5SSwtM37YXnnUR-UkkFcYTGjyeAprApI-kRAqisRzVAo61hUlp-caAi-OEALw_wcB) to create project logo
+- [Stackoverflow] (https://stackoverflow.com/questions/10813581/can-i-replace-the-expand-icon-of-the-details-element) for inspiring code to create a larger area for users to click in the faq question section.
 
+We would like to thank Andrew our Hack Lead whom we always available for support if we needed it.  Thank you to CI for organising a great hackathon, accessibility is such an important and often forgotton aspect for many people living their day to day lives, this opportunity to create this webpage has made us all more informed about coding with accessibility to the forefront of our minds. We would like to also thank any partners, family, friends, children and pets that may have been neglected over the last few days ;) 
 
 ## Content
 
