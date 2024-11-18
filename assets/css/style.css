@@ -969,10 +969,12 @@ footer small a {
   }
 
 }
+
 /**---------------------- team.html **/
 .team-title {
   text-align: center;
   font-size: 50px;
+  color: black;
 }
 
 .profile-wrapper {
@@ -1013,7 +1015,6 @@ footer small a {
 .profile:nth-of-type(odd) .social-wrapper svg path {
   fill: white;
 }
-
 
 .profile > .profile-image {
   flex: 0 0 24%;
@@ -1060,7 +1061,11 @@ footer small a {
   transform: scale(1.2);
 }
 
-/** Error Page Styles **/
+.profile:last-of-type {
+  margin-bottom: 40px; 
+}
+
+/**---------------------- Error page **/
 
 .page {
   display: flex;
