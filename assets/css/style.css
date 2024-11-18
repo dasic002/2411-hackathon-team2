@@ -807,7 +807,6 @@ section.faq details>summary::-webkit-details-marker {
   
 section.faq details>summary::before {
     content: '+ ';
-    font-size: 30;
   }
   
 section.faq details[open]>summary::before {
