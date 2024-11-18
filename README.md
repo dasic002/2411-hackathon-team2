@@ -72,6 +72,198 @@ A comprehensive guide to common frequently asked questions that our users may ha
 
 ---
 
+## API Integration and Related Implementation
+
+### Weather Section
+
+The weather functionality in News Echo is a key feature that provides real-time weather information with accessibility at its core. Users can access current weather conditions, forecasts, and hear weather updates read aloud, making weather information accessible to all users regardless of visual ability.
+
+#### Key Features
+
+- **Current Weather Display**:
+
+  - Real-time temperature updates
+  - Location-based weather information
+  - Visual weather conditions with accessible icons
+  - High and low temperature readings
+
+- **Weather Forecasts**:
+
+  - 2-day weather prediction
+  - Detailed daily forecasts including:
+    - Temperature ranges
+    - Precipitation chances
+    - Humidity levels
+    - Wind conditions
+
+- **Accessibility Features**:
+  - Text-to-speech weather reports
+  - Screen reader compatible elements
+  - High contrast weather icons
+
+#### Technical Details
+
+#### API Integration
+
+The weather system uses [WeatherAPI.com](https://www.weatherapi.com/docs/) for reliable weather data:
+
+- Current weather conditions
+- Multi-day forecasts
+- Location-based services
+- Comprehensive weather metrics
+
+#### Location Services
+
+Implements a two-tier location system:
+
+1. Browser Geolocation (Primary) - User's consent required
+2. Default Location (Fallback) - Rare cases where the API fails due to unknown reasons
+
+#### Weather Updates
+
+- Cache system (5 minutes) for optimal performance to reduce API calls and improve user experience
+- Error handling with graceful degradation
+- Offline functionality with cached data
+
+#### Responsive Design
+
+The weather interface is fully responsive
+
+### Weather Icons
+
+The application features custom SVG icons that represent different weather conditions:
+
+- Clear sky (day/night versions)
+- Partly cloudy
+- Overcast conditions
+- Various precipitation states
+- Dynamic icon updates based on current conditions
+
+### Voice Integration
+
+Text-to-speech capabilities include:
+
+- Current weather narration
+- Forecast readings
+- Customizable speech settings
+- Clear pronunciation of weather terms
+
+### Error Handling
+
+Robust error management system:
+
+- Connection failure recovery
+- User-friendly error messages
+- Automatic retry mechanisms
+
+### Future Enhancements
+
+Planned improvements include:
+
+- Extended forecast period
+- Weather alerts integration
+- Additional weather metrics
+- User location preferences
+- Enhanced caching system
+
+## News Section
+
+The news functionality in News Echo provides accessible news content from The Guardian, allowing users to read and listen to news articles with enhanced accessibility features.
+
+### Key Features
+
+#### Article Display
+
+- Latest news articles with headlines
+- Article sections/categories
+- Thumbnail images when available
+- Expandable article content
+- Original source links
+
+#### Accessibility Features
+
+- Text-to-speech article reading
+- Independent title and content narration
+- Customizable speech settings
+- Screen reader optimized markup
+- High contrast text display
+
+#### Speech Controls
+
+- Play/pause functionality
+- Stop playback option
+- Speech rate adjustment
+- Pitch control
+- Voice selection
+
+### Technical Details
+
+#### API Integration
+
+Uses [The Guardian API](https://open-platform.theguardian.com/documentation/) for news content:
+
+- Configurable article fetch limit
+- Multiple article fields support
+- Section categorization
+- Rich content formatting
+
+During the development process, we created mock data to simulate API responses and test the application's functionality.
+This allowed us to fine-tune the user experience and ensure seamless integration with the actual API without reaching the rate limit (500 per day).
+The mock data is still in place and serves as a fallback in case the API fails.
+
+#### Content Processing
+
+- HTML tag cleaning
+- Text formatting for readability
+- URL link processing
+- Paragraph structuring
+- Character limit handling
+
+#### Speech Synthesis
+
+Implements **Web Speech API** features:
+
+- Multiple voice support
+- Speech rate control (0.5x - 2.0x)
+- Pitch adjustment (0.5x - 2.0x)
+- Pause/resume capability
+- Reading progress tracking
+
+#### State Management
+
+- Current article tracking
+- Speech status monitoring
+- User preference retention
+- Reading position memory
+- Error state handling
+
+#### Content Controls
+
+Article interaction features:
+
+- Expandable/collapsible content
+- "View More/Less" toggles
+- Original source links
+- Section highlighting
+
+#### Error Management
+
+Comprehensive error handling:
+
+- API failure recovery
+- Speech synthesis fallbacks
+- Content loading states
+- User-friendly error messages
+- Graceful degradation
+
+### Future Enhancements
+
+Planned improvements:
+
+- Category filtering
+- Search functionality
+- Personalized news feed
+- Reading history
 
 ## Agile Workflow for GitHub Project Board
 
@@ -553,6 +745,49 @@ This structured Git workflow allowed our team to collaborate effectively and man
 
 ---
 
+## Knows Bugs
+
+### Weather Location Services Bug
+
+In rare cases, the weather location service may fail with a connection timeout, causing the API to return an error. This occurs due to API rate limiting or temporary connection issues.
+
+#### Technical Implementation
+
+1. **Location Caching**
+
+   - Cache Duration: 5 minutes
+   - Reduces API calls
+   - Improves response time
+   - Prevents rate limiting
+
+2. **API Retry Logic**
+
+   - Maximum retries: 3
+   - Retry delay: 1 second
+   - Progressive backoff strategy
+   - Error logging on final attempt
+
+3. **Fallback Location System**
+   - Default coordinates: Dublin (53.349805, -6.26031)
+   - Activates after retry failure
+   - Ensures continuous service
+   - Graceful degradation
+
+**User Impact**
+
+- 2-3 second delay during retries
+- Fallback location data if needed
+- Non-blocking functionality
+
+#### Mitigation Steps
+
+1. Location data caching (5-minute intervals)
+2. Automatic retry system (3 attempts)
+3. Dublin coordinates fallback
+4. User notification system
+
+---
+
 ## Team
 We had an amazing and hard working group of people working on this project who dedicated many hours to the project and also supported their other team mates. 
 
@@ -585,6 +820,8 @@ Viki did the FAQ page and assisted with the Readme documentation and thoroughly 
 - [EightShapes Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=D3D3D3%0D%0A000000%0D%0A1C1C1C%0D%0A708090%0D%0AD3D3D3%0D%0AFF4500%0D%0ADC143C%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to test foreground and background color combinations of color schemes
 - [Figma](https://www.figma.com/?utm_source=google&utm_medium=cpc&utm_campaign=21284800768&utm_term=figma&utm_content=699203569592&utm_adgroup=169015406544&gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RT5SSwtM37YXnnUR-UkkFcYTGjyeAprApI-kRAqisRzVAo61hUlp-caAi-OEALw_wcB) to create project logo
 - [Stackoverflow] (https://stackoverflow.com/questions/10813581/can-i-replace-the-expand-icon-of-the-details-element) for inspiring code to create a larger area for users to click in the faq question section.
+- [WeatherAPI.com](https://www.weatherapi.com/docs/) for providing real-time weather data, documentation, and guidance for the weather section.
+- [The Guardian API](https://open-platform.theguardian.com/documentation/) for providing news content, documentation, and guidance for the news section.
 
 We would like to thank Andrew our Hack Lead whom we always available for support if we needed it.  Thank you to CI for organising a great hackathon, accessibility is such an important and often forgotton aspect for many people living their day to day lives, this opportunity to create this webpage has made us all more informed about coding with accessibility to the forefront of our minds. We would like to also thank any partners, family, friends, children and pets that may have been neglected over the last few days ;) 
 
