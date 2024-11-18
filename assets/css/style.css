@@ -831,7 +831,7 @@ section.faq details[open] > summary {
 /**---------------------- Footer section **/
 
 footer {
-  margin-top: 10px;
+  margin-top: 3rem;
   background-color: var(--primary-color-light);
   color: var(--secondary-color);
   width: 100%;
@@ -916,7 +916,7 @@ footer a:hover {
 }
 
 footer small {
-  font-size: 8px;
+  font-size: var(--paragraph-font-size);
   color: var(--background-color);
   display: flex;
   justify-content: center;
@@ -927,7 +927,7 @@ footer small {
 footer small a {
   color: var(--background-color);
   text-decoration: underline;
-  font-size: 8px;
+  font-size: var(--paragraph-font-size);
   line-height: normal;
 }
 
