@@ -10,7 +10,7 @@ News Echo is a platform designed to enhance digital accessibility, particularly 
 
 [View the deployed website here](https://dasic002.github.io/2411-hackathon-team2/)
 
-Preview Image [add img]
+![Am I responsive](https://github.com/user-attachments/assets/4d4cfb43-ab8c-46db-9e4d-63591cfa4c43)
 
 ---
 
@@ -662,13 +662,19 @@ We created the website using the mobile first technique and created screen queri
 
 #### Manual Testing
 <details>
-  <summary>**Home*</summary>
+  <summary>**Home**</summary>
 
 </details>
 
 <details>
-  <summary>**FAQ*</summary>
-    | Feature             | Expected Outcome                              | Testing Procedure                                  | Actual Outcome                                                                                   |
+  <summary>**FAQ**</summary>
+
+</details>
+
+<details>
+  <summary>**Contact**</summary>
+
+| Feature             | Expected Outcome                              | Testing Procedure                                  | Actual Outcome                                                                                   |
 |---------------------|-----------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | Navigation Logo     | Redirects to the homepage (`index.html`)      | Click the logo in the navigation bar             | Successfully redirected to the homepage.                                                         |
 | Mobile Menu Toggle  | Opens and closes the navigation menu          | Click the menu button and close button           | Menu opened and closed as expected; `aria-expanded` attribute updated correctly.                 |
@@ -682,15 +688,11 @@ We created the website using the mobile first technique and created screen queri
 | Responsive Design   | Adjusts layout for different screen sizes     | Resize browser window and test on various devices| The layout adjusted correctly for mobile, tablet, and desktop views; no overlapping elements.    |
 | Keyboard Navigation | Allows navigation through keyboard only       | Use `Tab` and `Enter` keys to navigate           | All interactive elements were accessible via keyboard and followed a logical tab order.          |
 | Screen Reader Labels| Descriptive `aria-label`/`alt` attributes     | Use a screen reader (e.g., NVDA or VoiceOver)    | Screen reader successfully read all labels and descriptions; meaningful context provided.         |
-</details>
-
-<details>
-  <summary>**Contact*</summary>
 
 </details>
 
 <details>
-  <summary>**Error*</summary>
+  <summary>**Error**</summary>
 
 </details>
 
