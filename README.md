@@ -166,6 +166,105 @@ Planned improvements include:
 - User location preferences
 - Enhanced caching system
 
+## News Section
+
+The news functionality in News Echo provides accessible news content from The Guardian, allowing users to read and listen to news articles with enhanced accessibility features.
+
+### Key Features
+
+#### Article Display
+
+- Latest news articles with headlines
+- Article sections/categories
+- Thumbnail images when available
+- Expandable article content
+- Original source links
+
+#### Accessibility Features
+
+- Text-to-speech article reading
+- Independent title and content narration
+- Customizable speech settings
+- Screen reader optimized markup
+- High contrast text display
+
+#### Speech Controls
+
+- Play/pause functionality
+- Stop playback option
+- Speech rate adjustment
+- Pitch control
+- Voice selection
+
+### Technical Details
+
+#### API Integration
+
+Uses [The Guardian API](https://open-platform.theguardian.com/documentation/) for news content:
+
+- Configurable article fetch limit
+- Multiple article fields support
+- Section categorization
+- Rich content formatting
+
+During the development process, we created mock data to simulate API responses and test the application's functionality.
+This allowed us to fine-tune the user experience and ensure seamless integration with the actual API without reaching the rate limit (500 per day).
+The mock data is still in place and serves as a fallback in case the API fails.
+
+#### Content Processing
+
+- HTML tag cleaning
+- Text formatting for readability
+- URL link processing
+- Paragraph structuring
+- Character limit handling
+
+#### Speech Synthesis
+
+Implements **Web Speech API** features:
+
+- Multiple voice support
+- Speech rate control (0.5x - 2.0x)
+- Pitch adjustment (0.5x - 2.0x)
+- Pause/resume capability
+- Reading progress tracking
+
+#### State Management
+
+- Current article tracking
+- Speech status monitoring
+- User preference retention
+- Reading position memory
+- Error state handling
+
+#### Content Controls
+
+Article interaction features:
+
+- Expandable/collapsible content
+- "View More/Less" toggles
+- Original source links
+- Section highlighting
+
+#### Error Management
+
+Comprehensive error handling:
+
+- API failure recovery
+- Speech synthesis fallbacks
+- Content loading states
+- User-friendly error messages
+- Graceful degradation
+
+### Future Enhancements
+
+Planned improvements:
+
+- Category filtering
+- Search functionality
+- Personalized news feed
+- Reading history
+
 ## Agile Workflow for GitHub Project Board
 
 Agile methodology was used throughout the project.  At the beginning of the project, the team conducted a brainstorming session to generate ideas for the site's features. These ideas were captured as user stories and detailed into tasks with MoSCow proioties.  This initaial step was recorded on a google spreadsheet and categorisedto organise tasks efficientl and then transferred over to Project Boards on Github. On issues recorded on the Projects Board were recorded in a medhoical manner, in a step by step detail to ensure all tasks were detailed correctly to manage workflow and assign the correct team member to the task.  
