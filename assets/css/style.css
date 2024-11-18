@@ -764,24 +764,45 @@ section.faq {
 
 section.faq h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: var(--primary-heading-font-size);
+  color: var(--primary-color);
 }
 
 section.faq .shade-1 {
-  background-color: var(--contrast-color);
+  background-color: var(--tertiary-color);
+  color: white;
+  border: 0px;
+}
+
+section.faq .shade-1 p {
+  color: white;
+}
+
+section.faq .shade-1 a {
+  color: white;
+}
+
+section.faq .shade-2 {
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 section.faq details {
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 4px;
   width: 100%;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 section.faq summary {
   font-weight: bold;
   margin: 0.5em -0.5em 0;
   padding: 0.5em;
+}
+
+section.faq .parag-shade2 {
+  color: var(--primary-color);
 }
 
 section.faq details[open] {
