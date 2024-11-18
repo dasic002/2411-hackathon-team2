@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>News Echo</title>
+    <link rel="icon" type="image/x-icon" href="assets/media/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/cc20595ad4.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" type="image/x-icon" href="assets/media/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -15,11 +17,11 @@
     <!--Navbar-->
     <header>
       <section class="wrapper navbar">
-        <a href="#" class="logo" alt="Logo">
+        <a href="index.html" class="logo" aria-label="Home">
           <svg
             aria-hidden="true"
-            alt="Logo"
             focusable="false"
+            role="img"
             viewBox="0 0 539 500"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -46,12 +48,13 @@
          ensuring that screen reader reads this button first as it's based on the DOM position
          https://dequeuniversity.com/checklists/web/reading-focus-order
         -->
-        <button class="menu-btn" alt="Open Menu">
+        <button class="menu-btn" aria-label="Open Menu" role="button">
           <span class="sr-only">Open main menu</span>
           <svg
             aria-hidden="true"
             aria-expanded="true"
             focusable="false"
+            role="img"
             viewBox="0 0 69 69"
             fill="#708090"
             xmlns="http://www.w3.org/2000/svg"
@@ -233,38 +236,57 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <!--Footer section-->
-    <footer class="wrapper">
+    <footer class="">
       <div class="flex-container">
-          <div id="contact-button">
-              <a href="https://dasic002.github.io/2411-hackathon-team2/team.html" rel="noopener" aria-label="Go to team page page">Contact Us</a>
-
+        <div id="contact-button">
+          <a
+            href="team.html"
+            rel="noopener"
+            aria-label="Go to team page page"
+            >Contact Us</a
+          >
+        </div>
+        <div id="footer-info">
+          <div id="footer-info-block">
+            <p>More about visual impairment?</p>
+            <p id="footer-social">
+              <a
+                href="https://www.facebook.com/Fighting.Blindness.Ireland/"
+                rel="noopener"
+                target="_blank"
+                aria-label="Visit Fighting Blindness facebook page"
+              >
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/fightingblindness/"
+                rel="noopener"
+                target="_blank"
+                aria-label="Visit Fighting Blindness instagram page"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/fighting-blindness/"
+                rel="noopener"
+                target="_blank"
+                aria-label="Visit Fighting Blindness linkedin page"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </p>
           </div>
-          <div id="footer-info">
-              <div id="footer-info-block">
-                  <p>More about visual impairment?</p>
-                  <p id="footer-social">
-                      <a href="https://www.facebook.com/Fighting.Blindness.Ireland/" rel="noopener" target="_blank"
-                          aria-label="Visit Fighting Blindness facebook page">
-                          <i class="fa-brands fa-square-facebook"></i>
-                      </a>
-                      <a href="https://www.instagram.com/fightingblindness/" rel="noopener" target="_blank"
-                          aria-label="Visit Fighting Blindness instagram page">
-                          <i class="fa-brands fa-instagram"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/company/fighting-blindness/" rel="noopener" target="_blank"
-                          aria-label="Visit Fighting Blindness linkedin page">
-                          <i class="fa-brands fa-linkedin"></i>
-                      </a>
-                  </p>
-              </div>
-          </div>
+        </div>
       </div>
-      <small>© 2024 Copyright by <a href="team.html" rel="noopener" aria-label="Go to team page page">@Open
-              Access</a>. All Rights Reserved. </small>
+      <small
+        >© 2024 Copyright by &nbsp;
+        <a href="team.html" rel="noopener" aria-label="Go to team page page">
+          Open Access</a
+        >. All Rights Reserved.
+      </small>
     </footer>
 
     <script type="module" src="assets/js/script.js"></script>

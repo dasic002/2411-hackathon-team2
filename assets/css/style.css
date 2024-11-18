@@ -325,7 +325,6 @@ h1 {
   margin: 7px 0 5px 0;
   color: var(--background-color);
   padding: 5px;
-  font-size: 2em;
 }
 
 #title-box p {
@@ -333,14 +332,14 @@ h1 {
 }
 
 #greeting {
-  font-size: 1em;
+  font-size: var(--tertiary-heading-font-size);
   color: var(--background-color);
   font-weight: 600;
 }
 
 #greeting-date {
   color: var(--background-color);
-  font-size: 0.8em;
+  font-size: var(--paragraph-font-size);
   font-weight: 600;
   padding: 2px;
   font-family: Arial, Helvetica, sans-serif;
@@ -358,6 +357,10 @@ h1 {
 
   h1 {
     font-size: 1.5em;
+  }
+
+  #title-box {
+    height: 90%;
   }
 }
 
@@ -758,7 +761,8 @@ section.faq .wrapper {
 }
 
 section.faq {
-  padding: 40px;
+  padding: var(--mobile-side-padding);
+  min-height: calc(100vh - 4rem - 60px - 30px - 10rem);
 }
 
 section.faq h1 {
@@ -774,6 +778,10 @@ section.faq .shade-1 {
 }
 
 section.faq .shade-1 p {
+  color: white;
+}
+
+section.faq .shade-1 a {
   color: white;
 }
 
@@ -830,6 +838,21 @@ section.faq details[open]>summary {
     margin-bottom: 0.5rem;
   }
 
+/* Media queries for FAQ    */
+@media screen and (min-width: 600px) {
+  section.faq {
+    padding-right: var(--tablet-side-padding);
+    padding-left: var(--tablet-side-padding);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.faq {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 /**---------------------- Profile section **/
 
 .profile {
@@ -839,7 +862,7 @@ section.faq details[open]>summary {
 /**---------------------- Footer section **/
 
 footer {
-  margin-top: 10px;
+  margin-top: 3rem;
   background-color: var(--primary-color-light);
   color: var(--secondary-color);
   width: 100%;
@@ -861,6 +884,7 @@ footer a:hover {
   padding: 4px;
   justify-content: center;
   align-items: center;
+  min-height: 10rem;
 }
 
 #contact-button {
@@ -923,7 +947,7 @@ footer a:hover {
 }
 
 footer small {
-  font-size: 8px;
+  font-size: var(--paragraph-font-size);
   color: var(--background-color);
   display: flex;
   justify-content: center;
@@ -934,7 +958,7 @@ footer small {
 footer small a {
   color: var(--background-color);
   text-decoration: underline;
-  font-size: 8px;
+  font-size: var(--paragraph-font-size);
   line-height: normal;
 }
 
@@ -983,10 +1007,13 @@ footer small a {
     margin-bottom: 0;
   }
 }
+
 /**---------------------- team.html **/
 .team-title {
   text-align: center;
   font-size: 50px;
+  color: var(--primary-color-light);
+  margin-bottom: 0.5em;
 }
 
 .profile-wrapper {
@@ -1073,7 +1100,11 @@ footer small a {
   transform: scale(1.2);
 }
 
-/** Error Page Styles **/
+.profile:last-of-type {
+  margin-bottom: 40px; 
+}
+
+/**---------------------- Error page **/
 
 .page {
   display: flex;
