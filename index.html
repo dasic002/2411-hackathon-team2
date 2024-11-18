@@ -111,14 +111,61 @@
             <p id="greeting-date"></p>
           </div>
         </div>
-        <div class="hero-div weather">
-          <!--Weather section placeholder-->
-          <p>Weather widget</p>
+        <div class="hero-div hero-weather-container">
+          <div class="hero-weather-main">
+            <div class="hero-weather-icon"></div>
+            <div class="hero-weather-temp">
+              <span class="current-temp"></span>
+              <div class="hero-high-low"></div>
+            </div>
+          </div>
+          <div class="hero-weather-details">
+            <div class="hero-location"></div>
+            <div class="hero-condition"></div>
+          </div>
+          <div class="hero-weather-controls">
+            <button class="speak-weather btn-primary" aria-label="Read current weather information">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+              </svg>
+            </button>
+            <button class="toggle-forecast btn-primary" aria-label="View more forecast" aria-expanded="false">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <!--weather section-->
-      <section class="weather"></section>
+      <section class="weather">
+        <div class="forecast-container" style="display: none">
+          <!-- Forecast cards will be dynamically inserted here -->
+        </div>
+      </section>
 
       <!--news section-->
       <section class="wrapper news">
@@ -126,69 +173,9 @@
       </section>
 
       <!--Text-to-Speech Control Panel-->
-      <section
-        id="tts-control-panel"
-        role="region"
-        aria-label="Text-to-speech controls"
-      >
+      <section id="tts-control-panel" role="region" aria-label="Text-to-speech controls">
         <div class="panel-content">
-          <button class="controls-toggle" aria-expanded="false">
-            Show Speed & Pitch Controls
-          </button>
-          <div class="now-reading">
-            <span class="reading-label">Now reading: </span>
-            <span class="reading-title" aria-live="polite"></span>
-          </div>
-          <div class="controls-content">
-            <div class="control-group">
-              <label for="global-speech-rate">Speed:</label>
-              <input
-                type="range"
-                id="global-speech-rate"
-                min="0.5"
-                max="2"
-                step="0.1"
-                value="1"
-                class="speech-slider"
-                aria-label="Speech rate control"
-              />
-              <span class="speech-value" aria-live="polite">1.0x</span>
-            </div>
-            <div class="control-group">
-              <label for="global-speech-pitch">Pitch:</label>
-              <input
-                type="range"
-                id="global-speech-pitch"
-                min="0.5"
-                max="2"
-                step="0.1"
-                value="1"
-                class="speech-slider"
-                aria-label="Speech pitch control"
-              />
-              <span class="speech-value" aria-live="polite">1.0x</span>
-            </div>
-          </div>
-          <div class="speech-buttons">
-            <button class="pause-speech" aria-label="Pause reading" disabled>
-              <span class="button-text">Pause</span>
-            </button>
-            <button class="stop-speech" aria-label="Stop reading" disabled>
-              <span class="button-text">Stop</span>
-            </button>
-          </div>
-        </div>
-      </section>
-      <!--Text-to-Speech Control Panel-->
-      <section
-        id="tts-control-panel"
-        role="region"
-        aria-label="Text-to-speech controls"
-      >
-        <div class="panel-content">
-          <button class="controls-toggle" aria-expanded="false">
-            Show Controls
-          </button>
+          <button class="controls-toggle" aria-expanded="false">Show Controls</button>
           <div class="now-reading">
             <span class="reading-label">Now reading: </span>
             <span class="reading-title" aria-live="polite"></span>
