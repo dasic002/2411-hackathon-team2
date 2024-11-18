@@ -988,10 +988,12 @@ footer small a {
     margin-bottom: 0;
   }
 }
+
 /**---------------------- team.html **/
 .team-title {
   text-align: center;
   font-size: 50px;
+  color: black;
 }
 
 .profile-wrapper {
@@ -1078,7 +1080,11 @@ footer small a {
   transform: scale(1.2);
 }
 
-/** Error Page Styles **/
+.profile:last-of-type {
+  margin-bottom: 40px; 
+}
+
+/**---------------------- Error page **/
 
 .page {
   display: flex;
