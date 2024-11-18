@@ -745,6 +745,49 @@ This structured Git workflow allowed our team to collaborate effectively and man
 
 ---
 
+## Knows Bugs
+
+### Weather Location Services Bug
+
+In rare cases, the weather location service may fail with a connection timeout, causing the API to return an error. This occurs due to API rate limiting or temporary connection issues.
+
+#### Technical Implementation
+
+1. **Location Caching**
+
+   - Cache Duration: 5 minutes
+   - Reduces API calls
+   - Improves response time
+   - Prevents rate limiting
+
+2. **API Retry Logic**
+
+   - Maximum retries: 3
+   - Retry delay: 1 second
+   - Progressive backoff strategy
+   - Error logging on final attempt
+
+3. **Fallback Location System**
+   - Default coordinates: Dublin (53.349805, -6.26031)
+   - Activates after retry failure
+   - Ensures continuous service
+   - Graceful degradation
+
+**User Impact**
+
+- 2-3 second delay during retries
+- Fallback location data if needed
+- Non-blocking functionality
+
+#### Mitigation Steps
+
+1. Location data caching (5-minute intervals)
+2. Automatic retry system (3 attempts)
+3. Dublin coordinates fallback
+4. User notification system
+
+---
+
 ## Team
 We had an amazing and hard working group of people working on this project who dedicated many hours to the project and also supported their other team mates. 
 
