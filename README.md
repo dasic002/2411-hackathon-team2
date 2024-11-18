@@ -16,6 +16,8 @@ Preview Image [add img]
 
 ## Features
 
+
+
 #### Logo
 
 ![News Echo Logo](assets/media/readme/newsecho-logo.png)
@@ -152,6 +154,7 @@ The MoSCow prioitization method was implemented on all issues and was reviewed a
 <h2>SHOULD HAVES</h2>
 
 <h2>WON'T HAVES</h2>
+
 * Create text input area
 * Implement text-to-speech conversion
 * Add playback controls (check volume implementation ?)
@@ -419,6 +422,9 @@ To test the markup validity [HTML Validator](https://validator.w3.org/) was used
 #### CSS validator
 The CSS code of the website was validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input). The validation results are as follows:
 
+![CSS Validation image](https://github.com/user-attachments/assets/9fb94799-9996-4bd8-a40c-5eded96c8492)
+
+
 
 | CSS File      | Errors | Warnings                                                                                                                                       | Comments                                                                                                                        | Testing Date   |
 |---------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------------|
@@ -521,12 +527,13 @@ How to Fork:
 1. Login to Github
 2. Go to Project repository
 3. Click the FORK button top right corner
-4. How to Clone
-5. Log into Github
-6. Go to project repository
-7. Click on the code button, select what want to clone HTTPS, SSH or GitHub CLI and copy the link.
-8. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory
-9. Copy 'git clone' into the terminal and paste the link you copied in step 3. Press enter.
+
+1. How to Clone
+2. Log into Github
+3. Go to project repository
+4. Click on the code button, select what want to clone HTTPS, SSH or GitHub CLI and copy the link.
+5. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory
+6. Copy 'git clone' into the terminal and paste the link you copied in step 3. Press enter.
     
 ## Version Control 
 
