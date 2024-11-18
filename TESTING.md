@@ -81,7 +81,15 @@ We then tested each user story that we have created at the beginning of the curr
 
 ## Compatibility
 
+We then tested all pages for cross-browser compatibility to ensure that the site works on different browsers.
+
 #### Results
+
+| Test Case | Test Case Description           | Expected Result                                                                                            | Pass / Fail |
+| --------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------- |
+| TC01      | Page works with Google Chrome   | 1. Open Google Chrome<br>2. Navigate to the deployed page.<br>3. Verify the basic functionality of the app | PASS        |
+| TC02      | Page works with Mozilla Firefox | 1. Open Firefox<br>2. Navigate to the deployed page.<br>3. Verify the basic functionality of the app       | PASS        |
+| TC03      | Page works with Safari          | 1. Open Safari <br>2. Navigate to the deployed page.<br>3. Verify the basic functionality of the app       | PASS        |
 
 ---
 
