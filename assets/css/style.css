@@ -770,6 +770,7 @@ section.faq h1 {
 section.faq .shade-1 {
   background-color: var(--tertiary-color);
   color: white;
+  border: 0px;
 }
 
 section.faq .shade-1 p {
