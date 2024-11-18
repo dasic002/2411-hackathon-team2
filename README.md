@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Hackathon team 2  (Open Access)
+# Hackathon team 2 (Open Access)
 
 # News Echo
 
@@ -23,15 +23,17 @@ News Echo is a platform designed to enhance digital accessibility, particularly 
 The logo features a minimalist and modern design that reflects the site’s focus on clarity and accessibility. The design is simple yet striking, ensuring the logo is easily recognisable and ties directly to the site’s name. It consists of two main elements:
 
 1. Bold "N":
-  - This represents the title "News Echo".
-2.	Radiating Curves:
-	- Two curved lines extend outward from the "N", resembling waves or signals. These represent communication, connection, and the spread of knowledge.
 
-This logo captures the site's focus on accessibility and sharing information in a way that is easy for everyone to engage with. 
+- This represents the title "News Echo".
+
+2. Radiating Curves:
+   - Two curved lines extend outward from the "N", resembling waves or signals. These represent communication, connection, and the spread of knowledge.
+
+This logo captures the site's focus on accessibility and sharing information in a way that is easy for everyone to engage with.
 
 #### Navigation Menu
 
-The navigation bar is very intutitive and easy to navigate through the different options of HOME - CONTACT US - FAQ.  When viewed on mobile the menu turns into a burger icon and expands to a full menu when enlarged for tablets and desktops. 
+The navigation bar is very intutitive and easy to navigate through the different options of HOME - CONTACT US - FAQ. When viewed on mobile the menu turns into a burger icon and expands to a full menu when enlarged for tablets and desktops.
 
 #### Hero Section
 
@@ -41,11 +43,11 @@ In the Hero section we can see displayed the choosen title of the app "NEWS ECHO
 
 #### Weather Widget
 
-The weather widget is displayed clearly, using a universal cloud symbol.  Todays current weather is displayed with a large volume speak button, when the user selects this the weather will be spoken out loud to them.  If they click and select anywhere on the weather it will display weather for the next couple of days. It is intuitive and easy to use. It has been designed with users who may have poor motor skills and or visual impairments. 
+The weather widget is displayed clearly, using a universal cloud symbol. Todays current weather is displayed with a large volume speak button, when the user selects this the weather will be spoken out loud to them. If they click and select anywhere on the weather it will display weather for the next couple of days. It is intuitive and easy to use. It has been designed with users who may have poor motor skills and or visual impairments.
 
 #### News Widget
 
-The news widget is a large News symbol button with sound waves, when the user clicks on the large speaker button the news will be spoken to them.  They can choose to select to have the News headline title spoken to them first and they choose weather they wish to listen to the full article.  This allows to them to choose between different news articles that they are interested in.
+The news widget is a large News symbol button with sound waves, when the user clicks on the large speaker button the news will be spoken to them. They can choose to select to have the News headline title spoken to them first and they choose weather they wish to listen to the full article. This allows to them to choose between different news articles that they are interested in.
 
 #### Footer
 
@@ -56,19 +58,21 @@ The last part is about the Copyright with a link to the Team page.
 ![Footer Screenshot](assets/media/readme/footer_picture.png)
 
 #### Contact Page
+
 The Contact Page provides a space to showcase the talented individuals behind the project. Rather than being a traditional contact form, this page serves as a “Meet the Team” section, giving visitors insight into the team members’ skills, backgrounds, and professional experiences.
 Each team member is presented in a visually appealing format with a professional photo, name, role, and a brief personal introduction. The profiles highlight each member’s background, current expertise, and aspirations.
 
-
 #### About Us Page
-Meet the team who developed the website. Each team members bio, photo, linkedin and github profiles are clearly displayed with links that open in separate pages. 
+
+Meet the team who developed the website. Each team members bio, photo, linkedin and github profiles are clearly displayed with links that open in separate pages.
 
 #### FAQ Page
+
 On our Frequently Asked Questions page, we’ve made it easier for users with poor motor skills or visual impairments to interact with the content. Instead of needing to click on a small arrow, you can click anywhere on the question to open or close the answer section.
 
-The FAQ includes useful links to comprehensive guides from external sources to equip our user with knowledge of support services and accessible technology available.  We give clear instructions on how to change display settings on their apple or android devices.  We provide guidance if they have difficulties with our website, we explain how we handle personal information.  We explain how to use voice commands on the site and how our site is compatible with screen readers and other assistive technologies. 
+The FAQ includes useful links to comprehensive guides from external sources to equip our user with knowledge of support services and accessible technology available. We give clear instructions on how to change display settings on their apple or android devices. We provide guidance if they have difficulties with our website, we explain how we handle personal information. We explain how to use voice commands on the site and how our site is compatible with screen readers and other assistive technologies.
 
-A comprehensive guide to common frequently asked questions that our users may have enabling them to be better informed, independent technically savvy users.  
+A comprehensive guide to common frequently asked questions that our users may have enabling them to be better informed, independent technically savvy users.
 
 ---
 
@@ -267,79 +271,81 @@ Planned improvements:
 
 ## Agile Workflow for GitHub Project Board
 
-Agile methodology was used throughout the project.  At the beginning of the project, the team conducted a brainstorming session to generate ideas for the site's features. These ideas were captured as user stories and detailed into tasks with MoSCow proioties.  This initaial step was recorded on a google spreadsheet and categorisedto organise tasks efficientl and then transferred over to Project Boards on Github. On issues recorded on the Projects Board were recorded in a medhoical manner, in a step by step detail to ensure all tasks were detailed correctly to manage workflow and assign the correct team member to the task.  
+Agile methodology was used throughout the project. At the beginning of the project, the team conducted a brainstorming session to generate ideas for the site's features. These ideas were captured as user stories and detailed into tasks with MoSCow proioties. This initaial step was recorded on a google spreadsheet and categorisedto organise tasks efficientl and then transferred over to Project Boards on Github. On issues recorded on the Projects Board were recorded in a medhoical manner, in a step by step detail to ensure all tasks were detailed correctly to manage workflow and assign the correct team member to the task.
 
 A template was created to help write User Stories and define Epics.
 
 ![Issue Template](https://github.com/user-attachments/assets/118a3d02-e88d-433b-ba2f-0c6eb926a29e)
 
 #### Daily Workflow:
-After the details of the project were recorded, each team member was allocated a must have task.  The more experienced members of the team outlined the best methodolgoy for working in a proficant manner within Gitpod and Github and clear instructions on git commands were pinned in the teams slack channel to ensure all team members understood and carried out the same commands to avoid conflicts.
 
-The team leader kept detailed minutes of each sprint and followed up on issues from the previous sprint.  The team leader ensured all members of the team were allocated some time to discuss their particular tasks and any issues they were having and were given the appropriate advice from other team members.  
+After the details of the project were recorded, each team member was allocated a must have task. The more experienced members of the team outlined the best methodolgoy for working in a proficant manner within Gitpod and Github and clear instructions on git commands were pinned in the teams slack channel to ensure all team members understood and carried out the same commands to avoid conflicts.
 
-Each team worked using the project board and ticked off their tasks as they completed them and moved them to the approaite section.  The quality control team member after reviewing the code would create and allocate tasks which were highlighted to the team member as required. 
+The team leader kept detailed minutes of each sprint and followed up on issues from the previous sprint. The team leader ensured all members of the team were allocated some time to discuss their particular tasks and any issues they were having and were given the appropriate advice from other team members.
 
-**Progress Updates**: At the end of each sprint, the board was reviewed:  
-   - Items were moved to in progress
-   - Completed tasks were moved to **Done**.  
-   - Outstanding tasks were re-examined to determine which ones were most urgent for the following sprint.
-   - Quality control team member reviewed outstanding bugs and allocated team member to review.
+Each team worked using the project board and ticked off their tasks as they completed them and moved them to the approaite section. The quality control team member after reviewing the code would create and allocate tasks which were highlighted to the team member as required.
 
-#### Completion:  
+**Progress Updates**: At the end of each sprint, the board was reviewed:
+
+- Items were moved to in progress
+- Completed tasks were moved to **Done**.
+- Outstanding tasks were re-examined to determine which ones were most urgent for the following sprint.
+- Quality control team member reviewed outstanding bugs and allocated team member to review.
+
+#### Completion:
+
 This iterative approach ensured that all issues were addressed, resulting in a fully functional website with all planned features successfully implemented.
 
 #### Project Board
 
-* Epics were written containing possible user stories and based on that the website was made.
-* User stories were created by looking at epics and through iterations the project was advancing.
-* Labels were added to sort the issues based on the importance which resulted to have unclosed issues as labelled as "won't have":
-* Closed issues.
-* Opened issues.
-* The Project Board is set to public.
-* The Project Board was used to track progression of the task through the Todo, In progress and Done columns:
+- Epics were written containing possible user stories and based on that the website was made.
+- User stories were created by looking at epics and through iterations the project was advancing.
+- Labels were added to sort the issues based on the importance which resulted to have unclosed issues as labelled as "won't have":
+- Closed issues.
+- Opened issues.
+- The Project Board is set to public.
+- The Project Board was used to track progression of the task through the Todo, In progress and Done columns:
 
 ![Projects Board](https://github.com/user-attachments/assets/ec533b41-a4de-4ab9-a4e0-a142916a644b)
 
-
 #### User Stories
 
-* As a user, I want to see current weather information for my location.
-* As a user with visual impairments, I want to hear the weather information read aloud
-* As a user, I want to browse latest news articles
-* As a user, I want to hear news headlines and content read aloud
-* As a user, I want to adjust text size throughout the application
-* As a visually impaired user, I want to use keyboard shortcuts to navigate the website, so that I can easily move between sections without needing a mouse.
-* As a developer, I want to implement semantic HTML and ARIA roles, so that screen readers can accurately interpret and navigate the page content.
-* As a user, I want the site to function seamlessly on all device sizes, so that I have a consistent experience, whether on a mobile device or desktop.
-* As a user concerned about privacy, I want clear information on how my location data is used, so that I feel secure using the service.
-* As a user, I want to receive weather alerts for severe conditions, so that I can prepare accordingly.
-* As a non-native English speaker, I want to include an option to choose a different language or voice for the text-to-speech conversion, so I can understand the information more easily.
-* As a user I would like to have the option to adjust the speed or pitch of the audio, so I can listen comfortably.
-* As a user I would like to see a FAQ section, so I can access common queries easily and self-serve.
-* As a user, I can check today's weather by hours, so that I can dress accordingly.
-* As a user, I can filter the news, so I can access the latest news of the topics I want.
-* As a user, I would like to be able to navigate using the keyboard.
+- As a user, I want to see current weather information for my location.
+- As a user with visual impairments, I want to hear the weather information read aloud
+- As a user, I want to browse latest news articles
+- As a user, I want to hear news headlines and content read aloud
+- As a user, I want to adjust text size throughout the application
+- As a visually impaired user, I want to use keyboard shortcuts to navigate the website, so that I can easily move between sections without needing a mouse.
+- As a developer, I want to implement semantic HTML and ARIA roles, so that screen readers can accurately interpret and navigate the page content.
+- As a user, I want the site to function seamlessly on all device sizes, so that I have a consistent experience, whether on a mobile device or desktop.
+- As a user concerned about privacy, I want clear information on how my location data is used, so that I feel secure using the service.
+- As a user, I want to receive weather alerts for severe conditions, so that I can prepare accordingly.
+- As a non-native English speaker, I want to include an option to choose a different language or voice for the text-to-speech conversion, so I can understand the information more easily.
+- As a user I would like to have the option to adjust the speed or pitch of the audio, so I can listen comfortably.
+- As a user I would like to see a FAQ section, so I can access common queries easily and self-serve.
+- As a user, I can check today's weather by hours, so that I can dress accordingly.
+- As a user, I can filter the news, so I can access the latest news of the topics I want.
+- As a user, I would like to be able to navigate using the keyboard.
 
+#### MoSCoW Prioritization:
 
-#### MoSCoW Prioritization: 
-The MoSCow prioitization method was implemented on all issues and was reviewed after sprints. It was recorded on the issues of the project board and labelled accordingly. 
+The MoSCow prioitization method was implemented on all issues and was reviewed after sprints. It was recorded on the issues of the project board and labelled accordingly.
 
 <h2>MUST HAVES:</h2>
 
-* Create weather widget UI component
-* Integrate with OpenWeatherMap or similar weather API
-* Implement error handling
-* Implement geolocation functionality
-* Implement text-to-speech functionality using Web Speech API
-* Create speech controls (play, pause, stop) - if needed for this widget
-* Format weather data into readable text
-* Create news section layout
-* Integrate with a news API
-* Implement error handling
-* Implement article preview cards
-* Add text-to-speech controls for each article
-* Implement stop/pause functionality per article
+- Create weather widget UI component
+- Integrate with OpenWeatherMap or similar weather API
+- Implement error handling
+- Implement geolocation functionality
+- Implement text-to-speech functionality using Web Speech API
+- Create speech controls (play, pause, stop) - if needed for this widget
+- Format weather data into readable text
+- Create news section layout
+- Integrate with a news API
+- Implement error handling
+- Implement article preview cards
+- Add text-to-speech controls for each article
+- Implement stop/pause functionality per article
 
 <h2>SHOULD HAVES</h2>
 
@@ -355,7 +361,6 @@ The MoSCow prioitization method was implemented on all issues and was reviewed a
 ## Design
 
 ![Hackathon Wireframes V4](https://github.com/user-attachments/assets/10cfc136-006c-4b16-a7a3-ed9adb19275d)
-
 
 #### Colours
 
@@ -453,8 +458,8 @@ Our final chosen colour scheme was **Color Scheme 1 (Classic Contrast)**, based 
 
 #### Typography
 
- - Based on reseach into font that was readable to people with visual impairments and dyslexia the font type Roboto and sans-serif were chosen as the sites primary font.
-   
+- Based on reseach into font that was readable to people with visual impairments and dyslexia the font type Roboto and sans-serif were chosen as the sites primary font.
+
 #### UX Research
 
 To inform our design and layout decisions, we adopted a user-centric approach and sought to create user personas. We outlined our project goals to ChatGPT and asked for assistance in generating five user personas that represent our target audience for the application:
@@ -581,120 +586,35 @@ Slow-loading pages or sites that are not voice-enabled.</li>
 - ...
 
 ---
-## Future Implementation
-* Pdf to speech, a user could paste a pdf into the site and it would be read aloud.
-* Implement text-to-speech conversion
-* Create theme switcher component
-* Implement high contrast theme
-* Create color-blind friendly themes
-* Store user theme preference
 
+## Future Implementation
+
+- Pdf to speech, a user could paste a pdf into the site and it would be read aloud.
+- Implement text-to-speech conversion
+- Create theme switcher component
+- Implement high contrast theme
+- Create color-blind friendly themes
+- Store user theme preference
 
 ## Testing
+
 We took a systematic and structural approach to manually test each page to ensure it functions correctly and to help identify potential bugs. We created a specific testing template to ensure and re-check all aspects of the app were working correctly as specified with expected and actual outcomes using a methodical approach. We did final testing on the deployed site.
 
 We manually tested all available features to ensure they were working as intended.
 We carried out various intensive testing to see if any errors occurred. Errors were fixed and it works well without any bugs.
 
-#### HTML validator
-## HTML Validation
-To test the markup validity [HTML Validator](https://validator.w3.org/) was used to assess markup validity and compliance with accessibility standards. THe following table shows the results for each page:
+We tested the page for
 
-**Summary Table**
-| Page             | Date       | Comments | Pass/Fail |
-|------------------|------------|----------|-----------|
-| Home             |  18/11/24  |          |           |
-| FAQ              |  18/11/24  |          |           |
-| Contact          |  18/11/24  |          |           |
-| Error            |  18/11/24  |          |           |
+- Basic Functionality
+- User Stories
+- Compatibility
+- Responsiveness
+- HTML Validation
+- CSS Validation
+- Accessibility
+- Performance
 
-#### CSS validator
-The CSS code of the website was validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input). The validation results are as follows:
-
-
-| CSS File      | Errors | Warnings                                                                                                                                       | Comments                                                                                                                        | Testing Date   |
-|---------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|----------------|
-| Home          | None   |                      |                        | 18/11/24 |
-| FAQ           | None   |                      |                        | 18/11/24 |
-| Contact       | None   |                      |                        | 18/11/24 |
-| Error         | None   |                      |                        | 18/11/24 |
-
-#### Responsiveness
-We created the website using the mobile first technique and created screen queries to accommodate the site on larger sizes. 
-
-**Browser Compatibility** 
--   Expected: Consistent appearance and functionality across major browsers.
--   Testing: Test site on Chrome, Mozilla, Safari, and Edge browsers.
--   Outcome: The site renders as expected with good responsiveness and compatibility across different browsers.
-
-**Responsiveness Test**
-- Expected: Site should render appropriately on various devices with different screen sizes. 
-- Testing: Test responsiveness on iPhone 12, iPad 12, and desktop (1024px). 
-- Outcome: The site displays responsively across different devices, maintaining functionality and appearance as intended.
-
-#### Accessibility
-
-* Weather can be read aloud to people with visual impairments.
-* News can read aloud to people with visual impairments.
-* User can be in control of what they want to listen to.
-* User can navigate easily using keyboard instruction.
-* Clean, unclutterd easy to navigate
-* Meaningful Alt descriptions on all images making it suitable for screen readers and descriptive for screen reader users.
-* Large buttons used thoughout website to aid people with difficulties with motor skills.
-* Aria labels used to describe the content for screen readers and other accessibility tools.
-* Detailed color analysis as outlined in the design section above was implmented.
-* Colors suitable for people who are visually impaired was utilised
-* Font type Roboto, sans serif text was researched and used due to its suitablity for people with visually impairments and dyslexia.
-* Background and contrast colors were tested and worked efficiently and clearly.
-* After running our deployed site in incognito mode using Lighthouse any issues that were identified were recitified.
-* 
-
-#### Performance
-
-#### Lighthouse
-| Page              | Performance |             | Accessibility |          | Best Practice |             | SEO  |                   |
-|-------------------|-------------|-------------|---------------|----------|---------------|-------------|------|-------------------|
-|                   | Mobile (%)  | Desktop (%) | Mobile (%) | Desktop (%) | Mobile (%) | Desktop (%)    | Mobile (%) | Desktop (%) |
-| **Index**         |             |             |            |             |            |                |            |             |
-| **FAQ**           |             |             |            |             |            |                |            |             |
-| **Contact**       |    93       |   99        |      96    |   96        |     99     |   96           | 100        |   100       |
-| **Error**         |             |             |            |             |            |                |            |             |
-
-#### Manual Testing
-<details>
-  <summary>**Home**</summary>
-
-</details>
-
-<details>
-  <summary>**FAQ**</summary>
-
-</details>
-
-<details>
-  <summary>**Contact**</summary>
-
-| Feature             | Expected Outcome                              | Testing Procedure                                  | Actual Outcome                                                                                   |
-|---------------------|-----------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Navigation Logo     | Redirects to the homepage (`index.html`)      | Click the logo in the navigation bar             | Successfully redirected to the homepage.                                                         |
-| Mobile Menu Toggle  | Opens and closes the navigation menu          | Click the menu button and close button           | Menu opened and closed as expected; `aria-expanded` attribute updated correctly.                 |
-| Navigation Links    | Redirects to respective pages                 | Click `Home`, `Contact Us`, and `FAQ` links      | Navigation links successfully redirected to the expected pages.                                  |
-| Profile Images      | Displays correct images for all team members  | Verify images for each profile                   | Images for all profiles displayed correctly.                                                     |
-| Profile Descriptions| Displays correct text for each profile        | Read descriptions under each team member         | All descriptions were accurate and correctly displayed.                                          |
-| GitHub Links        | Redirects to respective GitHub profiles       | Click on GitHub links for each team member       | GitHub links opened the correct profiles in a new tab.                                           |
-| LinkedIn Links      | Redirects to respective LinkedIn profiles     | Click on LinkedIn links for each team member     | LinkedIn links opened the correct profiles in a new tab.                                         |
-| Social Media Icons  | Redirects to Fighting Blindness social pages  | Click `Facebook`, `Instagram`, and `LinkedIn` icons in the footer | Social media links opened the correct pages in new tabs.                                         |
-| Contact Us Button   | Redirects to the Contact Us page              | Click the `Contact Us` button in the footer      | Successfully redirected to the Contact Us page.                                                  |
-| Responsive Design   | Adjusts layout for different screen sizes     | Resize browser window and test on various devices| The layout adjusted correctly for mobile, tablet, and desktop views; no overlapping elements.    |
-| Keyboard Navigation | Allows navigation through keyboard only       | Use `Tab` and `Enter` keys to navigate           | All interactive elements were accessible via keyboard and followed a logical tab order.          |
-| Screen Reader Labels| Descriptive `aria-label`/`alt` attributes     | Use a screen reader (e.g., NVDA or VoiceOver)    | Screen reader successfully read all labels and descriptions; meaningful context provided.         |
-
-</details>
-
-<details>
-  <summary>**Error**</summary>
-
-</details>
+The main testing document can be found here : [TESTING](TESTING.md)
 
 ---
 
@@ -721,24 +641,26 @@ How to Fork:
 7. Click on the code button, select what want to clone HTTPS, SSH or GitHub CLI and copy the link.
 8. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory
 9. Copy 'git clone' into the terminal and paste the link you copied in step 3. Press enter.
-    
-## Version Control 
+
+## Version Control
 
 The site was developed by a team of 7 using Git for version control, with all code managed in the **"main"** GitHub repository. Our workflow included the following key Git commands:
 
-- **Daily Workflow**:  
-  - `git checkout main` – Switch to the main branch.  
-  - `git pull origin main` – Fetch and integrate the latest changes from the remote main branch.  
-  - `git checkout <your-branch>` – Switch back to your feature branch.  
-  - `git merge main` – Merge the latest changes from the main branch into your branch.  
+- **Daily Workflow**:
 
-- **Stashing Changes**:  
-  - `git stash push -u -m "Your stash message"` – Temporarily save your changes.  
+  - `git checkout main` – Switch to the main branch.
+  - `git pull origin main` – Fetch and integrate the latest changes from the remote main branch.
+  - `git checkout <your-branch>` – Switch back to your feature branch.
+  - `git merge main` – Merge the latest changes from the main branch into your branch.
+
+- **Stashing Changes**:
+
+  - `git stash push -u -m "Your stash message"` – Temporarily save your changes.
   - `git stash apply` – Reapply stashed changes after syncing with the main branch.
 
-- **Committing and Pushing Changes**:  
-  - `git add .` – Stage all changes (or specify individual files).  
-  - `git commit -m "Description of your changes"` – Commit changes with a descriptive message.  
+- **Committing and Pushing Changes**:
+  - `git add .` – Stage all changes (or specify individual files).
+  - `git commit -m "Description of your changes"` – Commit changes with a descriptive message.
   - `git push origin <branch-name>` – Push committed changes to the remote repository.
 
 This structured Git workflow allowed our team to collaborate effectively and manage changes efficiently throughout development.
@@ -805,28 +727,36 @@ In rare cases, the weather location service may fail with a connection timeout, 
 ---
 
 ## Team
-We had an amazing and hard working group of people working on this project who dedicated many hours to the project and also supported their other team mates. 
+
+We had an amazing and hard working group of people working on this project who dedicated many hours to the project and also supported their other team mates.
 
 #### Carlos
-Carlos lead the team as Team Leader from the start and did an amazing job of keeping sprints on schedule, tasks reviewed and everyone motivated. 
+
+Carlos lead the team as Team Leader from the start and did an amazing job of keeping sprints on schedule, tasks reviewed and everyone motivated.
 
 #### Charlie
-Charlie did a fabulous job of creating a lovely teams page and supporting other team members. 
+
+Charlie did a fabulous job of creating a lovely teams page and supporting other team members.
 
 #### Eugénie
-Eugénie did a great job of the header and footer of the page and offering support and advice throughout the project. 
+
+Eugénie did a great job of the header and footer of the page and offering support and advice throughout the project.
 
 #### Ioan
-We cannot say enough about Ioan, his coding skills and work rate were phenomenal.  He put a lot of work and time into this project and it is much appreciated. He was a huge support to the team with his extensive knowledge.
+
+We cannot say enough about Ioan, his coding skills and work rate were phenomenal. He put a lot of work and time into this project and it is much appreciated. He was a huge support to the team with his extensive knowledge.
 
 #### Nils
-Nils attention to detail in all aspects of the project was fantastic.  His coding skills to navigate the menu bar and quality assurance to ensure all accessibility code was implemented was invaluable.  He was a huge support to other team members and was always happy to take a huddle to give advice to other team members. 
+
+Nils attention to detail in all aspects of the project was fantastic. His coding skills to navigate the menu bar and quality assurance to ensure all accessibility code was implemented was invaluable. He was a huge support to other team members and was always happy to take a huddle to give advice to other team members.
 
 #### Shantel
-Shantel assisted with the readme document and the error 404 page and was great help with the final sprint home. 
+
+Shantel assisted with the readme document and the error 404 page and was great help with the final sprint home.
 
 #### Viki
-Viki did the FAQ page and assisted with the Readme documentation and thoroughly enjoyed the whole hackathon and leart many new things! 
+
+Viki did the FAQ page and assisted with the Readme documentation and thoroughly enjoyed the whole hackathon and leart many new things!
 
 ---
 
@@ -839,11 +769,8 @@ Viki did the FAQ page and assisted with the Readme documentation and thoroughly 
 - [WeatherAPI.com](https://www.weatherapi.com/docs/) for providing real-time weather data, documentation, and guidance for the weather section.
 - [The Guardian API](https://open-platform.theguardian.com/documentation/) for providing news content, documentation, and guidance for the news section.
 
-We would like to thank Andrew our Hack Lead whom we always available for support if we needed it.  Thank you to CI for organising a great hackathon, accessibility is such an important and often forgotton aspect for many people living their day to day lives, this opportunity to create this webpage has made us all more informed about coding with accessibility to the forefront of our minds. We would like to also thank any partners, family, friends, children and pets that may have been neglected over the last few days ;) 
+We would like to thank Andrew our Hack Lead whom we always available for support if we needed it. Thank you to CI for organising a great hackathon, accessibility is such an important and often forgotton aspect for many people living their day to day lives, this opportunity to create this webpage has made us all more informed about coding with accessibility to the forefront of our minds. We would like to also thank any partners, family, friends, children and pets that may have been neglected over the last few days ;)
 
 ## Content
 
-* The background image for the hero section was found on [Pexels](https://www.pexels.com/).
-
-
-
+- The background image for the hero section was found on [Pexels](https://www.pexels.com/).
