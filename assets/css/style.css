@@ -801,12 +801,11 @@ section.faq .parag-shade2 {
 }
 
 section.faq details[open] {
-  padding: 0.5em;
+  padding: 1.5em;
 }
 
 /**-Code inspired by stackoverflow to make faq easier to open close **/
 
-<<<<<<< HEAD
 section.faq details>summary {
     list-style-type: none;
     outline: none;
@@ -830,32 +829,6 @@ section.faq details[open]>summary::before {
 section.faq details[open]>summary {
     margin-bottom: 0.5rem;
   }
-=======
-section.faq details > summary {
-  list-style-type: none;
-  outline: none;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-section.faq details > summary::-webkit-details-marker {
-  display: none;
-}
-
-section.faq details > summary::before {
-  content: "+ ";
-  font-size: 30;
-}
-
-section.faq details[open] > summary::before {
-  content: "- ";
-}
-
-section.faq details[open] > summary {
-  margin-bottom: 0.5rem;
-}
->>>>>>> 96b30dd80e4237c3349fe0fe9ace96ccbae0d07d
 
 /**---------------------- Profile section **/
 
