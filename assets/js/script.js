@@ -3,6 +3,7 @@ import { fetchGuardianNews } from "./services/newsService.js";
 import { renderNewsCard } from "./components/newsCard.js";
 import { initializeSpeechControls } from "./eventHandlers/newsEvents.js";
 import { initializeControlPanel } from "./components/controlPanel.js";
+import { initializeWeather } from "./components/weatherComponent.js";
 
 // Navbar section
 // Navbar : open mobile menu
@@ -101,5 +102,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   await initializeSpeechSynthesis();
   displayCurrentDate();
   displayGreeting();
+  initializeWeather();
   initializeNewsAndControl();
 });
