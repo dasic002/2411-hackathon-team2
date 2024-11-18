@@ -1008,6 +1008,8 @@ footer small a {
 .team-title {
   text-align: center;
   font-size: 50px;
+  color: var(--primary-color-light);
+  margin-bottom: 0.5em;
 }
 
 .profile-wrapper {
