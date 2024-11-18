@@ -10,7 +10,7 @@ News Echo is a platform designed to enhance digital accessibility, particularly 
 
 [View the deployed website here](https://dasic002.github.io/2411-hackathon-team2/)
 
-Preview Image [add img]
+![Am I responsive](https://github.com/user-attachments/assets/4d4cfb43-ab8c-46db-9e4d-63591cfa4c43)
 
 ---
 
