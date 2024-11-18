@@ -747,7 +747,21 @@ This structured Git workflow allowed our team to collaborate effectively and man
 
 ---
 
-## Knows Bugs
+## Knows Bugs and Issues
+
+### API Keys Security
+
+This project uses API keys stored in a `secrets.js` file which is committed to the repository. While typically this is not recommended for production applications, in this case it is an acceptable approach because:
+
+1. The application is hosted on GitHub Pages which only serves static content
+2. The keys are for free-tier APIs with built-in rate limiting
+3. Due to time constraints, a more secure solution was not implemented
+
+#### GitHub Pages Environment Variables Limitations
+
+GitHub Pages does not support server-side environment variables since it only serves static content. Common solutions like using `.env` files or environment secrets through GitHub Actions don't work with GitHub Pages. While there are workarounds involving build processes or third-party services, for this demonstration project, storing API keys in a JavaScript file provides a straightforward solution that balances functionality with acceptable security for our use case.
+
+For a more secure production environment, these API calls would be proxied through a backend server that securely stores and manages the credentials.
 
 ### Weather Location Services Bug
 
