@@ -1055,29 +1055,29 @@ section.faq details[open] {
 
 /**-Code inspired by stackoverflow to make faq easier to open close **/
 
-section.faq details>summary {
-    list-style-type: none;
-    outline: none;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-section.faq details>summary::-webkit-details-marker {
-    display: none;
-  }
-  
-section.faq details>summary::before {
-    content: '+ ';
-  }
-  
-section.faq details[open]>summary::before {
-    content: '- ';
-  }
-  
-section.faq details[open]>summary {
-    margin-bottom: 0.5rem;
-  }
+section.faq details > summary {
+  list-style-type: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+section.faq details > summary::-webkit-details-marker {
+  display: none;
+}
+
+section.faq details > summary::before {
+  content: "+ ";
+}
+
+section.faq details[open] > summary::before {
+  content: "- ";
+}
+
+section.faq details[open] > summary {
+  margin-bottom: 0.5rem;
+}
 
 /* Media queries for FAQ    */
 @media screen and (min-width: 600px) {
@@ -1191,6 +1191,9 @@ footer small {
   font-size: var(--paragraph-font-size);
   color: var(--background-color);
   display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
   justify-content: center;
   padding: 5px;
   margin-top: 10px;
@@ -1220,6 +1223,9 @@ footer small a {
 }
 
 @media screen and (max-width: 485px) {
+  footer small {
+    flex-direction: column;
+  }
   .flex-container {
     margin: auto;
     flex-direction: column;
@@ -1342,7 +1348,7 @@ footer small a {
 }
 
 .profile:last-of-type {
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 /**---------------------- Error page **/
