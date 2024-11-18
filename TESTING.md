@@ -99,6 +99,13 @@ The responsiveness was tested thanks to [Chrome Device toolbar](https://develope
 
 #### Results
 
+| Test Case | Test Case Description              | Expected Result                                                                                                                                     | Pass / Fail |
+| --------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| TC01      | Page works on mobile screens       | 1. Navigate to the deployed page.<br>2. Open the developer toos<br>3. Set the window size to 380px<br>4. Verify the basic functionality of the app  | PASS        |
+| TC01      | Page works on tablet screens       | 1. Navigate to the deployed page.<br>2. Open the developer toos<br>3. Set the window size to 650px<br>4. Verify the basic functionality of the app  | PASS        |
+| TC03      | Page works on desktop screens      | 1. Navigate to the deployed page.<br>2. Open the developer toos<br>3. Set the window size to 1200px<br>4. Verify the basic functionality of the app | PASS        |
+| TC04      | Page works on wide screen desktops | 1. Navigate to the deployed page.<br>2. Open the developer toos<br>3. Set the window size to 2200px<br>4. Verify the basic functionality of the app | PASS        |
+
 ---
 
 ## Accessibility
