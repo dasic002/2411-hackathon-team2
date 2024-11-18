@@ -18,10 +18,10 @@
         <!--Navbar-->
         <header>
             <section class="wrapper navbar">
-              <a href="index.html" class="logo" alt="Logo">
+              <a href="index.html" class="logo" aria-label="Home">
                 <svg
                   aria-hidden="true"
-                  alt="Logo"
+                  role="img"
                   focusable="false"
                   viewBox="0 0 539 500"
                   fill="none"
@@ -49,12 +49,13 @@
                ensuring that screen reader reads this button first as it's based on the DOM position
                https://dequeuniversity.com/checklists/web/reading-focus-order
               -->
-              <button class="menu-btn" alt="Open Menu">
+              <button class="menu-btn" aria-label="Open Menu" role="button">
                 <span class="sr-only">Open main menu</span>
                 <svg
                   aria-hidden="true"
                   aria-expanded="true"
                   focusable="false"
+                  role="img"
                   viewBox="0 0 69 69"
                   fill="#708090"
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +80,7 @@
                   <svg
                     aria-hidden="true"
                     focusable="false"
+                    role="img"
                     viewBox="0 0 66 66"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +388,7 @@
 
         <!--Footer section-->
       
-        <footer class="wrapper">
+        <footer class="">
           <div class="flex-container">
               <div id="contact-button">
                   <a href="team.html" rel="noopener" aria-label="Go to team page page">Contact Us</a>
@@ -412,7 +414,7 @@
                   </div>
               </div>
           </div>
-          <small>© 2024 Copyright by <a href="team.html" rel="noopener" aria-label="Go to team page page">@Open
+          <small>© 2024 Copyright by &nbsp;<a href="team.html" rel="noopener" aria-label="Go to team page page">Open
                   Access</a>. All Rights Reserved. </small>
         </footer>
 
