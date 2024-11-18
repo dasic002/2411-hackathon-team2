@@ -56,7 +56,15 @@ We then tested the validation of each page using the [W3 HTML Validation Tool](h
 
 ## CSS Validator
 
+We then tested the validation of each page using the [W3 Jigsaw CSS Validation Tool](https://jigsaw.w3.org/css-validator/)
+
 #### Results
+
+| Test Case | Test Case Description                  | Expected Result                                                                                                                               | Pass / Fail |
+| --------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| TC01      | Home page passes CSS Jigsaw validator  | 1. Navigate to the CSS Jigsaw Validator <br>2. Copy the link of the Home Page or validate by copy+paste its html<br>3. Verify that it passes  | PASS        |
+| TC02      | Teams page passes CSS Jigsaw validator | 1. Navigate to the CSS Jigsaw Validator <br>2. Copy the link of the Teams Page or validate by copy+paste its html<br>3. Verify that it passes | PASS        |
+| TC03      | FAQ page passes CSS Jigsaw validator   | 1. Navigate to the CSS Jigsaw Validator <br>2. Copy the link of the FAQ Page or validate by copy+paste its html<br>3. Verify that it passes   | PASS        |
 
 ---
 
